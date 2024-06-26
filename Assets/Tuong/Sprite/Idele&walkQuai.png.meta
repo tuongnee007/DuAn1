@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8241cc24b744e7745a71eaff77d48ddd
+guid: de37d84f823d30e439b15010725e8b00
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Water_Spell_0
+      name: Idele&walkQuai_0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 0
-        width: 56
-        height: 16
+        x: 358
+        y: 902
+        width: 368
+        height: 411
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2193047a8d1cec64f9326fe942a99858
-      internalID: 469770165
+      spriteID: b335c85ad5b1a474f90adb9719aaf8f6
+      internalID: 1816593648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Spell_1
+      name: Idele&walkQuai_1
       rect:
         serializedVersion: 2
-        x: 204
-        y: 0
-        width: 46
-        height: 55
+        x: 840
+        y: 902
+        width: 401
+        height: 406
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc215fa30e438a747b0a8810a76daeda
-      internalID: -501640822
+      spriteID: abcdd2a7b75ec7f46863b6280d43ad83
+      internalID: 1310163591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Spell_2
+      name: Idele&walkQuai_2
       rect:
         serializedVersion: 2
-        x: 308
-        y: 0
-        width: 129
-        height: 101
+        x: 1379
+        y: 902
+        width: 363
+        height: 401
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2b5780707879ac4da7fdc5c4af3be21
-      internalID: 730691340
+      spriteID: 0e192e2399d939c4cba8610354cd07fd
+      internalID: 1260690944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Spell_3
+      name: Idele&walkQuai_3
       rect:
         serializedVersion: 2
-        x: 458
-        y: 0
-        width: 133
-        height: 92
+        x: 363
+        y: 431
+        width: 364
+        height: 405
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a775e7ffd8be71468cc50ce51c4bb9a
-      internalID: -1604712991
+      spriteID: dee54bb8aaf2474439d54e084a9145f5
+      internalID: -261193632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Spell_4
+      name: Idele&walkQuai_4
       rect:
         serializedVersion: 2
-        x: 613
-        y: 0
-        width: 129
-        height: 84
+        x: 761
+        y: 117
+        width: 367
+        height: 405
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 170947150daa9f140bd434e30d5117d1
-      internalID: 1237947573
+      spriteID: 2d2f3b347bdb9d94f948372123954f33
+      internalID: 2050126108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Spell_5
+      name: Idele&walkQuai_5
       rect:
         serializedVersion: 2
-        x: 754
-        y: 0
-        width: 446
-        height: 88
+        x: 1184
+        y: 122
+        width: 406
+        height: 395
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,8 +242,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6aea6ad971aa9944936edcda704b546
-      internalID: -1729511509
+      spriteID: 1127f502790da64408120d2a4fe22f00
+      internalID: 1022875182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idele&walkQuai_6
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 122
+        width: 362
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdd41fa437693e429837f2573b1ffd6
+      internalID: 516833239
       vertices: []
       indices: 
       edges: []
@@ -259,12 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Water_Spell_0: 469770165
-      Water_Spell_1: -501640822
-      Water_Spell_2: 730691340
-      Water_Spell_3: -1604712991
-      Water_Spell_4: 1237947573
-      Water_Spell_5: -1729511509
+      Idele&walkQuai_0: 1816593648
+      Idele&walkQuai_1: 1310163591
+      Idele&walkQuai_2: 1260690944
+      Idele&walkQuai_3: -261193632
+      Idele&walkQuai_4: 2050126108
+      Idele&walkQuai_5: 1022875182
+      Idele&walkQuai_6: 516833239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

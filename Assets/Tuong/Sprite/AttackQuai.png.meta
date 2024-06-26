@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8241cc24b744e7745a71eaff77d48ddd
+guid: 9d4f7aa08553e404194ab21784750a45
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Water_Spell_0
+      name: AttackQuai_0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 0
-        width: 56
-        height: 16
+        x: 478
+        y: 1112
+        width: 297
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2193047a8d1cec64f9326fe942a99858
-      internalID: 469770165
+      spriteID: 263bc7b2bbfa3f444a1da8fddacdaf41
+      internalID: -819913096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Spell_1
+      name: AttackQuai_1
       rect:
         serializedVersion: 2
-        x: 204
-        y: 0
-        width: 46
-        height: 55
+        x: 807
+        y: 1112
+        width: 294
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc215fa30e438a747b0a8810a76daeda
-      internalID: -501640822
+      spriteID: 97e0b63a360ce3544aef123d6b5c889a
+      internalID: 1217935380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Spell_2
+      name: AttackQuai_2
       rect:
         serializedVersion: 2
-        x: 308
-        y: 0
-        width: 129
-        height: 101
+        x: 1167
+        y: 1112
+        width: 341
+        height: 283
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2b5780707879ac4da7fdc5c4af3be21
-      internalID: 730691340
+      spriteID: 02d607c386d44124d97e4cb9a0c780ab
+      internalID: 1239579323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Spell_3
+      name: AttackQuai_3
       rect:
         serializedVersion: 2
-        x: 458
-        y: 0
-        width: 133
-        height: 92
+        x: 492
+        y: 812
+        width: 337
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a775e7ffd8be71468cc50ce51c4bb9a
-      internalID: -1604712991
+      spriteID: e22be08a3f4f8c748a750a92925a3cf3
+      internalID: 2119014684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Spell_4
+      name: AttackQuai_4
       rect:
         serializedVersion: 2
-        x: 613
-        y: 0
-        width: 129
-        height: 84
+        x: 884
+        y: 812
+        width: 333
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 170947150daa9f140bd434e30d5117d1
-      internalID: 1237947573
+      spriteID: 1f5ff7a2a93528143a6f64eb8b2a5d8a
+      internalID: 1976962880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Spell_5
+      name: AttackQuai_5
       rect:
         serializedVersion: 2
-        x: 754
-        y: 0
-        width: 446
-        height: 88
+        x: 536
+        y: 429
+        width: 259
+        height: 318
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,8 +242,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6aea6ad971aa9944936edcda704b546
-      internalID: -1729511509
+      spriteID: 2a9662c41f711014fbd7118c6cdf8f44
+      internalID: 544327798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackQuai_6
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 429
+        width: 256
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17efa2c3f4593124aa8fafde90401672
+      internalID: -364627735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackQuai_7
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 426
+        width: 379
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843557ba873d17d4b9dbe20f6467a431
+      internalID: 546582857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackQuai_8
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 149
+        width: 302
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28c49f231c1f8e4fbb11dddcd0f08b3
+      internalID: -983868550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackQuai_9
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 149
+        width: 282
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061808fbef0c1d344936b3272d5438af
+      internalID: -2040269256
       vertices: []
       indices: 
       edges: []
@@ -259,12 +343,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Water_Spell_0: 469770165
-      Water_Spell_1: -501640822
-      Water_Spell_2: 730691340
-      Water_Spell_3: -1604712991
-      Water_Spell_4: 1237947573
-      Water_Spell_5: -1729511509
+      AttackQuai_0: -819913096
+      AttackQuai_1: 1217935380
+      AttackQuai_2: 1239579323
+      AttackQuai_3: 2119014684
+      AttackQuai_4: 1976962880
+      AttackQuai_5: 544327798
+      AttackQuai_6: -364627735
+      AttackQuai_7: 546582857
+      AttackQuai_8: -983868550
+      AttackQuai_9: -2040269256
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

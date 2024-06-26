@@ -7,14 +7,18 @@ public class EnemySlime : MonoBehaviour
     public float Speed = 5f;
     public float circleRadius;
     private Rigidbody2D rb;
+    private Animator anim;
     public GameObject groundCheck;
     public LayerMask groundPlayer;
     public bool facingRight;
     public bool isGrounded;
 
+    public float heathEnemy = 100f;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -42,5 +46,20 @@ public class EnemySlime : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(groundCheck.transform.position, circleRadius);
+    }
+
+    public void TakeDamage(float damage)
+    {
+        heathEnemy = heathEnemy - damage;
+        if(heathEnemy <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        anim.SetTrigger("die");
+        Destroy(gameObject, 0.5f);
     }
 }
