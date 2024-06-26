@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Tuong/Scene/Level 1.unity
+    guid: b896df66793c99f4a93758f56e3cfdf6
   m_configObjects: {}
