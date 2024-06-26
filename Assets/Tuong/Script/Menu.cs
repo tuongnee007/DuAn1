@@ -30,5 +30,5 @@ public class Menu : MonoBehaviour
     public void ChangeScene(int ID)
     {
         SceneManager.LoadScene(ID);
-    }
+    } 
 }
