@@ -14,18 +14,18 @@ public class Player : MonoBehaviour
     private bool isFacingRight = true;
     private bool grounded;
 
-    public float health = 100f;
-    private float currentHealth;
+    //public float health = 100f;
+    //private float currentHealth;
 
-    private bool isAttacking = false;
+    //private bool isAttacking = false;
 
-    public float attackRange = 3f;
-    public LayerMask enemyLayers;
+    //public float attackRange = 3f;
+    //public LayerMask enemyLayers;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        currentHealth = health;
+        //currentHealth = health;
     }
 
     private void Update()
@@ -36,11 +36,6 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && grounded)
         {
             Jump();
-        }
-
-        if(Input.GetMouseButtonDown(0) && !isAttacking)
-        {
-            Attack();
         }
         anim.SetBool("run", left_Right != 0);
         anim.SetBool("grounded" ,grounded);
@@ -72,54 +67,16 @@ public class Player : MonoBehaviour
     }
 
     //Xu li sat thuog
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        if(currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-
+    //public void TakeDamage(int damage)
+    //{
+    //    currentHealth -= damage;
+    //    if(currentHealth <= 0)
+    //    {
+    //        Die();
+    //    }
+    //}
     private void Die()
     {
 
-    }
-
-    private void Attack()
-    {
-        anim.SetTrigger("attack");
-        AudioManager audioManager = FindObjectOfType<AudioManager>();
-        if(audioManager != null)
-        {
-            audioManager.StartVolume();
-        }
-        isAttacking = true;
-        DealDamageToEnemies();
-        StartCoroutine(EndAttack());
-    }
-
-    private void DealDamageToEnemies()
-    {
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange,enemyLayers);
-        foreach (Collider2D enemy in hitEnemies)
-        {
-            EnemySlime enemySlime = enemy.GetComponent<EnemySlime>();
-            if (enemySlime != null)
-            {
-                enemySlime.TakeDamage(100);
-            }
-        }
-    }
-    private IEnumerator EndAttack()
-    {
-        yield return new WaitForSeconds(0.5f);
-        isAttacking = false;
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
