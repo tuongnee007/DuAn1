@@ -89,6 +89,11 @@ public class Player : MonoBehaviour
     private void Attack()
     {
         anim.SetTrigger("attack");
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
+        if(audioManager != null)
+        {
+            audioManager.StartVolume();
+        }
         isAttacking = true;
         DealDamageToEnemies();
         StartCoroutine(EndAttack());
