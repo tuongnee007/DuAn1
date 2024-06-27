@@ -18,9 +18,12 @@ public class PlayerAttack : MonoBehaviour
 
     //Điểm
     public TMP_Text score;
+    private int Score;
     private void Start()
     {
         anim = GetComponent<Animator>();
+        Score = 0;
+        UpdateScore();
     }
     private void Update()
     {
@@ -79,5 +82,16 @@ public class PlayerAttack : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         isAttacking = false;
+    }
+
+    public void AddScore(int point)
+    {
+        Score += point;
+        UpdateScore();
+    }
+
+    private void UpdateScore()
+    {
+        score.text = Score.ToString();
     }
 }

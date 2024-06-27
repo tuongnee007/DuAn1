@@ -14,6 +14,8 @@ public class EnemySlime : MonoBehaviour
     public bool isGrounded;
 
     public float heathEnemy = 100f;
+    private int diem;
+    private bool isDead = false;
 
     private void Start()
     {
@@ -34,7 +36,6 @@ public class EnemySlime : MonoBehaviour
             Flip();
         }
     }
-
     private void Flip()
     {
         facingRight = !facingRight;
@@ -59,7 +60,16 @@ public class EnemySlime : MonoBehaviour
 
     private void Die()
     {
-        anim.SetTrigger("die");
-        Destroy(gameObject, 0.5f);
+        if (!isDead)
+        {
+            isDead = true;
+            anim.SetTrigger("die");
+            PlayerAttack playerAttack = FindAnyObjectByType<PlayerAttack>();
+            if (playerAttack != null)
+            {
+                playerAttack.AddScore(2);
+            }
+            Destroy(gameObject, 1f);
+        }    
     }
 }

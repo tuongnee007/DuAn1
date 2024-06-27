@@ -14,13 +14,6 @@ public class Player : MonoBehaviour
     private bool isFacingRight = true;
     private bool grounded;
 
-    //public float health = 100f;
-    //private float currentHealth;
-
-    //private bool isAttacking = false;
-
-    //public float attackRange = 3f;
-    //public LayerMask enemyLayers;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();

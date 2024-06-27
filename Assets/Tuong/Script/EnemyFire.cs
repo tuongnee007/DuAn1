@@ -30,13 +30,7 @@ public class EnemyFire : MonoBehaviour
         {
             speed = 0f;
             dazedTime -= Time.deltaTime;
-        }
-
-        if(health <= 0)
-        {
-            anim.SetTrigger("death");
-            Destroy(gameObject);
-        }
+        }     
         transform.Translate(Vector2.left * speed * Time.deltaTime); 
     }
 
@@ -44,5 +38,10 @@ public class EnemyFire : MonoBehaviour
     {
         Instantiate(bloodEffect, transform.position, Quaternion.identity);
         health -= damage;
+        if (health <= 0)
+        {
+            anim.SetTrigger("death");
+            Destroy(gameObject, 2f);
+        }
     }  
 }
