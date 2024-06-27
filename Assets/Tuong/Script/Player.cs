@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     private bool grounded;
 
     public float health = 100f;
-    private float currrentHealth;
+    private float currentHealth;
 
     private bool isAttacking = false;
 
@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        currrentHealth = health;
+        currentHealth = health;
     }
 
     private void Update()
@@ -69,22 +69,13 @@ public class Player : MonoBehaviour
         {
             grounded = true;
         }
-
-        //if(collision.gameObject.tag == "Enemy")
-        //{
-        //    EnemySlime enemySlime = collision.gameObject.GetComponent<EnemySlime>();
-        //    if (enemySlime != null)
-        //    {
-        //        enemySlime.TakeDamage(100f);
-        //    }
-        //}
     }
 
     //Xu li sat thuog
     public void TakeDamage(int damage)
     {
-        currrentHealth -= damage;
-        if(currrentHealth < 0)
+        currentHealth -= damage;
+        if(currentHealth <= 0)
         {
             Die();
         }
@@ -99,25 +90,31 @@ public class Player : MonoBehaviour
     {
         anim.SetTrigger("attack");
         isAttacking = true;
-        EndAttack();
+        DealDamageToEnemies();
+        StartCoroutine(EndAttack());
     }
 
     private void DealDamageToEnemies()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange,enemyLayers);
-        foreach(Collider2D enemy in hitEnemies)
+        foreach (Collider2D enemy in hitEnemies)
         {
             EnemySlime enemySlime = enemy.GetComponent<EnemySlime>();
-            if(enemySlime != null)
+            if (enemySlime != null)
             {
                 enemySlime.TakeDamage(100);
             }
         }
-
-
     }
-   private void EndAttack()
+    private IEnumerator EndAttack()
     {
+        yield return new WaitForSeconds(0.5f);
         isAttacking = false;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
