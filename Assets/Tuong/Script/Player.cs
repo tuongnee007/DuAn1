@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     
-    private bool isFacingRight = true;
+    public bool IsFacingRight = true;
     private bool grounded = true;
 
     private void Start()
@@ -35,9 +35,9 @@ public class Player : MonoBehaviour
     }
     void flip()
     {
-        if((isFacingRight && left_Right < 0) || (!isFacingRight && left_Right > 0))
+        if((IsFacingRight && left_Right < 0) || (!IsFacingRight && left_Right > 0))
         {
-            isFacingRight = !isFacingRight;
+            IsFacingRight = !IsFacingRight;
             Vector3 size = transform.localScale;
             size.x *= -1;
             transform.localScale = size;

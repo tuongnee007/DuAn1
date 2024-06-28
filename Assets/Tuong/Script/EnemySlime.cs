@@ -57,7 +57,6 @@ public class EnemySlime : MonoBehaviour
             Die();
         }
     }
-
     private void Die()
     {
         if (!isDead)
