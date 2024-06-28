@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     private Animator anim;
     
     private bool isFacingRight = true;
-    private bool grounded;
+    private bool grounded = true;
 
     private void Start()
     {

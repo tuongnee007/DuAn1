@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6474313200684557283}
   - component: {fileID: 8938174929650356312}
+  - component: {fileID: 550243628659770022}
   m_Layer: 0
   m_Name: wagon
-  m_TagString: Untagged
+  m_TagString: grounded
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,3 +85,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &550243628659770022
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556215584907713841}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.93, y: 0.75}
+    newSize: {x: 0.93, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.385, y: -0.325}
+      - {x: 0.465, y: -0.235}
+      - {x: 0.465, y: -0.185}
+      - {x: 0.42499998, y: -0.155}
+      - {x: 0.465, y: -0.035}
+      - {x: 0.465, y: 0.114999995}
+      - {x: 0.39499998, y: 0.24499999}
+      - {x: 0.33499998, y: 0.345}
+      - {x: 0.235, y: 0.375}
+      - {x: -0.16499999, y: 0.375}
+      - {x: -0.305, y: 0.315}
+      - {x: -0.36499998, y: 0.235}
+      - {x: -0.465, y: 0.13499999}
+      - {x: -0.465, y: -0.145}
+      - {x: -0.415, y: -0.295}
+      - {x: -0.275, y: -0.375}
+      - {x: -0.065, y: -0.375}
+      - {x: -0.005, y: -0.315}
+      - {x: 0.095, y: -0.375}
+      - {x: 0.325, y: -0.375}
+    - - {x: -0.015, y: -0.16499999}
+      - {x: 0.074999996, y: -0.155}
+      - {x: 0.055, y: -0.16499999}
+      - {x: 0.044999998, y: -0.195}
+      - {x: 0.005, y: -0.195}
+  m_UseDelaunayMesh: 0
