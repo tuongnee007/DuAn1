@@ -5,7 +5,6 @@ using UnityEngine;
 public class ChaseController : MonoBehaviour
 {
     public EnemyFlying[] enemyArray;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
