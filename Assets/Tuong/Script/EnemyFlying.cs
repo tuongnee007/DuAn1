@@ -25,7 +25,7 @@ public class EnemyFlying : MonoBehaviour
         {
             ReturnStartPoint();
         }
-        Flip();o
+        Flip();
     }
 
     private void ReturnStartPoint()
