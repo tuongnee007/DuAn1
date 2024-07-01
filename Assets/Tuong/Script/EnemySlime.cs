@@ -51,7 +51,7 @@ public class EnemySlime : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        heathEnemy = heathEnemy - damage;
+        heathEnemy -= damage;
         if(heathEnemy <= 0)
         {
             Die();

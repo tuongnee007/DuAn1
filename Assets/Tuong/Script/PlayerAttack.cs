@@ -5,15 +5,12 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private float timeAttack;
-    public float startTimeAttack;
-
     public Transform attackEnemy;
     public LayerMask whatIsEnemies;
     private Animator anim;
     public float attackRangeX;
     public float attackRangeY;
-    public int damage;
+    public float damage;
     private bool isAttacking = false;
 
     //Điểm
@@ -27,17 +24,11 @@ public class PlayerAttack : MonoBehaviour
     }
     private void Update()
     {
-        if(timeAttack <= 0)
+        if(Input.GetMouseButtonDown(0) && !isAttacking)
         {
-            if(Input.GetMouseButtonDown(0) && !isAttacking)
-            {
-                Attack();
-            }
-            timeAttack = startTimeAttack;
-        }
-        else
-        {
-            timeAttack -= Time.deltaTime;
+            isAttacking = true;
+            anim.SetTrigger("attack");
+            StartCoroutine(EndAttack());
         }
     }
 
@@ -49,7 +40,6 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
-        anim.SetTrigger("attack");
         AudioManager audioManager = FindObjectOfType<AudioManager>();
         if (audioManager != null)
         {
@@ -67,13 +57,19 @@ public class PlayerAttack : MonoBehaviour
             EnemySlime enemySlime = enemy.GetComponent<EnemySlime>();
             if (enemySlime != null)
             {
-                enemySlime.TakeDamage(100);
+                enemySlime.TakeDamage(damage);
             }
 
             EnemyFire enemyFire1 = enemy.GetComponent<EnemyFire>();
             if (enemyFire1 != null)
             {
                 enemyFire1.TakeDamage(50);
+            }
+
+            EnemyFlying enemyFlying = enemy.GetComponent<EnemyFlying>();
+            if (enemyFlying != null)
+            {
+                enemyFlying.TakeDamage(damage);
             }
         }    
     }

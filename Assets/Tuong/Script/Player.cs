@@ -17,8 +17,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        //currentHealth = health;
+        anim = GetComponent<Animator>();      
     }
 
     private void Update()
@@ -57,19 +56,5 @@ public class Player : MonoBehaviour
         {
             grounded = true;
         }
-    }
-
-    //Xu li sat thuog
-    //public void TakeDamage(int damage)
-    //{
-    //    currentHealth -= damage;
-    //    if(currentHealth <= 0)
-    //    {
-    //        Die();
-    //    }
-    //}
-    private void Die()
-    {
-
     }
 }
