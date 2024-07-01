@@ -10,10 +10,9 @@ public class Player : MonoBehaviour
     private float left_Right;
     private Rigidbody2D rb;
     private Animator anim;
-    
+    public ParticleSystem dust;
     public bool IsFacingRight = true;
     private bool grounded = true;
-
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -40,14 +39,18 @@ public class Player : MonoBehaviour
             Vector3 size = transform.localScale;
             size.x *= -1;
             transform.localScale = size;
-        }
-    }
-    
+            if(grounded)
+            {
+                CreateDust();
+            }
+        }       
+    } 
     private void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, highJump);
         anim.SetTrigger("jump");
         grounded = false;
+        CreateDust();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -56,5 +59,9 @@ public class Player : MonoBehaviour
         {
             grounded = true;
         }
+    }
+    private void CreateDust()
+    {
+        dust.Play();
     }
 }

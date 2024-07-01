@@ -891,18 +891,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8951b895a5709ef44a51f76dc9da6c81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  shotingRange: 5.78
+  Speed: 3
+  shotingRange: 6
   bullet: {fileID: 8607199025584732389, guid: 703006b924f872841b0b9e7a2a6f3bfe, type: 3}
   bulletParent: {fileID: 567398091}
-  fireRate: 2.3
+  fireRate: 3
   chase: 0
   Health: 10
   diem: 2
   whatIsPlayers:
     serializedVersion: 2
     m_Bits: 256
-  lineofSite: 8.7
+  lineofSite: 8
 --- !u!60 &171524173
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4465,10 +4465,6 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 1737233196}
-    - target: {fileID: 6156103418241906533, guid: 4c7bb9ed13059f342af39a700e61e0ae, type: 3}
-      propertyPath: startTimeAttack
-      value: 2.49
-      objectReference: {fileID: 0}
     - target: {fileID: 8762943930431924421, guid: 4c7bb9ed13059f342af39a700e61e0ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.28
@@ -6300,6 +6296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 4.5
   highJump: 7
+  dust: {fileID: 0}
   IsFacingRight: 1
 --- !u!60 &1297977926
 PolygonCollider2D:

@@ -11,8 +11,7 @@ public class PlayerAttack : MonoBehaviour
     public float attackRangeX;
     public float attackRangeY;
     public float damage;
-    private bool isAttacking = false;
-
+    private bool isAttacking = false;   
     //Điểm
     public TMP_Text score;
     private float Score;
@@ -42,18 +41,6 @@ public class PlayerAttack : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(attackEnemy.position, new Vector3(attackRangeX, attackRangeY, 1));
     }
-
-    //private void Attack()
-    //{
-    //    AudioManager audioManager = FindObjectOfType<AudioManager>();
-    //    if (audioManager != null)
-    //    {
-    //        audioManager.StartVolume();
-    //    }
-    //    DealDamageToEnemies();
-    //    StartCoroutine(EndAttack());
-    //}
-
     private void DealDamageToEnemies()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, Mathf.Max(attackRangeX, attackRangeY), whatIsEnemies);
@@ -96,7 +83,6 @@ public class PlayerAttack : MonoBehaviour
         Score += point;
         UpdateScore();
     }
-
     private void UpdateScore()
     {
         score.text = Score.ToString();
