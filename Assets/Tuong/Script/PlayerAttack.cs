@@ -15,7 +15,7 @@ public class PlayerAttack : MonoBehaviour
 
     //Điểm
     public TMP_Text score;
-    private int Score;
+    private float Score;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -24,10 +24,15 @@ public class PlayerAttack : MonoBehaviour
     }
     private void Update()
     {
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
         if(Input.GetMouseButtonDown(0) && !isAttacking)
         {
             isAttacking = true;
             anim.SetTrigger("attack");
+            if(audioManager != null)
+            {
+                audioManager.StartVolume();
+            }
             StartCoroutine(EndAttack());
         }
     }
@@ -38,16 +43,16 @@ public class PlayerAttack : MonoBehaviour
         Gizmos.DrawWireCube(attackEnemy.position, new Vector3(attackRangeX, attackRangeY, 1));
     }
 
-    private void Attack()
-    {
-        AudioManager audioManager = FindObjectOfType<AudioManager>();
-        if (audioManager != null)
-        {
-            audioManager.StartVolume();
-        }
-        DealDamageToEnemies();
-        StartCoroutine(EndAttack());
-    }
+    //private void Attack()
+    //{
+    //    AudioManager audioManager = FindObjectOfType<AudioManager>();
+    //    if (audioManager != null)
+    //    {
+    //        audioManager.StartVolume();
+    //    }
+    //    DealDamageToEnemies();
+    //    StartCoroutine(EndAttack());
+    //}
 
     private void DealDamageToEnemies()
     {
@@ -71,6 +76,12 @@ public class PlayerAttack : MonoBehaviour
             {
                 enemyFlying.TakeDamage(damage);
             }
+
+            EnemyCling enemyCling = enemy.GetComponent<EnemyCling>();
+            if(enemyCling != null)
+            {
+                enemyCling.TakeDamage(damage);
+            }
         }    
     }
 
@@ -80,7 +91,7 @@ public class PlayerAttack : MonoBehaviour
         isAttacking = false;
     }
 
-    public void AddScore(int point)
+    public void AddScore(float point)
     {
         Score += point;
         UpdateScore();
