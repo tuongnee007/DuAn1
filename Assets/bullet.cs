@@ -49,11 +49,16 @@ public class bullet : MonoBehaviour
 
         foreach(Collider2D hitPlayer in hitPlayers)
         {
-            HealthPlayer health = hitPlayer.GetComponent<HealthPlayer>();
-            if (health != null)
+            Health health = hitPlayer.GetComponent<Health>();
+            if(health != null)
             {
                 health.TakeDamage(damage);
             }
+            //HealthPlayer health = hitPlayer.GetComponent<HealthPlayer>();
+            //if (health != null)
+            //{
+            //    health.TakeDamage(damage);
+            //}
         }
     }
 

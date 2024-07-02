@@ -4845,7 +4845,7 @@ GameObject:
   - component: {fileID: 5415073180514357142}
   - component: {fileID: 3420208190903869783}
   - component: {fileID: 6156103418241906533}
-  - component: {fileID: 412928248000373426}
+  - component: {fileID: -8529467095354060343}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -5104,7 +5104,7 @@ MonoBehaviour:
   attackRangeY: 1.67
   damage: 2
   score: {fileID: 0}
---- !u!114 &412928248000373426
+--- !u!114 &-8529467095354060343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5113,14 +5113,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2317608045916249796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc3481b865ee574ba33815769fb45b3, type: 3}
+  m_Script: {fileID: 11500000, guid: a2a33d262bafe9b4ca7f556db527e29e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 22
-  maxHealth: 22
-  damageColor: {r: 1, g: 0, b: 0, a: 1}
-  flashDuration: 0.3
-  flashCount: 3
+  health: 10
+  maxHealth: 10
+  healthSlider: {fileID: 0}
+  healthText: {fileID: 0}
 --- !u!1 &6953479680538419416
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,11 +12,8 @@ public class EnemySlime : MonoBehaviour
     public LayerMask groundPlayer;
     public bool facingRight;
     public bool isGrounded;
-
+    public float score;
     public float heathEnemy = 100f;
-    private int diem;
-    private bool isDead = false;
-
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -54,21 +51,13 @@ public class EnemySlime : MonoBehaviour
         heathEnemy -= damage;
         if(heathEnemy <= 0)
         {
-            Die();
-        }
-    }
-    private void Die()
-    {
-        if (!isDead)
-        {
-            isDead = true;
             anim.SetTrigger("die");
             PlayerAttack playerAttack = FindAnyObjectByType<PlayerAttack>();
             if (playerAttack != null)
             {
-                playerAttack.AddScore(2);
+                playerAttack.AddScore(score);
             }
             Destroy(gameObject, 1f);
-        }    
+        }
     }
 }

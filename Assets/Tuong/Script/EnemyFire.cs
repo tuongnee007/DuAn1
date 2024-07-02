@@ -1,47 +1,85 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyFire : MonoBehaviour
 {
-    public int health = 100;
-    public float speed;
-    private float dazedTime;
-    public float startDazedTime;
-
+    public float Speed = 5f;
+    public float damage;
+    public float circleRadius;
+    private Rigidbody2D rb;
     private Animator anim;
-    public GameObject bloodEffect;
+    public GameObject groundCheck;
+    public LayerMask groundPlayer;
+    public bool facingRight;
+    public bool isGrounded;
+    public float score;
+    public float healthEnemy;
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         anim.SetBool("walk", true);
     }
 
     private void Update()
     {
-        if(dazedTime <= 0)
+        rb.velocity = Vector2.left * Speed * Time.deltaTime;
+        isGrounded = Physics2D.OverlapCircle(groundCheck.transform.position, circleRadius, groundPlayer);
+        if (!isGrounded && facingRight)
         {
-            speed = 5f;
+            Flip();
+        }
+        else if (!isGrounded && !facingRight)
+        {
+            Flip();
+        }
+    }
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0, 180, 0);
+        Speed = -Speed;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(groundCheck.transform.position, circleRadius);
+    }
+
+    public void TakeDamage(float damage)
+    {
+        healthEnemy -= damage;
+        if (healthEnemy <= 0)
+        {
+            anim.SetTrigger("death");
+            PlayerAttack playerAttack = FindAnyObjectByType<PlayerAttack>();
+            if (playerAttack != null)
+            {
+                playerAttack.AddScore(score);
+            }
+            Destroy(gameObject, 2f);
         }
         else
         {
-            speed = 0f;
-            dazedTime -= Time.deltaTime;
-        }     
-        transform.Translate(Vector2.left * speed * Time.deltaTime); 
+            anim.SetTrigger("take hit");
+        }
     }
 
-    public void TakeDamage(int damage)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Instantiate(bloodEffect, transform.position, Quaternion.identity);
-        health -= damage;
-        if (health <= 0)
+        if(collision.gameObject.tag == "Player")
         {
-            anim.SetTrigger("death");
-            Destroy(gameObject, 2f);
+            rb.velocity = Vector2.zero;
+            anim.SetBool("walk", false);
+            anim.SetTrigger("attack");
+            HealthPlayer healthPlayer = FindAnyObjectByType<HealthPlayer>();
+            if(healthPlayer != null)
+            {
+                healthPlayer.TakeDamage(damage);
+            }
         }
-    }  
+    }
 }

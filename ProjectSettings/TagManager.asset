@@ -7,6 +7,7 @@ TagManager:
   - grounded
   - Ground
   - Enemy
+  - portial
   layers:
   - Default
   - TransparentFX

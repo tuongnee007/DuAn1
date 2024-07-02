@@ -67,8 +67,9 @@ public class EnemyFlying : MonoBehaviour
             if(playerAttack != null)
             {
                 playerAttack.AddScore(diem);
+                anim.SetTrigger("die");
             }
-            Destroy(gameObject);
+            Destroy(gameObject, 5);
         }
     }
     private void ReturnToStartingPoint()
