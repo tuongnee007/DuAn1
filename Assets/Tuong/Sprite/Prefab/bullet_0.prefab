@@ -160,14 +160,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  damage: 2.5
+  damage: 1
   WhatIsPlayers:
     serializedVersion: 2
     m_Bits: 256
-  attackRangeX: 1.55
+  attackRangeX: 1.73
   attackRangeY: 1.52
   attackPlayers: {fileID: 8927617847420560954}
-  desTroyDistance: 0.1
+  desTroyDistance: 1
 --- !u!95 &7003118020101903871
 Animator:
   serializedVersion: 5

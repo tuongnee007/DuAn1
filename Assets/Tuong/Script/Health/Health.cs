@@ -14,12 +14,25 @@ public class Health : MonoBehaviour
     {
         health = maxHealth;
         UpdateHealthUI();
+        AddHealth(health);
+    }
+
+    public void AddHealth(float health1)
+    {
+        if(health < maxHealth)
+        {
+            health += health1;
+            if (health > maxHealth)
+            {
+                health = maxHealth;
+            }
+            UpdateHealthUI();
+        }       
     }
     private void Update()
     {
         
     }
-
     public void TakeDamage(float damage)
     {
         health -= damage;

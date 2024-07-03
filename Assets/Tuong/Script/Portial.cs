@@ -33,7 +33,7 @@ public class Portial : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (playerInTrigger && Input.GetKeyDown(KeyCode.F))
         {
             SceneManager.LoadScene(2);
         }

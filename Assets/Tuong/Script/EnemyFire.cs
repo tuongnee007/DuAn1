@@ -15,7 +15,8 @@ public class EnemyFire : MonoBehaviour
     public bool isGrounded;
     public float score;
     public float healthEnemy;
-
+    private bool isDead = false;
+    private bool scored = true;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,6 +26,10 @@ public class EnemyFire : MonoBehaviour
 
     private void Update()
     {
+        if (isDead)
+        {
+            return;
+        }
         rb.velocity = Vector2.left * Speed * Time.deltaTime;
         isGrounded = Physics2D.OverlapCircle(groundCheck.transform.position, circleRadius, groundPlayer);
         if (!isGrounded && facingRight)
@@ -52,14 +57,16 @@ public class EnemyFire : MonoBehaviour
     public void TakeDamage(float damage)
     {
         healthEnemy -= damage;
-        if (healthEnemy <= 0)
+        if (healthEnemy <= 0 && scored)
         {
             anim.SetTrigger("death");
             PlayerAttack playerAttack = FindAnyObjectByType<PlayerAttack>();
             if (playerAttack != null)
             {
-                playerAttack.AddScore(score);
+                playerAttack.AddScore(score);              
+                scored = false;
             }
+            isDead = true;
             Destroy(gameObject, 2f);
         }
         else

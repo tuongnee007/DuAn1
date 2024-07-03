@@ -15,6 +15,8 @@ public class EnemyFlying : MonoBehaviour
     public bool chase;
     public float Health = 10f;
     public int diem = 2;
+    private bool scored = true;
+    private bool isDead = false;
     //Enemy
     public LayerMask whatIsPlayers;
 
@@ -33,6 +35,11 @@ public class EnemyFlying : MonoBehaviour
     }
     private void Update()
     {
+        if (isDead)
+        {
+            return;
+        } 
+            
         if (player == null)
             return;
         Chase();
@@ -64,11 +71,14 @@ public class EnemyFlying : MonoBehaviour
         if(Health <= 0)
         {
             PlayerAttack playerAttack = FindObjectOfType<PlayerAttack>();
-            if(playerAttack != null)
+            if(playerAttack != null && scored)
             {
                 playerAttack.AddScore(diem);
                 anim.SetTrigger("die");
+                scored = false;
             }
+            isDead = true;
+            //GetComponent<LootBag>().InstantiateLoot(transform.position);
             Destroy(gameObject, 5);
         }
     }
