@@ -11,8 +11,7 @@ public class bullet : MonoBehaviour
     public float damage;
     private Rigidbody2D bulletRb;
     public LayerMask WhatIsPlayers;
-    public float attackRangeX;
-    public float attackRangeY;
+    public float attackRange;
     public Transform attackPlayers;
     public float desTroyDistance = 0.1f;
     private bool hasDealDamage = false; 
@@ -24,7 +23,7 @@ public class bullet : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player");
         Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;
         bulletRb.velocity = new Vector2(moveDir.x, moveDir.y);
-        Destroy(this.gameObject, 2);
+        Destroy(this.gameObject, 7);
     }
 
     private void Update()
@@ -40,12 +39,11 @@ public class bullet : MonoBehaviour
                 hasDealDamage = true;
                 Destroy(gameObject);
             }
-        }
-       
+        }    
     }
     private void DealDametoPlayer()
     {
-        Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(transform.position, Mathf.Max(attackRangeX, attackRangeY), WhatIsPlayers);
+        Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(transform.position, attackRange, WhatIsPlayers);
 
         foreach(Collider2D hitPlayer in hitPlayers)
         {
@@ -53,18 +51,13 @@ public class bullet : MonoBehaviour
             if(health != null)
             {
                 health.TakeDamage(damage);
-            }
-            //HealthPlayer health = hitPlayer.GetComponent<HealthPlayer>();
-            //if (health != null)
-            //{
-            //    health.TakeDamage(damage);
-            //}
+            }       
         }
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(attackPlayers.position, new Vector3(attackRangeX, attackRangeY, 1));
+        Gizmos.DrawWireSphere(attackPlayers.position, attackRange);
     }
 }

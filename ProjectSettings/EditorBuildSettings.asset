@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tuong/Scene/Level 2.unity
     guid: 77b858a3480d38442a481da904507e96
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 51995cf97f55e45489c9352ed8e1183d, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 8fc9215a65669ad44bc251a01948891f, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 6260feb2d2a8f3e4fb7fb3d9376ee0ad, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 9e8c4248b7e3810408f54cf3e9161e01, type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: d349861495061a4409d0ad4a8be021ff, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f2d171fdc943a864d81e166932088407, type: 2}

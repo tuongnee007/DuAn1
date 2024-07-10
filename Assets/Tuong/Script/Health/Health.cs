@@ -42,7 +42,6 @@ public class Health : MonoBehaviour
         }
         UpdateHealthUI();
     }
-
     void UpdateHealthUI()
     {
         float healthPercent = health / maxHealth;

@@ -46,10 +46,10 @@ public class EnemyCling : MonoBehaviour
 
     private void OnTriggerEnter2D (Collider2D collision)
     {
-        HealthPlayer healthPlayer = FindObjectOfType<HealthPlayer>();
+        Health health = FindObjectOfType<Health>();
         if(collision.gameObject.tag == "Player")
         {
-            healthPlayer.TakeDamage(damage);
+            health.TakeDamage(damage);
         }
     }
 
