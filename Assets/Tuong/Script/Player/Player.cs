@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
     [Header("Tốc độ, độ cao,trái phải")]
     public float runSpeed = 8f;
     public float highJump = 8f;
@@ -16,47 +15,43 @@ public class Player : MonoBehaviour
     public bool IsFacingRight = true;
     private bool grounded = true;
     private bool isCrouch = false;
-
-
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();      
     }
 
     private void Update()
     {
         left_Right = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(left_Right * runSpeed, rb.velocity.y);
+        rb.velocity = new Vector2 (left_Right * runSpeed, rb.velocity.y);
         flip();
         if (Input.GetKey(KeyCode.Space) && grounded)
         {
             Jump();
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if(Input.GetKey(KeyCode.S))
         {
             Crouch();
         }
         anim.SetBool("run", left_Right != 0);
-        anim.SetBool("grounded", grounded);
+        anim.SetBool("grounded" ,grounded);
     }
-
     void flip()
     {
-        if ((IsFacingRight && left_Right < 0) || (!IsFacingRight && left_Right > 0))
+        if((IsFacingRight && left_Right < 0) || (!IsFacingRight && left_Right > 0))
         {
             IsFacingRight = !IsFacingRight;
             Vector3 size = transform.localScale;
             size.x *= -1;
             transform.localScale = size;
-            if (grounded)
+            if(grounded)
             {
                 CreateDust();
             }
-        }
-    }
-
+        }       
+    } 
     private void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, highJump);
@@ -67,7 +62,7 @@ public class Player : MonoBehaviour
 
     private void Crouch()
     {
-        if (Input.GetKey(KeyCode.S))
+        if(Input.GetKey (KeyCode.S))
         {
             if (!isCrouch)
             {
@@ -82,8 +77,8 @@ public class Player : MonoBehaviour
             isCrouch = false;
             anim.SetBool("crouch", false);
         }
+        
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "grounded")
@@ -91,7 +86,6 @@ public class Player : MonoBehaviour
             grounded = true;
         }
     }
-
     private void CreateDust()
     {
         dust.Play();
