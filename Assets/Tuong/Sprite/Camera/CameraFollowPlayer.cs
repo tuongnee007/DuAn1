@@ -5,62 +5,17 @@ using UnityEngine.Rendering;
 
 public class CameraFollowPlayer : MonoBehaviour
 {
-    [Header("References")]
-    [SerializeField] private Transform _playerTransform;
+    public Transform tagert;
+    public float smothSpeed = 0.125f;
+    public Vector3 offset;
 
-    [Header("Flip Rotation Start")]
-    [SerializeField] private float _flipYRotationTime = 0.5f;
-
-    private Coroutine turnCoroutine;
-
-    private Player player;
-    private bool isFacingRight;
-
-    private void Awake()
+    private void LateUpdate()
     {
-        player = _playerTransform.GetComponent<Player>();
-        isFacingRight = player.IsFacingRight;
-    }
-
-    private void Update()
-    {
-        transform.position = _playerTransform.position;       
-    }
-
-    public void CallTurn()//gọi lại
-    {
-        turnCoroutine = StartCoroutine(FlipYLerf());
-    }    
-
-    private IEnumerator FlipYLerf()
-    {
-        float startRotation = transform.localEulerAngles.y;
-        float endRotationAmount = DetermineEndRoation();
-        float yRotation = 0f;
-        //Thoi gian troi qua
-        float elaspedTime = 0f;
-        while(elaspedTime < _flipYRotationTime)
+        if(tagert != null)
         {
-            elaspedTime += Time.deltaTime;
-
-            yRotation = Mathf.Lerp(startRotation, endRotationAmount, (elaspedTime / _flipYRotationTime));
-            transform.rotation = Quaternion.Euler(0f, yRotation, 0f);
-
-            yield return null;
+            Vector3 disirecposition = tagert.position + offset;
+            Vector3 smothedPosition = Vector3.Lerp(transform.position, disirecposition, smothSpeed);
+            transform.LookAt(tagert);
         }
     }
-    private float DetermineEndRoation()
-    {
-        isFacingRight = !isFacingRight;
-
-        if(isFacingRight)
-        {
-            return 180f;
-        }
-        else
-        {
-            return 0f;
-        }
-    }
-
 }

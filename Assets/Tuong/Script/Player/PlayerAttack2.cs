@@ -13,8 +13,7 @@ public class PlayerAttack2 : MonoBehaviour
     public float damage;
     private bool isAttacking = false;
     private Coroutine attackCoroutine;
-    private bool isCrouching = false;
- 
+
     //Điểm
     public TMP_Text score;
     private float Score;
@@ -48,13 +47,7 @@ public class PlayerAttack2 : MonoBehaviour
             }
             StartCoroutine(EndAttack());
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            isCrouching |= isCrouching;
-            anim.SetBool("crouch", isCrouching);
-        }
     }
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
@@ -64,17 +57,12 @@ public class PlayerAttack2 : MonoBehaviour
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, Mathf.Max(attackRangeX, attackRangeY), whatIsEnemies);
         foreach (Collider2D enemy in hitEnemies)
-        {
-            if (enemy.gameObject.activeSelf)
-            {
-
-            }
+        {        
             EnemySlime enemySlime = enemy.GetComponent<EnemySlime>();
             if (enemySlime != null)
             {
                 enemySlime.TakeDamage(damage);
-            }
-
+            }          
             EnemyFire enemyFire1 = enemy.GetComponent<EnemyFire>();
             if (enemyFire1 != null)
             {
@@ -99,7 +87,6 @@ public class PlayerAttack2 : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         isAttacking = false;
-        isCrouching = false;
     }
 
     public void AddScore(float point)

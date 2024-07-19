@@ -14,10 +14,19 @@ public class EnemySlime : MonoBehaviour
     public bool isGrounded;
     public float score;
     public float heathEnemy = 100f;
+    //Effect
+    public GameObject poison;
+    public Transform poisonTransform;
+    private Vector3 lastTrailPosion;
+    public float traiSpacing = 0.5f;
+    public float time;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        lastTrailPosion = transform.position;
+        CreatePoisonSpot();
     }
 
     private void Update()
@@ -31,6 +40,11 @@ public class EnemySlime : MonoBehaviour
         else if(!isGrounded && !facingRight)
         {
             Flip();
+        }
+        if(Vector3.Distance(transform.position, lastTrailPosion)> traiSpacing)
+        {
+            CreatePoisonSpot();
+            lastTrailPosion = transform.position;
         }
     }
     private void Flip()
@@ -57,7 +71,19 @@ public class EnemySlime : MonoBehaviour
             {
                 playerAttack.AddScore(score);
             }
+            PlayerAttack2 playerAttack2 = FindAnyObjectByType<PlayerAttack2>();
+            if (playerAttack2 != null)
+            {
+                playerAttack2.AddScore(score);
+            }
             Destroy(gameObject, 1f);
         }
     }
+
+    private void CreatePoisonSpot()
+    {  
+        GameObject poisonPost = Instantiate(poison, poisonTransform.position, Quaternion.identity);
+        Destroy(poisonPost, time);
+    }
 }
+

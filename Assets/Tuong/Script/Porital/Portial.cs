@@ -9,17 +9,17 @@ using TMPro;
 public class Portial : MonoBehaviour
 {
     private bool playerInTrigger = false;
-    public TMP_Text inpoText;
+    public GameObject infoPanel;
     private void Start()
     {
-        inpoText.gameObject.SetActive(false);
+        infoPanel.gameObject.SetActive(false);
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {           
             playerInTrigger = true;
-            inpoText.gameObject.SetActive(true);
+            infoPanel.gameObject.SetActive(true);
         }
     }
 
@@ -28,7 +28,7 @@ public class Portial : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             playerInTrigger = false;
-            inpoText.gameObject.SetActive(false);
+            infoPanel.gameObject.SetActive(false);
         }
     }
     private void Update()

@@ -10,6 +10,11 @@ public class Health : MonoBehaviour
     public float maxHealth;
     public Slider healthSlider;
     public TMP_Text healthText;
+    public ParticleSystem takedamage;
+    private void Awake()
+    {
+        takedamage.Stop();
+    }
     private void Start()
     {
         health = maxHealth;
@@ -29,23 +34,28 @@ public class Health : MonoBehaviour
             UpdateHealthUI();
         }       
     }
-    private void Update()
-    {
-        
-    }
     public void TakeDamage(float damage)
     {
         health -= damage;
         if(health <= 0)
         {
+            UpdateHealthUI();
             Destroy(gameObject);
         }
-        UpdateHealthUI();
+        else
+        {
+            UpdateHealthUI();
+            takedamage.Play();
+        }
     }
     void UpdateHealthUI()
     {
         float healthPercent = health / maxHealth;
         healthSlider.value = healthPercent;
         healthText.text = $"Health: {health} / {maxHealth}";
+    }
+    private void Takedame()
+    {
+
     }
 }

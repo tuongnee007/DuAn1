@@ -1,92 +1,133 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class EnemyFire : MonoBehaviour
 {
-    public float Speed = 5f;
-    public float damage;
-    public float circleRadius;
+    public float speed;
+    public Transform rightPọint;
+    public Transform leftPoint;
+    private bool movingRight = true;
     private Rigidbody2D rb;
     private Animator anim;
-    public GameObject groundCheck;
-    public LayerMask groundPlayer;
-    public bool facingRight;
-    public bool isGrounded;
+    public float wattingTime;
+    private bool isWaiting = false;
+    public float detecrionRange;
+    private float attackRange;
+    public Transform player;
+    public PolygonCollider2D colider;
+    public float health;
+    private bool scored;
+    private bool isDead;
     public float score;
-    public float healthEnemy;
-    private bool isDead = false;
-    private bool scored = true;
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        anim.SetBool("walk", true);
+        rb = GetComponent<Rigidbody2D>();
+        colider.enabled = false;
     }
-
     private void Update()
     {
-        if (isDead)
+        if (!isWaiting)
         {
-            return;
+            if (movingRight)
+            {
+                float disctanceToPlayer = Vector2.Distance(transform.position, player.position);
+                if (disctanceToPlayer <= detecrionRange)
+                {
+                    MoveTowardsPlayer();
+                }
+                else
+                {
+                    Patrol();
+                }
+            }
+        }             
+    }
+
+    private void Patrol()
+    {
+        if (movingRight)
+        {
+            transform.Translate(Vector2.right * speed * Time.deltaTime);
+            if(transform.position.x >= rightPọint.position.x)
+            {
+                StartCoroutine(WaitAndFlip());
+                movingRight = false;
+                Flip();
+            }
         }
-        rb.velocity = Vector2.left * Speed * Time.deltaTime;
-        isGrounded = Physics2D.OverlapCircle(groundCheck.transform.position, circleRadius, groundPlayer);
-        if (!isGrounded && facingRight)
+        else
         {
-            Flip();
+            transform.Translate(Vector2.left * speed * Time.deltaTime);
+            if (transform.position.x <= leftPoint.position.x)
+            {
+                StartCoroutine(WaitAndFlip());
+                movingRight = false;
+                Flip();
+            }
         }
-        else if (!isGrounded && !facingRight)
+    }
+
+    private void MoveTowardsPlayer()
+    {
+        if(Vector2.Distance(transform.position, player.transform.position) >= attackRange)
         {
-            Flip();
+            Vector2 direction = (player.transform.position - transform.position).normalized;
+            transform.Translate(direction * speed * Time.deltaTime);
+        }
+        else
+        {
+            anim.SetTrigger("attack");
         }
     }
     private void Flip()
     {
-        facingRight = !facingRight;
-        transform.Rotate(0, 180, 0);
-        Speed = -Speed;
+        Vector2 size = transform.localScale;
+        size.x *= -1;
+        transform.localScale = size;
     }
 
-    private void OnDrawGizmosSelected()
+    IEnumerator WaitAndFlip()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(groundCheck.transform.position, circleRadius);
+        isWaiting = true;
+        anim.SetBool("walk", false);
+        yield return new WaitForSeconds(wattingTime);
+        anim.SetBool("walk", true);
+        isWaiting = false;
+    }
+    public void EnableAttackColider()
+    {
+        colider.enabled = true;
+    }
+    public void DisableAttackColider()
+    {
+        colider.enabled = false;
     }
 
     public void TakeDamage(float damage)
     {
-        healthEnemy -= damage;
-        if (healthEnemy <= 0 && scored)
+        health -= damage;
+        if (health <= 0)
         {
-            anim.SetTrigger("death");
-            PlayerAttack playerAttack = FindAnyObjectByType<PlayerAttack>();
-            if (playerAttack != null)
+            PlayerAttack playerAttack = FindObjectOfType<PlayerAttack>();
+            if (playerAttack != null && scored)
             {
-                playerAttack.AddScore(score);              
+                playerAttack.AddScore(score);
+                anim.SetTrigger("die");
+                scored = false;
+            }
+            PlayerAttack2 playerAttack2 = FindObjectOfType<PlayerAttack2>();
+            if (playerAttack2 != null && scored)
+            {
+                playerAttack2.AddScore(score);
+                anim.SetTrigger("die");
                 scored = false;
             }
             isDead = true;
-            Destroy(gameObject, 2f);
-        }
-        else
-        {
-            anim.SetTrigger("take hit");
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag == "Player")
-        {
-            rb.velocity = Vector2.zero;
-            anim.SetBool("walk", false);
-            anim.SetTrigger("attack");
-            Health health = FindAnyObjectByType<Health>();
-            if(health != null)
-            {
-                health.TakeDamage(damage);
-            }
+            //GetComponent<LootBag>().InstantiateLoot(transform.position);
+            Destroy(gameObject, 5);
         }
     }
 }

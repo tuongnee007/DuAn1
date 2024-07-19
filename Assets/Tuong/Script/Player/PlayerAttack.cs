@@ -47,21 +47,13 @@ public class PlayerAttack : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, Mathf.Max(attackRangeX, attackRangeY), whatIsEnemies);
         foreach (Collider2D enemy in hitEnemies)
         {
-            if (enemy.gameObject.activeSelf)
-            {
-
-            }
             EnemySlime enemySlime = enemy.GetComponent<EnemySlime>();
             if (enemySlime != null)
             {
                 enemySlime.TakeDamage(damage);
             }
 
-            EnemyFire enemyFire1 = enemy.GetComponent<EnemyFire>();
-            if (enemyFire1 != null)
-            {
-                enemyFire1.TakeDamage(50);
-            }
+  
 
             EnemyFlying enemyFlying = enemy.GetComponent<EnemyFlying>();
             if (enemyFlying != null)
@@ -82,11 +74,6 @@ public class PlayerAttack : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         isAttacking = false;
     }
-    //private IEnumerator EndAttack2()
-    //{
-    //    yield return new WaitForSeconds(0.5f);
-    //    isAttacking2 = false;
-    //}
     public void AddScore(float point)
     {
         Score += point;

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyFlying : MonoBehaviour
 {
@@ -14,24 +15,37 @@ public class EnemyFlying : MonoBehaviour
     private float nextFireTime;
     public bool chase;
     public float Health = 10f;
+    public float MaxHealth = 10f;
     public int diem = 2;
     private bool scored = true;
     private bool isDead = false;
-    //Enemy
-    public LayerMask whatIsPlayers;
-
+    public float time;
     //public Transform startingPoint;
     private Animator anim;
     private Rigidbody2D rb;
     private Vector2 startingPoint;
-    public float lineofSite = 10f;
+    //public float lineofSite = 10f;
+    public float boxX;
+    public float boxY;
     private bool isAttacking = false;
+    //UI
+    public Slider healthBarSlider;
+    public Vector3 healthBarOffset;
+    //Audio
+    public AudioSource dieAudio;
+    private void Awake()
+    {
+        dieAudio.Stop();
+        healthBarSlider.gameObject.SetActive(false);
+    }
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         startingPoint = transform.position;
+        Health = MaxHealth;
+        UpateHeathBarPosition();
     }
     private void Update()
     {
@@ -44,16 +58,17 @@ public class EnemyFlying : MonoBehaviour
             return;
         Chase();
         Flip();
+        UpateHeathBarPosition();
     }
     private void Chase()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
-        if(distanceToPlayer > lineofSite)
+        if(distanceToPlayer > Mathf.Max(boxX,boxY))
         {
             ReturnToStartingPoint();
             return;
         }
-        if(distanceToPlayer < lineofSite && distanceToPlayer > shotingRange) 
+        if(distanceToPlayer < Mathf.Max(boxX, boxY) && distanceToPlayer > shotingRange) 
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Speed * Time.deltaTime);
             anim.SetBool("fly", true);
@@ -67,7 +82,13 @@ public class EnemyFlying : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Health -= damage;
+        if(Health > 0)
+        {
+            Health -= damage;
+            healthBarSlider.gameObject.SetActive(true);
+            StartCoroutine(WaitTime());
+        }
+        UpateHeathBarPosition();
         if(Health <= 0)
         {
             PlayerAttack playerAttack = FindObjectOfType<PlayerAttack>();
@@ -75,12 +96,26 @@ public class EnemyFlying : MonoBehaviour
             {
                 playerAttack.AddScore(diem);
                 anim.SetTrigger("die");
+                dieAudio.Play();
+                scored = false;
+            }
+            PlayerAttack2 playerAttack2 = FindObjectOfType<PlayerAttack2>();
+            if(playerAttack2 != null && scored)
+            {
+                playerAttack2.AddScore(diem);
+                anim.SetTrigger("die");
+                dieAudio.Play();
                 scored = false;
             }
             isDead = true;
             //GetComponent<LootBag>().InstantiateLoot(transform.position);
             Destroy(gameObject, 5);
         }
+    }
+    private IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(time);
+        healthBarSlider.gameObject.SetActive(false);
     }
     private void ReturnToStartingPoint()
     {
@@ -109,7 +144,7 @@ public class EnemyFlying : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, lineofSite);
+        Gizmos.DrawWireCube(transform.position, new Vector2(boxX, boxY));
         Gizmos.DrawWireSphere(transform.position, shotingRange);
     }
     private void Flip()
@@ -121,6 +156,15 @@ public class EnemyFlying : MonoBehaviour
         else
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+    }
+    private void UpateHeathBarPosition()
+    {
+        if(healthBarSlider != null)
+        {
+            float heathEnemy = Health / MaxHealth;
+            healthBarSlider.value = heathEnemy;
+            healthBarSlider.transform.position = Camera.main.WorldToScreenPoint(transform.position + healthBarOffset);
         }
     }
 }

@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource audioSource;
+    public AudioSource attackAudio;
 
     private void Start()
     {
-        audioSource.Stop();
+        attackAudio.Stop();
     }
     public void StartVolume()
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.volume = 1.0f;
-        audioSource.Play();
+        attackAudio = GetComponent<AudioSource>();
+        attackAudio.volume = 1.0f;
+        attackAudio.Play();
     }
 }

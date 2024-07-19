@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - portial
   - apple
+  - ground
   layers:
   - Default
   - TransparentFX
