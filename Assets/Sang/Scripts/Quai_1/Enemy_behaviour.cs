@@ -77,7 +77,7 @@ public class Enemy_behaviour : MonoBehaviour
     {
         anim.SetBool("canWalk", true);
 
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack"))
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("attack"))
         {
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
 
@@ -92,6 +92,7 @@ public class Enemy_behaviour : MonoBehaviour
 
         anim.SetBool("canWalk", false);
         anim.SetBool("Attack", true);
+
     }
 
     void Cooldown()
