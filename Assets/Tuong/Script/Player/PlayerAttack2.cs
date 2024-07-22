@@ -10,13 +10,18 @@ public class PlayerAttack2 : MonoBehaviour
     private Animator anim;
     public float attackRangeX;
     public float attackRangeY;
-    public float damage;
+    public float baseDamage;
+    public float criticalChance = 0.1f;
+    public float criticalMultiplier = 2.0f;
+    public float randomFactor = 0.1f;
     private bool isAttacking = false;
     private Coroutine attackCoroutine;
 
     //Điểm
     public TMP_Text score;
     private float Score;
+
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -55,14 +60,10 @@ public class PlayerAttack2 : MonoBehaviour
     }
     private void DealDamageToEnemies()
     {
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, Mathf.Max(attackRangeX, attackRangeY), whatIsEnemies);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackEnemy.position, Mathf.Max(attackRangeX, attackRangeY), whatIsEnemies);
         foreach (Collider2D enemy in hitEnemies)
-        {        
-            EnemySlime enemySlime = enemy.GetComponent<EnemySlime>();
-            if (enemySlime != null)
-            {
-                enemySlime.TakeDamage(damage);
-            }          
+        {
+            float damage = CalculateDamage();                                          
             EnemyFire enemyFire1 = enemy.GetComponent<EnemyFire>();
             if (enemyFire1 != null)
             {
@@ -75,10 +76,11 @@ public class PlayerAttack2 : MonoBehaviour
                 enemyFlying.TakeDamage(damage);
             }
 
-            EnemyCling enemyCling = enemy.GetComponent<EnemyCling>();
-            if (enemyCling != null)
+            EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
+            if(enemyHealth != null)
             {
-                enemyCling.TakeDamage(damage);
+                enemyHealth.TakeDamage(damage);
+                
             }
         }
     }
@@ -97,5 +99,15 @@ public class PlayerAttack2 : MonoBehaviour
     private void UpdateScore()
     {
         score.text = Score.ToString();
+    }
+    private float CalculateDamage()
+    {
+        float damage = baseDamage * Random.Range(1 - randomFactor, 1 + randomFactor);
+        bool isCritial = Random.value < criticalChance;
+        if (isCritial)
+        {
+            damage *= criticalMultiplier;
+        }
+        return damage;
     }
 }

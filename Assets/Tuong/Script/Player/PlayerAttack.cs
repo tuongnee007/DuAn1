@@ -47,25 +47,12 @@ public class PlayerAttack : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, Mathf.Max(attackRangeX, attackRangeY), whatIsEnemies);
         foreach (Collider2D enemy in hitEnemies)
         {
-            EnemySlime enemySlime = enemy.GetComponent<EnemySlime>();
-            if (enemySlime != null)
-            {
-                enemySlime.TakeDamage(damage);
-            }
-
-  
-
             EnemyFlying enemyFlying = enemy.GetComponent<EnemyFlying>();
             if (enemyFlying != null)
             {
                 enemyFlying.TakeDamage(damage);
             }
 
-            EnemyCling enemyCling = enemy.GetComponent<EnemyCling>();
-            if(enemyCling != null)
-            {
-                enemyCling.TakeDamage(damage);
-            }
         }    
     }
 

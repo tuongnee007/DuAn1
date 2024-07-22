@@ -7,11 +7,9 @@ public class Player2Attack : MonoBehaviour
     public Animator anim;
     public int combo;
     public bool atacando;
-    public AudioSource audio;
     public AudioClip[] sondio;
     private void Start()
     {
-        audio = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
     }
 
@@ -21,8 +19,6 @@ public class Player2Attack : MonoBehaviour
         {
             atacando = true;
             anim.SetTrigger("" + combo);
-            audio.clip = sondio[combo];
-            audio.Play();
         }
     }
     public void StartCombo()

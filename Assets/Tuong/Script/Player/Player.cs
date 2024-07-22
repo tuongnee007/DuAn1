@@ -1,6 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 public class Player : MonoBehaviour
@@ -10,12 +10,15 @@ public class Player : MonoBehaviour
     public float highJump = 8f;
     private Rigidbody2D rb;
     private Animator anim;
+    public bool IsFacingRight = true;
+    private bool grounded = true;
+    private bool doubleJump;
     //Hiệu ứng
     public ParticleSystem dust;
     public ParticleSystem flashSmoke;
-    public bool IsFacingRight = true;
-    private bool grounded = true;
+    public ParticleSystem doubleJumpEffect;
     private float horizontalInput;
+    public AudioSource runEffect;
     //express
     [Header("Tốc hành")]
     public float tagertRunSpeed;
@@ -43,6 +46,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         flashAudio.Stop();
+        runEffect.Stop();
     }
     private void Start()
     {
@@ -56,34 +60,61 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        HandleMovement();
+        HandleJump();
+        HandleSpeedBost();
+        HandleTeleport();
+        HandleRecall();
+        anim.SetBool("run", Mathf.Abs(horizontalInput) > 0);
+        anim.SetBool("grounded", grounded);
+    }
+
+    private void HandleMovement()
+    {
         horizontalInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(horizontalInput * runSpeed, rb.velocity.y);
         flip();
-        if (Input.GetKey(KeyCode.Space) && grounded)
+    }
+    private void HandleJump()
+    {
+        if (Input.GetButtonDown("Jump"))
         {
-            Jump();
+            if (grounded)
+            {
+                Jump();
+            }
+            else if (!doubleJump)
+            {
+                Jump();
+                DoubleJumpEffect();
+                doubleJump = true;
+            }
         }
-
-        bool isSpeedingUp = Input.GetKeyDown(KeyCode.F);
-        if (isSpeedingUp && !isCollingdown)
+    }
+    private void HandleSpeedBost()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
         {
             StartCoroutine(ChangeSpeedOverTime(tagertRunSpeed));
             StartCoroutine(CoolldownTime(coolDownTime));
-        }
+        }       
+    }
+    private void HandleTeleport()
+    {
         if (Input.GetMouseButtonDown(1) && canTeleport)
         {
             Teleport();
             FlashAudio();
             FlashSmoke();
         }
+    }
+    private void HandleRecall()
+    {
         if (Input.GetKey(KeyCode.V) && !isRicalling)
         {
             StartCoroutine(Recall());
         }
-        anim.SetBool("run", Mathf.Abs(horizontalInput) > 0);
-        anim.SetBool("grounded", grounded);
     }
-
     void flip()
     {
         if ((IsFacingRight && horizontalInput < 0) || (!IsFacingRight && horizontalInput > 0))
@@ -110,9 +141,9 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "ground")
         {
             grounded = true;
+            doubleJump = false;
         }
     }
-
     private void CreateDust()
     {
         dust.Play();
@@ -121,9 +152,14 @@ public class Player : MonoBehaviour
     {
         flashSmoke.Play();
     }
+    private void DoubleJumpEffect()
+    {
+        doubleJumpEffect.Play();
+    }    
     private IEnumerator ChangeSpeedOverTime(float targetSpeed)
     {
         float intialSpeed = runSpeed;
+        runEffect.Play();
         runSpeed = targetSpeed;
         yield return new WaitForSeconds(timetoChangeSpeed);
         runSpeed = intialSpeed;

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7991562179375929986}
   - component: {fileID: 2323843240556696097}
   - component: {fileID: 2340793451994994617}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Deep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,5 +173,4 @@ MonoBehaviour:
   - {fileID: 0}
   damage: 3
   health: 5
-  diem: 2
-  time: 10
+  score: 2

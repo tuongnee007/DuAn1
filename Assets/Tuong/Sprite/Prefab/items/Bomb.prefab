@@ -105,12 +105,13 @@ MonoBehaviour:
   attackRange: 8
   WhatIsPlayers:
     serializedVersion: 2
-    m_Bits: 1280
+    m_Bits: 256
   destroyDistance: 5
   blinkColor: {r: 1, g: 0, b: 0, a: 1}
   pushForce: 15
   clockAudio: {fileID: 6563676636429520637}
   bombAudio: {fileID: 2799613293389862197}
+  time: 0.7
 --- !u!82 &6563676636429520637
 AudioSource:
   m_ObjectHideFlags: 0

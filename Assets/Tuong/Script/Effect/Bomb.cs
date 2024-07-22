@@ -21,6 +21,7 @@ public class Bomb : MonoBehaviour
     //Audio 
     public AudioSource clockAudio;
     public AudioSource bombAudio;
+    public float time;
     private void Start()
     {
         tagert = GameObject.FindGameObjectWithTag("Player");
@@ -42,7 +43,7 @@ public class Bomb : MonoBehaviour
                 StartCoroutine(BlinkEffect());
                 clockAudio.Play(); 
                 StartCoroutine(WaitAudioBomb());
-                Destroy(gameObject, explosionTime +0.7f);
+                Destroy(gameObject, explosionTime +time);
             }
         }     
     }
@@ -57,13 +58,7 @@ public class Bomb : MonoBehaviour
             {
                 health.TakeDamage(bombDamage);              
                 PushPlayer(hitPlayer);
-            }
-            EnemySlime enemySlime = hitPlayer.GetComponent<EnemySlime>();
-            if(enemySlime != null)
-            {
-                enemySlime.TakeDamage(bombDamage);
-                PushPlayer(hitPlayer);
-            } 
+            }      
         }
     }
 

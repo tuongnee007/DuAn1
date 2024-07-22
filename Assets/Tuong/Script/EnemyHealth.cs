@@ -1,0 +1,70 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+
+public class EnemyHealth : MonoBehaviour
+{
+    public Slider healthBarSlider;
+    public Vector3 healthBarOffset;
+    public float health;
+    public float maxHealth;
+    public float score;
+    private bool scored = true;
+    private bool isDead = false;
+    public float waitTime;
+    public float time;
+    private void Start()
+    {
+        healthBarSlider.gameObject.SetActive(false);
+        health = maxHealth;
+        UpateHeathBarPosition();    
+    }
+    private void Update()
+    {
+        UpateHeathBarPosition();
+    }
+    public void TakeDamage(float damage)
+    {
+        if (health > 0)
+        {
+            health -= damage;
+            healthBarSlider.gameObject.SetActive(true);
+            StartCoroutine(WaitTime());
+        }
+        UpateHeathBarPosition();
+        if (health <= 0)
+        {
+            UpateHeathBarPosition();
+            PlayerAttack playerAttack = FindObjectOfType<PlayerAttack>();
+            if (playerAttack != null && scored)
+            {
+                playerAttack.AddScore(score);
+                scored = false;
+            }
+            PlayerAttack2 playerAttack2 = FindObjectOfType<PlayerAttack2>();
+            if (playerAttack2 != null && scored)
+            {
+                playerAttack2.AddScore(score);
+                scored = false;
+            }
+            isDead = true;
+            Destroy(gameObject, waitTime);
+        }
+    }
+    private IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(time);
+        healthBarSlider.gameObject.SetActive(false);
+    }
+    private void UpateHeathBarPosition()
+    {
+        if (healthBarSlider != null)
+        {
+            float heathEnemy = health / maxHealth;
+            healthBarSlider.value = heathEnemy;
+            healthBarSlider.transform.position = Camera.main.WorldToScreenPoint(transform.position + healthBarOffset);
+        }
+    }
+}

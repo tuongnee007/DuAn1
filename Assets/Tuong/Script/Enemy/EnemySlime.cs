@@ -13,7 +13,6 @@ public class EnemySlime : MonoBehaviour
     public bool facingRight;
     public bool isGrounded;
     public float score;
-    public float heathEnemy = 100f;
     //Effect
     public GameObject poison;
     public Transform poisonTransform;
@@ -58,26 +57,6 @@ public class EnemySlime : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(groundCheck.transform.position, circleRadius);
-    }
-
-    public void TakeDamage(float damage)
-    {
-        heathEnemy -= damage;
-        if(heathEnemy <= 0)
-        {
-            anim.SetTrigger("die");
-            PlayerAttack playerAttack = FindAnyObjectByType<PlayerAttack>();
-            if (playerAttack != null)
-            {
-                playerAttack.AddScore(score);
-            }
-            PlayerAttack2 playerAttack2 = FindAnyObjectByType<PlayerAttack2>();
-            if (playerAttack2 != null)
-            {
-                playerAttack2.AddScore(score);
-            }
-            Destroy(gameObject, 1f);
-        }
     }
 
     private void CreatePoisonSpot()

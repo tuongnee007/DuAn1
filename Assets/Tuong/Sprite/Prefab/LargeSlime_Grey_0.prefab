@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3070420103625241967}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8753857741511430715}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: poison Transform
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 5938555030021003790}
   - component: {fileID: 3675788790966867770}
   - component: {fileID: 4568783616584215350}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: LargeSlime_Grey_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,6 @@ MonoBehaviour:
   facingRight: 1
   isGrounded: 0
   score: 2
-  heathEnemy: 4
   poison: {fileID: 7137727453123395772, guid: 523448b9ddf5ce44dbbbdc44be987076, type: 3}
   poisonTransform: {fileID: 8753857741511430715}
   traiSpacing: 0.9

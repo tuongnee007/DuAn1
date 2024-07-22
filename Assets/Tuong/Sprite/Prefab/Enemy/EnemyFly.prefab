@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5474829309672691369}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4339114030602422755}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RightCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 8899748340831556052}
   - component: {fileID: 2453350050001056534}
   - component: {fileID: 6240732265561919064}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemyFly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8532764981978951088}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TopCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

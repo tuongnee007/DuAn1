@@ -10,7 +10,7 @@ public class EnemyCling : MonoBehaviour
     public float damage;
     int nextWayPoint = 1;
     float distToPoint;
-    public float health = 5;
+    //public float health = 5;
     public float score = 2f;
     private void Update()
     {
@@ -50,22 +50,6 @@ public class EnemyCling : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             health.TakeDamage(damage);
-        }
-    }
-    public void TakeDamage(float damage)
-    {     
-        health -= damage;
-        PlayerAttack playerAttack = FindObjectOfType<PlayerAttack>();
-        if(health <= 0)
-        {
-            playerAttack.AddScore(score);
-            Destroy(gameObject);
-        }
-        PlayerAttack2 playerAttack2 = FindObjectOfType<PlayerAttack2>();
-        if(playerAttack2 != null)
-        {
-            playerAttack2.AddScore(score);
-            Destroy(gameObject);
         }
     }
 }

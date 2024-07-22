@@ -11,9 +11,11 @@ public class Health : MonoBehaviour
     public Slider healthSlider;
     public TMP_Text healthText;
     public ParticleSystem takedamage;
+    public AudioSource takeDamage;
     private void Awake()
     {
         takedamage.Stop();
+        takeDamage.Stop();
     }
     private void Start()
     {
@@ -46,16 +48,13 @@ public class Health : MonoBehaviour
         {
             UpdateHealthUI();
             takedamage.Play();
+            takeDamage.Play();
         }
     }
     void UpdateHealthUI()
     {
-        float healthPercent = health / maxHealth;
+        float healthPercent = (health / maxHealth) *100f;
         healthSlider.value = healthPercent;
-        healthText.text = $"Health: {health} / {maxHealth}";
-    }
-    private void Takedame()
-    {
-
+        healthText.text = $"Health: {healthPercent.ToString("0")}%";
     }
 }
