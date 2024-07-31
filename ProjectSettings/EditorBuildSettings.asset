@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tuong/Scene/Level 1.unity
     guid: b896df66793c99f4a93758f56e3cfdf6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Tuong/Scene/Level 2.unity
     guid: 77b858a3480d38442a481da904507e96
+  - enabled: 1
+    path: Assets/Tuong/Scene/Dark Porest.unity
+    guid: 5d8aa318ac98edd4094a5eae2a94b3e8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 51995cf97f55e45489c9352ed8e1183d, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 8fc9215a65669ad44bc251a01948891f, type: 2}
@@ -22,4 +25,5 @@ EditorBuildSettings:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 9c54f752403ff33488ddf0220728353e, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 9e8c4248b7e3810408f54cf3e9161e01, type: 2}
     com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: d349861495061a4409d0ad4a8be021ff, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 614e3bbaa2c0196488812f84d23ab6ea, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 67000abd1d759c04b91393c95bda1daa, type: 2}
