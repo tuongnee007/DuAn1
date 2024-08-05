@@ -26,7 +26,7 @@ public class EnemyHealth_test : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        knockback.GetKnockedBack(Player_test.Instance.transform, knockBackThrust);
+        knockback.GetKnockedBack(Player.Instance.transform, knockBackThrust);
         StartCoroutine(flash.FlashRoutine());
         StartCoroutine(CheckDetectDeathRoutine());
     }

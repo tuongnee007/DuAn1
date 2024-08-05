@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
+    public static Player Instance { get; private set; }
+
     [Header("Tốc độ, độ cao,trái phải")]
     public float runSpeed = 8f;
     public float highJump = 8f;
@@ -23,7 +25,7 @@ public class Player : MonoBehaviour
     [Header("Tốc hành")]
     public float tagertRunSpeed;
     public float timetoChangeSpeed;
-    private bool isCollingdown = false;
+    //private bool isCollingdown = false;
     public float coolDownTime;
     private float coolDownTimer;
     //text
@@ -43,6 +45,7 @@ public class Player : MonoBehaviour
     public TMP_Text recallText;
     private float recallTimer;
     public SpriteRenderer recallSprire;
+
     private void Awake()
     {
         flashAudio.Stop();
@@ -72,8 +75,15 @@ public class Player : MonoBehaviour
     private void HandleMovement()
     {
         horizontalInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(horizontalInput * runSpeed, rb.velocity.y);
-        flip();
+        float targetSpeed = runSpeed * horizontalInput;
+        float speedDifference = targetSpeed - rb.velocity.x;
+        float accelerationRate = (Mathf.Abs(targetSpeed) > 0.01f) ? 10f : 20f;
+        float movement = Mathf.Pow(Mathf.Abs(speedDifference) * accelerationRate, 0.9f) * Mathf.Sign(speedDifference);
+        rb.AddForce(movement * Vector2.right);
+        if (horizontalInput != 0)
+        {
+            flip();
+        }
     }
     private void HandleJump()
     {
@@ -167,7 +177,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator CoolldownTime(float coolDown)
     {
-        isCollingdown = true;
+        //isCollingdown = true;
         coolDownTimer = coolDown;
         while (coolDownTimer > 0)
         {
@@ -177,7 +187,7 @@ public class Player : MonoBehaviour
             cooldownText.gameObject.SetActive(false);
             UpdateCooldownText();
         }
-        isCollingdown = false;
+        //isCollingdown = false;
         coolDownTimer = 0;
         UpdateCooldownText();
     }

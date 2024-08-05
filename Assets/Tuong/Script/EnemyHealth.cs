@@ -12,14 +12,15 @@ public class EnemyHealth : MonoBehaviour
     public float maxHealth;
     public float score;
     private bool scored = true;
-    private bool isDead = false;
     public float waitTime;
     public float time;
+    private Animator anim;
     private void Start()
     {
         healthBarSlider.gameObject.SetActive(false);
         health = maxHealth;
         UpateHeathBarPosition();    
+        anim = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -37,6 +38,7 @@ public class EnemyHealth : MonoBehaviour
         if (health <= 0)
         {
             UpateHeathBarPosition();
+            anim.SetTrigger("die");
             PlayerAttack playerAttack = FindObjectOfType<PlayerAttack>();
             if (playerAttack != null && scored)
             {
@@ -49,7 +51,6 @@ public class EnemyHealth : MonoBehaviour
                 playerAttack2.AddScore(score);
                 scored = false;
             }
-            isDead = true;
             Destroy(gameObject, waitTime);
         }
     }

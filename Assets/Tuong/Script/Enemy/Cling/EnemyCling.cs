@@ -10,7 +10,6 @@ public class EnemyCling : MonoBehaviour
     public float damage;
     int nextWayPoint = 1;
     float distToPoint;
-    //public float health = 5;
     public float score = 2f;
     private void Update()
     {

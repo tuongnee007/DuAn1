@@ -19,7 +19,7 @@ public class EnemyAttack : MonoBehaviour
     public float health;
     private bool scored;
     public float score;
-    private bool isDead;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -124,7 +124,6 @@ public class EnemyAttack : MonoBehaviour
                 anim.SetTrigger("die");
                 scored = false;
             }
-            isDead = true;
             //GetComponent<LootBag>().InstantiateLoot(transform.position);
             Destroy(gameObject, 5);
         }

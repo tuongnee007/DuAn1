@@ -19,7 +19,6 @@ public class EnemyFire : MonoBehaviour
     public PolygonCollider2D colider;
     public float health;
     private bool scored;
-    private bool isDead;
     public float score;
     private void Start()
     {
@@ -125,7 +124,6 @@ public class EnemyFire : MonoBehaviour
                 anim.SetTrigger("die");
                 scored = false;
             }
-            isDead = true;
             //GetComponent<LootBag>().InstantiateLoot(transform.position);
             Destroy(gameObject, 5);
         }

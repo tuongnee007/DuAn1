@@ -1,0 +1,1482 @@
+fileFormatVersion: 2
+guid: 872729695946a3b4680c23d4be9a46f9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ville map 2_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 911
+        width: 186
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51092a39765f92b4c9157aaaa0b52a48
+      internalID: 1720605296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_1
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 952
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681cff974dcbf5b4b9d9acdd2415ce66
+      internalID: -637937161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_2
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 892
+        width: 99
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b415f4d058fe0c4dbf3e28a6768577f
+      internalID: -669648538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_3
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 892
+        width: 99
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b9942ccda67c045846b43f6cc99217
+      internalID: 201011979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_4
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 807
+        width: 44
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd46748c68ff9434795fe497d96ddaf2
+      internalID: 528218295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_5
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 807
+        width: 215
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa975fcc70f8aa4184062e0966c6ef7
+      internalID: -478571166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_6
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 807
+        width: 44
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1baf2bd9d0bfb34a9326492aaab8542
+      internalID: 1162902354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_7
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 919
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5945f60c00eb0ad4a9d4f353a847a58c
+      internalID: -495249903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_8
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 919
+        width: 95
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b4c9223821edf4687bc853678272dd
+      internalID: 1280687775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_9
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 922
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd35850642d5de41860c7ba14ad7973
+      internalID: -2127971260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_10
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 922
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8c30771c3f5b04eb8a72a21f9c4d30
+      internalID: -22249773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_11
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 914
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c101c81aa98f824692a47114a2a9a6f
+      internalID: -495793728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 808
+        width: 187
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4fbdfa5dc4c16438890067e68a3be3
+      internalID: -1442245955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_13
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 880
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72c3397ba4433644bb18480435d5437
+      internalID: 748657768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_14
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 693
+        width: 106
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8429b88da05e44b8fa970175c65c4f
+      internalID: 217900331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_15
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 693
+        width: 107
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915d090d9d6509748a58ebc7e3c90d6a
+      internalID: -1497991990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_16
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 654
+        width: 26
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfd81a9e1087f145b26c5825bcc1fd9
+      internalID: 105022064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_17
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 768
+        width: 94
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7697793672612994eb9560a9f986c292
+      internalID: 56471989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_18
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 768
+        width: 94
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07cfa98bd789a3e418ca4c31687512af
+      internalID: -1998833458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_19
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 593
+        width: 48
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920617ed2c839ed4281b040fa1f926b5
+      internalID: 901713359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_20
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 593
+        width: 215
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6087728d7593f60478b33279f45a0892
+      internalID: -56516075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_21
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 593
+        width: 48
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08b9e9fa31fafb4fa38cf33b6ff815f
+      internalID: 1653315305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_22
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 778
+        width: 95
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac87e885c4da7bb4cb9aed5a1b358cab
+      internalID: -1216748493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_23
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 778
+        width: 64
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6400fc129cf87a943ba018e4459340b1
+      internalID: -302854436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_24
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 778
+        width: 63
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67be0aba9bb51604d8b2a6c891d652d1
+      internalID: 553137799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_25
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 778
+        width: 89
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0477c602bfe550447a484df534a5be42
+      internalID: -1234320581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_26
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 709
+        width: 273
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdf71b66a53c9e40b50e17fb41f3dc1
+      internalID: 533145566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_27
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 627
+        width: 103
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01845c1d8fb0a64fbbd48ef8c053d29
+      internalID: 105239209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_28
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 627
+        width: 103
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a214222d7ab48647b196c7d57be5c94
+      internalID: -858121878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_29
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 627
+        width: 103
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75a0b2c1fa79b54e8b8421078c358c5
+      internalID: 1639326211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_30
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 650
+        width: 214
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6f7eed44b91294086963d0352b21c5
+      internalID: -119161675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_31
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 650
+        width: 274
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e4263585a14b64db29c85ef398c8b6
+      internalID: -299177674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_32
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 511
+        width: 70
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2957f8edc8e8d4aa8e388df455708e
+      internalID: 1795193352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_33
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 511
+        width: 241
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11121c4304d0d9747a8d8b617abfacd9
+      internalID: 1933685857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_34
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 511
+        width: 70
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d217e746533c15445abe91c20f78894b
+      internalID: 1612479781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_35
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 379
+        width: 42
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7e80db98fcce244b14a004603eb6fc
+      internalID: -214704036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_36
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 379
+        width: 211
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2e3eab28f899e45822d7920c465740
+      internalID: 1165562775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_37
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 379
+        width: 42
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db83c7f49d91e647974326b0a344b38
+      internalID: 1269240802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_38
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 503
+        width: 235
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062bb89a9659d3e4aa188949a2cbe84e
+      internalID: 47378425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_39
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 503
+        width: 236
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f668ca1f2d60d4b9a8ede4710e4f9b
+      internalID: -673025287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_40
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 379
+        width: 68
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aadcf95c66b298439dd3cc7a2e7fd30
+      internalID: 1341177816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_41
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 379
+        width: 237
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c3a48ab1bf3a842892360ef71764ab
+      internalID: -2028344883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_42
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 379
+        width: 68
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9240e5b5d766a449ebcdfdcd5c73fb
+      internalID: -770609190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_43
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 374
+        width: 236
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ef028de09efc34fbf3870b7b1d9b06
+      internalID: -564850339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_44
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 374
+        width: 236
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e87d1e2663c45541b1a1ed2694821eb
+      internalID: -1222989009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_45
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 254
+        width: 56
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c66fc229926f3d47b47d7bfe556ea93
+      internalID: 1997778510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_46
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 270
+        width: 72
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e59c4ef08fc55845bb8011bd7600cee
+      internalID: 1596373695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_47
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 270
+        width: 88
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0540920cc24d76c42beee6f7bbf78d6f
+      internalID: -1925921251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_48
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 270
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0118944aa54e3342b7848c4a6407860
+      internalID: -1070505960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_49
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 271
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7a2d8b16b18b84d87b364788498369
+      internalID: -1913989531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_50
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 270
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffff71330da1b44f84a34286a8e6546
+      internalID: 1022422714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_51
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 271
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f24ab8da675375438cb39c4341846c1
+      internalID: -1345825934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_52
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 266
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6937590706b65674a8041a007cd93302
+      internalID: -1014248005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_53
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 35
+        width: 97
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95d68288e98cf14d99f43ddf0c22892
+      internalID: -487952870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_54
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 35
+        width: 98
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9852280f09f770c43bdc51bcef8e76ba
+      internalID: -1805041004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_55
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 35
+        width: 98
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8340b540ddf43640b0171563e0283ae
+      internalID: 1162142436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_56
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 35
+        width: 99
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7a7ac91a35bc148a4ec8c5ea3a71ce
+      internalID: -416294934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_57
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 34
+        width: 162
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e65a1f927be904ca5b5e3683917255
+      internalID: 1396445749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_58
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 34
+        width: 174
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae89cb088665e047841e8ba46db6481
+      internalID: 1737649649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_59
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 34
+        width: 160
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e073b8cdd210fb4397fb0ad854d706d
+      internalID: -352383137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ville map 2_60
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 34
+        width: 172
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32409bf75d03a04b9f8316edc5523c2
+      internalID: -1720077682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Ville map 2_0: 1720605296
+      Ville map 2_1: -637937161
+      Ville map 2_10: -22249773
+      Ville map 2_11: -495793728
+      Ville map 2_12: -1442245955
+      Ville map 2_13: 748657768
+      Ville map 2_14: 217900331
+      Ville map 2_15: -1497991990
+      Ville map 2_16: 105022064
+      Ville map 2_17: 56471989
+      Ville map 2_18: -1998833458
+      Ville map 2_19: 901713359
+      Ville map 2_2: -669648538
+      Ville map 2_20: -56516075
+      Ville map 2_21: 1653315305
+      Ville map 2_22: -1216748493
+      Ville map 2_23: -302854436
+      Ville map 2_24: 553137799
+      Ville map 2_25: -1234320581
+      Ville map 2_26: 533145566
+      Ville map 2_27: 105239209
+      Ville map 2_28: -858121878
+      Ville map 2_29: 1639326211
+      Ville map 2_3: 201011979
+      Ville map 2_30: -119161675
+      Ville map 2_31: -299177674
+      Ville map 2_32: 1795193352
+      Ville map 2_33: 1933685857
+      Ville map 2_34: 1612479781
+      Ville map 2_35: -214704036
+      Ville map 2_36: 1165562775
+      Ville map 2_37: 1269240802
+      Ville map 2_38: 47378425
+      Ville map 2_39: -673025287
+      Ville map 2_4: 528218295
+      Ville map 2_40: 1341177816
+      Ville map 2_41: -2028344883
+      Ville map 2_42: -770609190
+      Ville map 2_43: -564850339
+      Ville map 2_44: -1222989009
+      Ville map 2_45: 1997778510
+      Ville map 2_46: 1596373695
+      Ville map 2_47: -1925921251
+      Ville map 2_48: -1070505960
+      Ville map 2_49: -1913989531
+      Ville map 2_5: -478571166
+      Ville map 2_50: 1022422714
+      Ville map 2_51: -1345825934
+      Ville map 2_52: -1014248005
+      Ville map 2_53: -487952870
+      Ville map 2_54: -1805041004
+      Ville map 2_55: 1162142436
+      Ville map 2_56: -416294934
+      Ville map 2_57: 1396445749
+      Ville map 2_58: 1737649649
+      Ville map 2_59: -352383137
+      Ville map 2_6: 1162902354
+      Ville map 2_60: -1720077682
+      Ville map 2_7: -495249903
+      Ville map 2_8: 1280687775
+      Ville map 2_9: -2127971260
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

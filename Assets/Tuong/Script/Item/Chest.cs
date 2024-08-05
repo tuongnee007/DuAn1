@@ -12,12 +12,12 @@ public class Chest : MonoBehaviour
     private bool isPlayerInRange = false;
     public GameObject infoText;
     public GameObject player;
-    public AudioSource audio;
+    public AudioSource audioChest;
     private void Start()
     {
         anim = GetComponentInParent<Animator>();
         infoText.gameObject.SetActive(false);
-        audio.Stop();
+        audioChest.Stop();
     }
     public void OpenChest()
     {
@@ -72,7 +72,7 @@ public class Chest : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.F) && !isOpend && isPlayerInRange)
         {
-            audio.Play();
+            audioChest.Play();
             anim.SetTrigger("Open");
             OpenChest();
         }
@@ -83,7 +83,6 @@ public class Chest : MonoBehaviour
         {
             if(item != null)
             {
-                yield break;
                 item.transform.position = Vector2.MoveTowards(item.transform.position, player.transform.position, Time.deltaTime * 5);
                 yield return null;
             }          

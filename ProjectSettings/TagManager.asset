@@ -10,6 +10,7 @@ TagManager:
   - portial
   - apple
   - ground
+  - Ladder
   layers:
   - Default
   - TransparentFX

@@ -52,7 +52,7 @@ public class Login : MonoBehaviour
     private void OnLoginGameSucces(LoginResult result)
     {
         Debug.Log("Đăng nhập thành công");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     private void OnErrorLogin(PlayFabError error)
