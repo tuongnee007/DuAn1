@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class EnemyHealth : MonoBehaviour
+public class EnemyHealth2 : MonoBehaviour
 {
+
     public Slider healthBarSlider;
     public Vector3 healthBarOffset;
     public float health;
@@ -15,16 +15,14 @@ public class EnemyHealth : MonoBehaviour
     public float waitTime;
     public float time;
     private Animator anim;
-    public AudioSource dieAudio;
-    public ParticleSystem takeDamage;
+    //public AudioSource dieAudio;
     private void Start()
     {
         healthBarSlider.gameObject.SetActive(false);
         health = maxHealth;
-        UpateHeathBarPosition();    
+        UpateHeathBarPosition();
         anim = GetComponent<Animator>();
-        dieAudio.Stop();
-        takeDamage.Stop();
+        //dieAudio.Stop();
     }
     private void Update()
     {
@@ -35,7 +33,6 @@ public class EnemyHealth : MonoBehaviour
         if (health > 0)
         {
             health -= damage;
-            Takedamge();
             healthBarSlider.gameObject.SetActive(true);
             StartCoroutine(WaitTime());
         }
@@ -44,7 +41,7 @@ public class EnemyHealth : MonoBehaviour
         {
             UpateHeathBarPosition();
             anim.SetTrigger("die");
-            dieAudio.Play();
+            //dieAudio.Play();
             PlayerAttack playerAttack = FindObjectOfType<PlayerAttack>();
             if (playerAttack != null && scored)
             {
@@ -73,9 +70,5 @@ public class EnemyHealth : MonoBehaviour
             healthBarSlider.value = heathEnemy;
             healthBarSlider.transform.position = Camera.main.WorldToScreenPoint(transform.position + healthBarOffset);
         }
-    }
-    private void Takedamge()
-    {
-        takeDamage.Play();
     }
 }

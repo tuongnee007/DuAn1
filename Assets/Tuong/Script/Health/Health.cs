@@ -19,10 +19,15 @@ public class Health : MonoBehaviour
     // UI
     public Slider upgradeSlider;
     public TMP_Text upgradeCostText;
+    //Điểm hồi sinh
+    private Vector3 respawnPoint;
+    private bool hasDieonce = false;
+    private List<Vector3> respawnPoints = new List<Vector3>();
     private void Awake()
     {
         takedamage.Stop();
         takeDamage.Stop();
+        respawnPoint = transform.position;  
     }
     private void Start()
     {
@@ -49,8 +54,16 @@ public class Health : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
-            UpdateHealthUI();
-            Destroy(gameObject);
+            if (!hasDieonce)
+            {
+                Respawn();
+                hasDieonce = true;
+            }
+            else
+            {
+                UpdateHealthUI();
+                Destroy(gameObject);
+            }
         }
         else
         {
@@ -136,5 +149,35 @@ public class Health : MonoBehaviour
     private float GetMaxHealthIncrease()
     {
         return 20f;
+    }
+    private void Respawn()
+    {
+        Vector3 nearestRespawnPoint = FindNearestRespawnPoint();
+        transform.position = nearestRespawnPoint;
+        health = maxHealth / 2;
+        UpdateHealthUI();
+    }
+    private Vector3 FindNearestRespawnPoint()
+    {
+        Vector3 nearestPoint = respawnPoint;
+        float minDistance = Vector3.Distance(transform.position, respawnPoint);
+        foreach(var point in respawnPoints)
+        {
+            float distance = Vector3.Distance(transform.position, point);
+            if(distance < minDistance)
+            {
+                minDistance = distance;
+                nearestPoint = point;
+            }
+        }
+        return nearestPoint;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("RespawnPoint"))
+        {
+            Vector3 newRespawnPoint = collision.transform.position;
+            respawnPoints.Add(newRespawnPoint);
+        }
     }
 }

@@ -79,13 +79,6 @@ public class PlayerAttack2 : MonoBehaviour
             {
                 enemyFire1.TakeDamage(50);
             }
-
-            EnemyFlying enemyFlying = enemy.GetComponent<EnemyFlying>();
-            if (enemyFlying != null)
-            {
-                enemyFlying.TakeDamage(damage);
-            }
-
             EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {

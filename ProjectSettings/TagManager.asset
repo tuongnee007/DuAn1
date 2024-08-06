@@ -11,6 +11,7 @@ TagManager:
   - apple
   - ground
   - Ladder
+  - RespawnPoint
   layers:
   - Default
   - TransparentFX

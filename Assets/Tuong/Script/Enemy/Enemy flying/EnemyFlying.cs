@@ -14,38 +14,21 @@ public class EnemyFlying : MonoBehaviour
     public float fireRate = 1f;
     private float nextFireTime;
     public bool chase;
-    public float Health = 10f;
-    public float MaxHealth = 10f;
     public int diem = 2;
-    private bool scored = true;
     private bool isDead = false;
     public float time;
-    //public Transform startingPoint;
     private Animator anim;
     private Rigidbody2D rb;
     private Vector2 startingPoint;
-    //public float lineofSite = 10f;
     public float boxX;
     public float boxY;
     private bool isAttacking = false;
-    //UI
-    public Slider healthBarSlider;
-    public Vector3 healthBarOffset;
-    //Audio
-    public AudioSource dieAudio;
-    private void Awake()
-    {
-        dieAudio.Stop();
-        healthBarSlider.gameObject.SetActive(false);
-    }
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         startingPoint = transform.position;
-        Health = MaxHealth;
-        UpateHeathBarPosition();
     }
     private void Update()
     {
@@ -58,7 +41,6 @@ public class EnemyFlying : MonoBehaviour
             return;
         Chase();
         Flip();
-        UpateHeathBarPosition();
     }
     private void Chase()
     {
@@ -80,43 +62,6 @@ public class EnemyFlying : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
-    {
-        if(Health > 0)
-        {
-            Health -= damage;
-            healthBarSlider.gameObject.SetActive(true);
-            StartCoroutine(WaitTime());
-        }
-        UpateHeathBarPosition();
-        if(Health <= 0)
-        {
-            PlayerAttack playerAttack = FindObjectOfType<PlayerAttack>();
-            if(playerAttack != null && scored)
-            {
-                playerAttack.AddScore(diem);
-                anim.SetTrigger("die");
-                dieAudio.Play();
-                scored = false;
-            }
-            PlayerAttack2 playerAttack2 = FindObjectOfType<PlayerAttack2>();
-            if(playerAttack2 != null && scored)
-            {
-                playerAttack2.AddScore(diem);
-                anim.SetTrigger("die");
-                dieAudio.Play();
-                scored = false;
-            }
-            isDead = true;
-            //GetComponent<LootBag>().InstantiateLoot(transform.position);
-            Destroy(gameObject, 5);
-        }
-    }
-    private IEnumerator WaitTime()
-    {
-        yield return new WaitForSeconds(time);
-        healthBarSlider.gameObject.SetActive(false);
-    }
     private void ReturnToStartingPoint()
     {
         transform.position = Vector2.MoveTowards(transform.position, startingPoint, Speed * Time.deltaTime);
@@ -156,15 +101,6 @@ public class EnemyFlying : MonoBehaviour
         else
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
-        }
-    }
-    private void UpateHeathBarPosition()
-    {
-        if(healthBarSlider != null)
-        {
-            float heathEnemy = Health / MaxHealth;
-            healthBarSlider.value = heathEnemy;
-            healthBarSlider.transform.position = Camera.main.WorldToScreenPoint(transform.position + healthBarOffset);
         }
     }
 }

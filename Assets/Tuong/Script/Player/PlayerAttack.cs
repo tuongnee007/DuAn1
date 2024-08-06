@@ -50,7 +50,7 @@ public class PlayerAttack : MonoBehaviour
             EnemyFlying enemyFlying = enemy.GetComponent<EnemyFlying>();
             if (enemyFlying != null)
             {
-                enemyFlying.TakeDamage(damage);
+                //enemyFlying.TakeDamage(damage);
             }
 
         }    
