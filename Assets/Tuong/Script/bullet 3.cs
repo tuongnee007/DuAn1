@@ -1,9 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
 
-public class bullet2 : MonoBehaviour
+public class bullet3 : MonoBehaviour
 {
     private GameObject target;
     private Animator animator;
@@ -14,9 +13,7 @@ public class bullet2 : MonoBehaviour
     public float attackRange;
     public Transform attackPlayers;
     public float desTroyDistance = 0.1f;
-    public float desTroyDistance2 = 0.1f;
     private bool hasDealDamage = false;
-
 
     private void Start()
     {
@@ -25,8 +22,9 @@ public class bullet2 : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player");
         Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;
         bulletRb.velocity = new Vector2(moveDir.x, moveDir.y);
-        Destroy(this.gameObject, 7);
+        Destroy(this.gameObject, 3f);
     }
+
     private void Update()
     {
         if (hasDealDamage)

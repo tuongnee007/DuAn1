@@ -134,7 +134,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -144,7 +144,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!95 &7003118020101903871
 Animator:
@@ -179,11 +179,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18c96df6e22f7a48a995c56b6210b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  damage: 1
+  speed: 8
+  damage: 20
   WhatIsPlayers:
     serializedVersion: 2
     m_Bits: 256
   attackRange: 2
   attackPlayers: {fileID: 8927617847420560954}
   desTroyDistance: 2
+  desTroyDistance2: 4
+  smallBulletPrefab: {fileID: 8607199025584732389, guid: bc76e116fa36a6c42a513dea3391c73b, type: 3}
+  numberOfSmallBullets: 3
+  seekForce: 5

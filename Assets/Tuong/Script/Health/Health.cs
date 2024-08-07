@@ -27,7 +27,7 @@ public class Health : MonoBehaviour
     {
         takedamage.Stop();
         takeDamage.Stop();
-        respawnPoint = transform.position;  
+        respawnPoint = transform.position;
     }
     private void Start()
     {
@@ -39,7 +39,7 @@ public class Health : MonoBehaviour
     }
     public void AddHealth(float health1)
     {
-        if(health < maxHealth)
+        if (health < maxHealth)
         {
             health += health1;
             if (health > maxHealth)
@@ -47,12 +47,12 @@ public class Health : MonoBehaviour
                 health = maxHealth;
             }
             UpdateHealthUI();
-        }       
+        }
     }
     public void TakeDamage(float damage)
     {
         health -= damage;
-        if(health <= 0)
+        if (health <= 0)
         {
             if (!hasDieonce)
             {
@@ -61,32 +61,31 @@ public class Health : MonoBehaviour
             }
             else
             {
-                UpdateHealthUI();
                 Destroy(gameObject);
             }
         }
         else
         {
-            UpdateHealthUI();
             takedamage.Play();
             takeDamage.Play();
         }
+        UpdateHealthUI();
     }
     void UpdateHealthUI()
     {
-        float healthPercent = (health / maxHealth) *100f;
-        healthSlider.value = healthPercent;
-        healthText.text = $"Health: {healthPercent.ToString("0")}%";
+        float healthPercent = (health / maxHealth);
+        healthSlider.value = healthPercent; // Cập nhật giá trị thanh máu
+        healthText.text = $"Health: {healthPercent * 100f:0}%"; // Hiển thị phần trăm máu
     }
     public void UpgradeHealth()
     {
-        if(upgradeLevel >= maxUpgradeLevel)
+        if (upgradeLevel >= maxUpgradeLevel)
         {
             return;
         }
         float cost = GetUpgradeCost();
         PlayerAttack2 playerAttack2 = FindObjectOfType<PlayerAttack2>();
-        if(playerAttack2 != null && playerAttack2.score >= cost)
+        if (playerAttack2 != null && playerAttack2.score >= cost)
         {
             float healthIncrease = GetMaxHealthIncrease();
             maxHealth += healthIncrease;
@@ -95,18 +94,18 @@ public class Health : MonoBehaviour
             upgradeLevel++;
             SavePlayerStats();
             UpdateHealthUI();
-            UpdateUpgradeSlider(); ;
+            UpdateUpgradeSlider();
         }
     }
     private void SavePlayerStats()
     {
-        PlayerPrefs.SetFloat("MaxHealth", maxHealth); 
+        PlayerPrefs.SetFloat("MaxHealth", maxHealth);
         PlayerPrefs.SetInt("UpgradeLevel", upgradeLevel);
         PlayerPrefs.Save();
     }
     private void LoadPlayerStats()
     {
-        maxHealth = PlayerPrefs.GetFloat("MaxHealth", 100f); 
+        maxHealth = PlayerPrefs.GetFloat("MaxHealth", 100f);
         upgradeLevel = PlayerPrefs.GetInt("UpgradeLevel", 1);
         health = maxHealth;
     }
@@ -117,7 +116,7 @@ public class Health : MonoBehaviour
             upgradeSlider.maxValue = maxUpgradeLevel;
             upgradeSlider.value = upgradeLevel;
         }
-        if(upgradeCostText != null)
+        if (upgradeCostText != null)
         {
             upgradeCostText.text = $"Upgrade Cost: {GetUpgradeCost()}";
         }
@@ -161,10 +160,10 @@ public class Health : MonoBehaviour
     {
         Vector3 nearestPoint = respawnPoint;
         float minDistance = Vector3.Distance(transform.position, respawnPoint);
-        foreach(var point in respawnPoints)
+        foreach (var point in respawnPoints)
         {
             float distance = Vector3.Distance(transform.position, point);
-            if(distance < minDistance)
+            if (distance < minDistance)
             {
                 minDistance = distance;
                 nearestPoint = point;

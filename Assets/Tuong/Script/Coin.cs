@@ -6,7 +6,6 @@ public class Coin : MonoBehaviour
 {
     public float coin;
     public AudioSource coinAudio;
-    public SpriteRenderer coinRenderer;
     private void Start()
     {
         coinAudio.Stop();
@@ -19,9 +18,8 @@ public class Coin : MonoBehaviour
             if(playerAttack2 != null)
             {
                 playerAttack2.AddScore(coin);
-                //coinRenderer.gameObject.SetActive(false);
                 coinAudio.Play();
-                Destroy(gameObject, 0.6f);
+                Destroy(gameObject, 0.5f);
             }
         }
     }

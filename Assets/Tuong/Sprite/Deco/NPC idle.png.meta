@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0b97f946e3055fd4cb66c0de3b6d7e67
+guid: 8b6b7c6006060844e857200ecdd25709
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Moving platform brick_0
+      name: NPC idle_0
       rect:
         serializedVersion: 2
-        x: 73
-        y: 509
-        width: 279
-        height: 101
+        x: 5
+        y: 7
+        width: 104
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccfb21d81aa18ae44bc62785f3e42bc7
-      internalID: 590466742
+      spriteID: 23280a6ac956794429ba162da598e320
+      internalID: 925109574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moving platform brick_1
+      name: NPC idle_1
       rect:
         serializedVersion: 2
-        x: 391
-        y: 509
-        width: 275
-        height: 97
+        x: 115
+        y: 5
+        width: 104
+        height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e1a92660d2766c4abb54cc9d4f91851
-      internalID: -1052858225
+      spriteID: 6b93bed11266d204aa0127bd25805ba5
+      internalID: 1008744375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moving platform brick_2
+      name: NPC idle_2
       rect:
         serializedVersion: 2
-        x: 73
-        y: 394
-        width: 276
-        height: 100
+        x: 224
+        y: 6
+        width: 103
+        height: 343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eff87c35c04bec44f9df6a18b8388316
-      internalID: 1337243474
+      spriteID: 0071d39c26fe53d46b97fa538166bbb5
+      internalID: 1255823812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moving platform brick_3
+      name: NPC idle_3
       rect:
         serializedVersion: 2
-        x: 391
-        y: 384
-        width: 275
-        height: 94
+        x: 333
+        y: 10
+        width: 105
+        height: 339
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dcaeb33e54130d42b19d2436dcdb45f
-      internalID: -193220614
+      spriteID: 5828267c6621f804cb8ed2eea7c401ca
+      internalID: 1106136801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moving platform brick_4
+      name: NPC idle_4
       rect:
         serializedVersion: 2
-        x: 74
-        y: 278
-        width: 278
-        height: 89
+        x: 445
+        y: 5
+        width: 104
+        height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d0c9427761b7a74aae974a7f12ea0d7
-      internalID: -796387731
+      spriteID: a3426460029f3644d965c4a337f256b3
+      internalID: 1647019832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moving platform brick_5
+      name: NPC idle_5
       rect:
         serializedVersion: 2
-        x: 391
-        y: 278
-        width: 275
-        height: 98
+        x: 554
+        y: 6
+        width: 103
+        height: 343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e778f4d69ae1304c8706f3e8de13c88
-      internalID: -1309133991
+      spriteID: 5ab47308e9ddfac40ae4316bd7e4e30c
+      internalID: 1421754314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moving platform brick_6
+      name: NPC idle_6
       rect:
         serializedVersion: 2
-        x: 74
-        y: 174
-        width: 278
-        height: 96
+        x: 663
+        y: 10
+        width: 105
+        height: 339
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,71 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0730973971f9c864bb520956ae6c4b46
-      internalID: -974454358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Moving platform brick_7
-      rect:
-        serializedVersion: 2
-        x: 391
-        y: 174
-        width: 275
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: faccdd840b3f6e040827fbfab19b2217
-      internalID: 2107669968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Moving platform brick_8
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 70
-        width: 275
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f848fb295a79d8948b5bf4f00431bb7a
-      internalID: 676921054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Moving platform brick_9
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 70
-        width: 274
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: abe57ef70935459448a14aa5132929b8
-      internalID: -1829533481
+      spriteID: 9541b7c7fb08525408c28474d9877a87
+      internalID: -908504617
       vertices: []
       indices: 
       edges: []
@@ -343,16 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Moving platform brick_0: 590466742
-      Moving platform brick_1: -1052858225
-      Moving platform brick_2: 1337243474
-      Moving platform brick_3: -193220614
-      Moving platform brick_4: -796387731
-      Moving platform brick_5: -1309133991
-      Moving platform brick_6: -974454358
-      Moving platform brick_7: 2107669968
-      Moving platform brick_8: 676921054
-      Moving platform brick_9: -1829533481
+      NPC idle_0: 925109574
+      NPC idle_1: 1008744375
+      NPC idle_2: 1255823812
+      NPC idle_3: 1106136801
+      NPC idle_4: 1647019832
+      NPC idle_5: 1421754314
+      NPC idle_6: -908504617
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
