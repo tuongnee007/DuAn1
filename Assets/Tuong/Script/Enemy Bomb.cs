@@ -4,141 +4,189 @@ using UnityEngine;
 
 public class EnemyBomb : MonoBehaviour
 {
-    public Transform pointA;
-    public Transform pointB;
-    public float speed = 2f;
-    public float waitTime = 1f;
-    public float detectionRange = 5f;
-    public float attackRange = 1f;
-    public LayerMask playerLayer;
-    public GameObject exclamationMark;
-    public float damage = 5f;
-    private bool movingToB = true;
-    private bool waiting = true;
-    private float waitTimer = 0f;
+    public Transform attackEnemy;
+    public Transform direction;
+    public float Speed;
     private Transform player;
+    public float shotingRangeX;
+    public float shotingRangeY;
+    public float fireRate = 1f;
+    private float nextFireTime;
+    public bool chase;
+    public int diem = 2;
+    private bool isDead = false;
+    public float time;
     private Animator anim;
-    private float originalSpeed;
+    private Rigidbody2D rb;
+    private Vector2 startingPoint;
+    public float boxX;
+    public float boxY;
+    private bool isAttacking = false;
+    public float damage;
+    public float pushForce;
+    public GameObject exclamationMark;
+    // Tuần tra
+    public Transform[] patrolPoints;
+    private int currentPatrolIndex = 0;
+    public float patrolWaitTime = 2f;
+    private float patrolTimer;
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        originalSpeed = speed;
-        exclamationMark.SetActive(false);
+        startingPoint = transform.position;
+        exclamationMark.gameObject.SetActive(false);
     }
 
     private void Update()
     {
-        player = DetectPlayer();
-        if (player != null)
+        if (isDead)
         {
-            exclamationMark.SetActive(true);
-            float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-            FlipTowards(player.position);
-
-            if (distanceToPlayer <= attackRange)
-            {
-                player.GetComponent<Health>().TakeDamage(damage);
-                anim.SetBool("attack", true);
-                StartCoroutine(DestroyEnemyAfterAttack());
-            }
-            else
-            {
-                anim.SetBool("attack", false);
-                anim.SetBool("walking", true);
-                MoveTowards(player.position, originalSpeed);
-            }
+            return;
         }
-        else
+
+        if (player == null)
+            return;
+
+        Chase();
+    }
+
+    private void Chase()
+    {
+        float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
+        bool isPlayerIsDetectionRange = Mathf.Abs(player.transform.position.x - direction.position.x) <= boxX / 2 &&
+                                        Mathf.Abs(player.transform.position.y - direction.position.y) <= boxY / 2;
+        if (!isPlayerIsDetectionRange)
         {
-            exclamationMark.SetActive(false);
-            anim.SetBool("attack", false);
-            Patrol();
+            ReturnToStartingPointOrPatrol();
+            return;
+        }
+        if (distanceToPlayer <= Mathf.Max(shotingRangeX, shotingRangeY) && nextFireTime < Time.time)
+        {
+            nextFireTime = Time.time + fireRate;
+            StartCoroutine(AttackandFire());
+            Destroy(gameObject,1f);
+        }
+        else if (distanceToPlayer > Mathf.Max(shotingRangeX, shotingRangeY))
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Speed * Time.deltaTime);
+            anim.SetBool("fly", true);
+            exclamationMark.gameObject.SetActive(true);
+            FlipTowardsPlayer();
         }
     }
 
-    Transform DetectPlayer()
+    private void ReturnToStartingPointOrPatrol()
     {
-        Collider2D[] hitcolliders = Physics2D.OverlapCircleAll(transform.position, detectionRange, playerLayer);
-        foreach (var hitcollider in hitcolliders)
+        if (patrolPoints.Length > 0)
         {
-            if (hitcollider.CompareTag("Player"))
-            {
-                return hitcollider.transform;
-            }
+            Patrol();
         }
-        return null;
+        else
+        {
+            transform.position = Vector2.MoveTowards(transform.position, startingPoint, Speed * Time.deltaTime);
+            anim.SetBool("fly", false);
+            isAttacking = false;
+        }
     }
 
     private void Patrol()
     {
-        if (waiting)
-        {
-            waitTimer += Time.deltaTime;
-            if (waitTimer >= waitTime)
-            {
-                waiting = false;
-                waitTimer = 0f;
-                movingToB = !movingToB;
-                Flip();
-            }
-            else
-            {
-                anim.SetBool("walking", false);
-                anim.SetBool("idle", true);
-                return;
-            }
-        }
+        if (patrolPoints.Length == 0) return;
 
-        Vector3 targetPosition = movingToB ? pointB.position : pointA.position;
-        if (Vector2.Distance(transform.position, targetPosition) <= 0.1f)
+        Transform targetPatrolPoint = patrolPoints[currentPatrolIndex];
+        transform.position = Vector2.MoveTowards(transform.position, targetPatrolPoint.position, Speed * Time.deltaTime);
+        FlipTowardsPatrolPoint(targetPatrolPoint);
+
+        if (Vector2.Distance(transform.position, targetPatrolPoint.position) < 0.1f)
         {
-            waiting = true;
+            patrolTimer += Time.deltaTime;
+            if (patrolTimer >= patrolWaitTime)
+            {
+                currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
+                patrolTimer = 0f;
+            }
         }
         else
         {
-            anim.SetBool("walking", true);
-            anim.SetBool("idle", false);
-            MoveTowards(targetPosition, originalSpeed);
+            patrolTimer = 0f;
         }
+
+        anim.SetBool("fly", true);
     }
 
-    void MoveTowards(Vector3 targetPosition, float currentSpeed)
+    private IEnumerator AttackandFire()
     {
-        Vector3 direction = (targetPosition - transform.position).normalized;
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, currentSpeed * Time.deltaTime);
-    }
-
-    void Flip()
-    {
-        Vector3 localScale = transform.localScale;
-        localScale.x *= -1;
-        transform.localScale = localScale;
-    }
-
-    void FlipTowards(Vector3 targetPosition)
-    {
-        bool playerIsOnRight = targetPosition.x > transform.position.x;
-        bool enemyIsFacingRight = transform.localScale.x > 0;
-
-        if (playerIsOnRight != enemyIsFacingRight)
+        if (!isAttacking)
         {
-            Flip();
+            anim.SetTrigger("attack");
+            isAttacking = true;
+            yield return new WaitForSeconds(0.2f);
+            DealDamage();
+            isAttacking = false;
         }
     }
 
-    System.Collections.IEnumerator DestroyEnemyAfterAttack()
+    private void DealDamage()
     {
-        yield return new WaitForSeconds(1f);
-        Destroy(gameObject);
+        bool playerPushed = false;
+        Collider2D[] hitPlayers = Physics2D.OverlapBoxAll(attackEnemy.position, new Vector2(shotingRangeX, shotingRangeY), 0);
+        foreach (Collider2D hitPlayer in hitPlayers)
+        {
+            if (hitPlayer.gameObject.CompareTag("Player"))
+            {
+                Health health = hitPlayer.GetComponent<Health>();
+                if (health != null)
+                {
+                    health.TakeDamage(damage);
+                    if (!playerPushed)
+                    {
+                        Rigidbody2D playerRb = hitPlayer.GetComponent<Rigidbody2D>();
+                        if (playerRb != null)
+                        {
+                            Vector2 pushDirection = hitPlayer.transform.position - transform.position;
+                            pushDirection.Normalize();
+                            playerRb.AddForce(pushDirection * pushForce, ForceMode2D.Impulse);
+                            playerPushed = true;
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    void OnDrawGizmosSelected()
+    private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, detectionRange);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireCube(direction.position, new Vector2(boxX, boxY));
+        Gizmos.DrawWireCube(attackEnemy.position, new Vector2(shotingRangeX, shotingRangeY));
+    }
 
-        Gizmos.color = Color.blue;
-        Gizmos.DrawLine(pointA.position, pointB.position);
+    private void FlipTowardsPlayer()
+    {
+        if (transform.position.x > player.transform.position.x)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+    }
+
+    private void FlipTowardsPatrolPoint(Transform targetPatrolPoint)
+    {
+        if (transform.position.x > targetPatrolPoint.position.x)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
     }
 }
+    
+

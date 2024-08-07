@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyFlying2 : MonoBehaviour
 {
     public Transform attackEnemy;
+    public Transform direction;
     public float Speed;
     private Transform player;
     public float shotingRangeX;
@@ -54,22 +55,29 @@ public class EnemyFlying2 : MonoBehaviour
     private void Chase()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
-        if (distanceToPlayer > Mathf.Max(boxX, boxY))
+        bool isPlayerIsDetectionRange = Mathf.Abs(player.transform.position.x - direction.position.x) <= boxX / 2 &&
+                                        Mathf.Abs(player.transform.position.y - direction.position.y) <= boxY / 2;
+        if (!isPlayerIsDetectionRange)
         {
             ReturnToStartingPointOrPatrol();
             return;
         }
-        if (distanceToPlayer < Mathf.Max(boxX, boxY) && distanceToPlayer > Mathf.Max(shotingRangeX, shotingRangeY))
-        {
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Speed * Time.deltaTime);
-            anim.SetBool("fly", true);
-            FlipTowardsPlayer();
-        }
-        else if (distanceToPlayer <= Mathf.Max(shotingRangeX, shotingRangeY) && nextFireTime < Time.time)
+        //if (distanceToPlayer > Mathf.Max(boxX, boxY))
+        //{
+        //    ReturnToStartingPointOrPatrol();
+        //    return;
+        //}
+        if (distanceToPlayer <= Mathf.Max(shotingRangeX, shotingRangeY) && nextFireTime < Time.time)
         {
             nextFireTime = Time.time + fireRate;
             StartCoroutine(AttackandFire());
         }
+        else if (distanceToPlayer > Mathf.Max(shotingRangeX, shotingRangeY))
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Speed * Time.deltaTime);
+            anim.SetBool("fly", true);
+            FlipTowardsPlayer();
+        }     
     }
 
     private void ReturnToStartingPointOrPatrol()
@@ -98,18 +106,20 @@ public class EnemyFlying2 : MonoBehaviour
         if (Vector2.Distance(transform.position, targetPatrolPoint.position) < 0.1f)
         {
             patrolTimer += Time.deltaTime;
+            anim.SetBool("fly", false);
+
             if (patrolTimer >= patrolWaitTime)
             {
                 currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
                 patrolTimer = 0f;
+                anim.SetBool("fly", true);
             }
         }
         else
         {
             patrolTimer = 0f;
+            anim.SetBool("fly", true);
         }
-
-        anim.SetBool("fly", true);
     }
 
     private IEnumerator AttackandFire()
@@ -155,7 +165,7 @@ public class EnemyFlying2 : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(transform.position, new Vector2(boxX, boxY));
+        Gizmos.DrawWireCube(direction.position, new Vector2(boxX, boxY));
         Gizmos.DrawWireCube(attackEnemy.position, new Vector2(shotingRangeX, shotingRangeY));
     }
 

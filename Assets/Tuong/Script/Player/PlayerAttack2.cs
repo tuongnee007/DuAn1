@@ -15,6 +15,7 @@ public class PlayerAttack2 : MonoBehaviour
     public float criticalMultiplier = 2.0f;
     public float randomFactor = 0.1f;
     private bool isAttacking = false;
+    public float pushForce = 5f;
 
     // Điểm
     public TMP_Text scoreText;
@@ -26,8 +27,7 @@ public class PlayerAttack2 : MonoBehaviour
     // UI
     public Slider upgradeSlider;
     public TMP_Text upgradeCostText;
-    //Hiện sát thương
-    public GameObject damagePopupPrefab;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -73,16 +73,17 @@ public class PlayerAttack2 : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackEnemy.position, Mathf.Max(attackRangeX, attackRangeY), whatIsEnemies);
         foreach (Collider2D enemy in hitEnemies)
         {
-            float damage = CalculateDamage();
-            EnemyFire enemyFire1 = enemy.GetComponent<EnemyFire>();
-            if (enemyFire1 != null)
-            {
-                enemyFire1.TakeDamage(50);
-            }
+            float damage = CalculateDamage();    
             EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
                 enemyHealth.TakeDamage(damage);
+            }
+            Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
+            if(rb != null)
+            {
+                Vector2 direction = (enemy.transform.position - transform.position).normalized;
+                rb.AddForce(direction * pushForce, ForceMode2D.Impulse);
             }
         }
     }
@@ -145,7 +146,6 @@ public class PlayerAttack2 : MonoBehaviour
             UpdateUpgradeSlider();
         }
     }
-
     public void DamageReduction()
     {
         if (baseDamage > 0)
