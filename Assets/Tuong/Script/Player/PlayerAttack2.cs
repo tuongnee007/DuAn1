@@ -27,6 +27,8 @@ public class PlayerAttack2 : MonoBehaviour
     // UI
     public Slider upgradeSlider;
     public TMP_Text upgradeCostText;
+    //Audio
+    public AudioSource coinAudio;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -34,6 +36,7 @@ public class PlayerAttack2 : MonoBehaviour
         UpdateScore();
         LoadPlayerStats();
         UpdateUpgradeSlider();
+        coinAudio.Stop();
     }
     private void Update()
     {
@@ -212,5 +215,9 @@ public class PlayerAttack2 : MonoBehaviour
     private float GetBaseDamageIncrease()
     {
         return 5f;
+    }
+    public void PlayeAudio()
+    {
+        coinAudio.Play();
     }
 }

@@ -78,10 +78,10 @@ public class Shooter_test : MonoBehaviour, IEnemy
                 newBullet.transform.right = newBullet.transform.position - transform.position;
 
 
-                if (newBullet.TryGetComponent(out Projectile_Test projectile))
-                {
-                    projectile.UpdateMoveSpeed(bulletMoveSpeed);
-                }
+                //if (newBullet.TryGetComponent(out Projectile_Test projectile))
+                //{
+                //    projectile.UpdateMoveSpeed(bulletMoveSpeed);
+                //}
 
                 currentAngle += angleStep;
 
