@@ -61,7 +61,7 @@ public class EnemyAI_test : MonoBehaviour
 
         enemyPathfinding.MoveTo(roamPosition);
 
-        if (Vector2.Distance(transform.position, Player_test.Instance.transform.position) < attackRange)
+        if (Vector2.Distance(transform.position, Player.Instance.transform.position) < attackRange)
         {
             state = State.Attacking;
         }
@@ -74,7 +74,7 @@ public class EnemyAI_test : MonoBehaviour
 
     private void Attacking()
     {
-        if (Vector2.Distance(transform.position, Player_test.Instance.transform.position) > attackRange)
+        if (Vector2.Distance(transform.position, Player.Instance.transform.position) > attackRange)
         {
             state = State.Roaming;
         }

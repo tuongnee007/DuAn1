@@ -7,7 +7,6 @@ using Unity.VisualScripting;
 public class SettingPanel : MonoBehaviour
 {
     public GameObject settingPanel;
-    //public Slider volumeSlider;
 
     private void Start()
     {
@@ -18,7 +17,7 @@ public class SettingPanel : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Escape))
         {
-            settingPanel.gameObject.SetActive(true);
+            settingPanel.gameObject.SetActive(!settingPanel.activeSelf);
         }
     }
 

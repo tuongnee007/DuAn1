@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tuong/Scene/Level 1.unity
     guid: b896df66793c99f4a93758f56e3cfdf6
-  - enabled: 0
-    path: Assets/Tuong/Scene/Level 2.unity
-    guid: 77b858a3480d38442a481da904507e96
   - enabled: 1
     path: Assets/Tuong/Scene/Dark Porest.unity
     guid: 5d8aa318ac98edd4094a5eae2a94b3e8
+  - enabled: 1
+    path: Assets/Tuong/Scene/Map 1.unity
+    guid: 938abee12c80ca14094ede748e23b2bb
+  - enabled: 1
+    path: Assets/Tuong/Scene/Ville.unity
+    guid: 32a6d2eb3850b494fa1d01796c05a773
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 51995cf97f55e45489c9352ed8e1183d, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 8fc9215a65669ad44bc251a01948891f, type: 2}

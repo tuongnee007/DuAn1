@@ -23,11 +23,16 @@ public class Health : MonoBehaviour
     private Vector3 respawnPoint;
     private bool hasDieonce = false;
     private List<Vector3> respawnPoints = new List<Vector3>();
+    //UI chết
+    public GameObject gameoverPanel;
+    private Animator anim;
     private void Awake()
     {
         takedamage.Stop();
         takeDamage.Stop();
-        respawnPoint = transform.position;
+        respawnPoint = transform.position;;
+        anim = GetComponent<Animator>();
+        gameoverPanel.SetActive(false);
     }
     private void Start()
     {
@@ -61,6 +66,8 @@ public class Health : MonoBehaviour
             }
             else
             {
+                anim.SetTrigger("die");
+                gameoverPanel.SetActive(true);
                 Destroy(gameObject);
             }
         }
@@ -74,8 +81,8 @@ public class Health : MonoBehaviour
     void UpdateHealthUI()
     {
         float healthPercent = (health / maxHealth);
-        healthSlider.value = healthPercent; // Cập nhật giá trị thanh máu
-        healthText.text = $"Health: {healthPercent * 100f:0}%"; // Hiển thị phần trăm máu
+        healthSlider.value = healthPercent; 
+        healthText.text = $"Health: {healthPercent * 100f:0}%"; 
     }
     public void UpgradeHealth()
     {
@@ -97,6 +104,22 @@ public class Health : MonoBehaviour
             UpdateUpgradeSlider();
         }
     }
+
+    public void healthDelete()
+    {
+        if (maxHealth > 0)
+        {
+            maxHealth -= GetMaxHealthIncrease();
+            if (upgradeLevel >= 2)
+            {
+                upgradeLevel--;
+            }
+            
+            SavePlayerStats();
+            UpdateUpgradeSlider();
+        }
+    }
+
     private void SavePlayerStats()
     {
         PlayerPrefs.SetFloat("MaxHealth", maxHealth);

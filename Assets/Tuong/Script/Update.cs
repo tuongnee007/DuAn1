@@ -34,4 +34,20 @@ public class UpdateManager : MonoBehaviour
         Health health = player.GetComponent<Health>();
         health.UpgradeHealth();
     }
+    public void healthReduction()
+    {
+        Health health = player.GetComponent<Health>();
+        health.healthDelete();
+    }
+
+    public void UpdateSpeed()
+    {
+        Player player2 = player.GetComponent<Player>(); 
+        player2.UpgradeSpeed();
+    }
+    public void BloodHealth()
+    {
+        Player player2 = player.GetComponent<Player>();
+        player2.hypotension();
+    }
 }

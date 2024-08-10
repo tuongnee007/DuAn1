@@ -17,6 +17,7 @@ public class EnemyHealth : MonoBehaviour
     private Animator anim;
     public AudioSource dieAudio;
     public ParticleSystem takeDamage;
+    private bool isDead = false;
     private void Start()
     {
         healthBarSlider.gameObject.SetActive(false);
@@ -40,11 +41,13 @@ public class EnemyHealth : MonoBehaviour
             StartCoroutine(WaitTime());
         }
         UpateHeathBarPosition();
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
+            isDead = true;
             UpateHeathBarPosition();
             anim.SetTrigger("die");
             dieAudio.Play();
+            gameManager.Instance.IncreaseEnemyDeathCount();
             PlayerAttack playerAttack = FindObjectOfType<PlayerAttack>();
             if (playerAttack != null && scored)
             {

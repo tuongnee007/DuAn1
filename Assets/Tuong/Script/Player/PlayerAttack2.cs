@@ -27,7 +27,6 @@ public class PlayerAttack2 : MonoBehaviour
     // UI
     public Slider upgradeSlider;
     public TMP_Text upgradeCostText;
-
     private void Start()
     {
         anim = GetComponent<Animator>();

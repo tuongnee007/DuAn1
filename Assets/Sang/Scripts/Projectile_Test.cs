@@ -4,22 +4,40 @@ using UnityEngine;
 
 public class Projectile_Test : MonoBehaviour
 {
+    private GameObject target;
+    public float damage;
+    public LayerMask WhatIsPlayers;
     [SerializeField] private float moveSpeed = 22f;
     [SerializeField] private GameObject particleOnHitPrefabVFX;
     [SerializeField] private bool isEnemyProjectile = false;
     [SerializeField] private float projectileRange = 10f;
+    private bool hasDealDamage = false;
+    public float desTroyDistance = 0.1f;
 
     private Vector3 startPosition;
 
     private void Start()
     {
         startPosition = transform.position;
+        target = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update()
     {
         MoveProjectile();
         DetectFireDistance();
+        if (hasDealDamage)
+            return;
+        if (target != null)
+        {
+            float distance = Vector2.Distance(transform.position, target.transform.position);
+            if (distance <= desTroyDistance)
+            {
+                DealDametoPlayer();
+                hasDealDamage = true;
+                Destroy(gameObject);
+            }
+        }
     }
 
     public void UpdateProjectileRange(float projectileRange)
@@ -32,25 +50,21 @@ public class Projectile_Test : MonoBehaviour
         this.moveSpeed = moveSpeed;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void DealDametoPlayer()
     {
-        EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
-        Indestructible indestructible = other.gameObject.GetComponent<Indestructible>();
+        Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(transform.position, projectileRange, WhatIsPlayers);
 
-        if (!other.isTrigger && (enemyHealth || indestructible))
+        foreach (Collider2D hitPlayer in hitPlayers)
         {
-            if ((isEnemyProjectile) || (enemyHealth && !isEnemyProjectile))
+            Health health = hitPlayer.GetComponent<Health>();
+            if (health != null)
             {
-                Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
-                Destroy(gameObject);
-            }
-            else if (!other.isTrigger && indestructible)
-            {
-                Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
-                Destroy(gameObject);
+                health.TakeDamage(damage);
             }
         }
     }
+
+
 
     private void DetectFireDistance()
     {

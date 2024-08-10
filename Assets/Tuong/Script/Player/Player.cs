@@ -45,11 +45,26 @@ public class Player : MonoBehaviour
     public TMP_Text recallText;
     private float recallTimer;
     public SpriteRenderer recallSprire;
-
+    // NÂng cấp tốc chạy
+    public float speedUpdateCost = 75f;
+    public float upgradeLevel = 1f;
+    public float maxUpgradeLevel = 10f;
+    private float initialRunSpeed;
+    // Kill
+    public TMP_Text enemyDeathCountText;
     private void Awake()
     {
         flashAudio.Stop();
         runEffect.Stop();
+        initialRunSpeed = runSpeed;
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     private void Start()
     {
@@ -177,7 +192,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator CoolldownTime(float coolDown)
     {
-        //isCollingdown = true;
+
         coolDownTimer = coolDown;
         while (coolDownTimer > 0)
         {
@@ -187,7 +202,7 @@ public class Player : MonoBehaviour
             cooldownText.gameObject.SetActive(false);
             UpdateCooldownText();
         }
-        //isCollingdown = false;
+
         coolDownTimer = 0;
         UpdateCooldownText();
     }
@@ -256,5 +271,67 @@ public class Player : MonoBehaviour
         flashAudio = GetComponent<AudioSource>();
         flashAudio.volume = 1f;
         flashAudio.Play();
+    }
+
+    public void UpgradeSpeed()
+    {
+        if (upgradeLevel >= maxUpgradeLevel)
+        {
+            return;
+        }
+        float cost = GetUpgradeCost();
+        PlayerAttack2 playerAttack2 = FindObjectOfType<PlayerAttack2>();
+        if (playerAttack2 != null && playerAttack2.score >= cost)
+        {
+            float healthIncrease = GetSpeedIncrease();
+            runSpeed += healthIncrease;
+            playerAttack2.AddScore(-cost);
+            upgradeLevel++;
+        }
+    }
+    public void hypotension()
+    {
+        if(runSpeed > 0)
+        {
+            if(upgradeLevel > 1)
+            {
+                runSpeed -= GetSpeedIncrease();
+                upgradeLevel--;
+            }
+            else
+            {
+                runSpeed = initialRunSpeed;
+            }
+        }
+    }
+
+    private float GetUpgradeCost()
+    {
+        if (upgradeLevel >= 1 && upgradeLevel <= 3)
+        {
+            return speedUpdateCost * upgradeLevel;
+        }
+        else if (upgradeLevel == 4 || upgradeLevel == 5)
+        {
+            return speedUpdateCost * 3;
+        }
+        else if (upgradeLevel >= 6 && upgradeLevel <= 8)
+        {
+            return speedUpdateCost * 5;
+        }
+        else if (upgradeLevel == 9)
+        {
+            return speedUpdateCost * 7;
+        }
+        else if (upgradeLevel == 10)
+        {
+            return speedUpdateCost * 8;
+        }
+        return speedUpdateCost;
+    }
+
+    private float GetSpeedIncrease()
+    {
+        return 2f;
     }
 }

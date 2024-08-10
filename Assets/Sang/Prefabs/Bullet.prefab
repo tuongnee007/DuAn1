@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -454155393, guid: d5513d136388b6c43a3220231e1f2e93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -161,7 +161,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1dc6ee703c02b4386466324294fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 3
+  WhatIsPlayers:
+    serializedVersion: 2
+    m_Bits: 256
   moveSpeed: 4
   particleOnHitPrefabVFX: {fileID: 2948048360338672110, guid: 2cc17252420a7fd4abfcd8d8cf31f4c8, type: 3}
   isEnemyProjectile: 0
   projectileRange: 30
+  desTroyDistance: 0.1

@@ -16,9 +16,7 @@ GameObject:
   - component: {fileID: 5734854501983042942}
   - component: {fileID: 861595627976976244}
   - component: {fileID: 6678047167370863138}
-  - component: {fileID: 3106882718152431757}
   - component: {fileID: 8068836309435893516}
-  - component: {fileID: 3675389882436546493}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -36,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.59, y: -2.55, z: 0.036268517}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -715680832, guid: ea9ee0adde5eafb428b7ab0a3dd70d0a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -220,27 +218,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7082564668250685458, guid: ca7256b25a8521d46a505be71a255951, type: 3}
   bulletMoveSpeed: 6
-  burstCount: 12
-  projectilesPerBurst: 14
-  angleSpread: 177
+  burstCount: 2
+  projectilesPerBurst: 1
+  angleSpread: 1
   startingDistance: 0.3
   timeBetweenBursts: 1
   restTime: 0.1
   stagger: 1
   oscillate: 1
---- !u!114 &3106882718152431757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3292262415937702429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 975e90f71aee8bf4c82d4130366883b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  knockBackTime: 0.2
 --- !u!114 &8068836309435893516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,17 +241,3 @@ MonoBehaviour:
   startingHealth: 3
   deathVFXPrefab: {fileID: 2948048360338672110, guid: a26af1b41f261564fba3ed10a0a85c13, type: 3}
   knockBackThrust: 15
---- !u!114 &3675389882436546493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3292262415937702429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068dc00d13e0104469846b41c2878520, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  whiteFlashMat: {fileID: 2100000, guid: 793609989d65a734eb922c12c8f572db, type: 2}
-  restoreDefaultMatTime: 0.2

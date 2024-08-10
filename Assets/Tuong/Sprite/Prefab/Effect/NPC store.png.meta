@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d0929d66c03fbed4c865b0c068429f47
+guid: 56ffe8f594958ef47b84dd126675655d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy_0
+      name: NPC store_0
       rect:
         serializedVersion: 2
-        x: 1253
-        y: 858
-        width: 187
-        height: 55
+        x: 4
+        y: 1627
+        width: 156
+        height: 173
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86139ad977ecd184585e48e3c9dc474a
-      internalID: 62200354
+      spriteID: feb62b4fad537d64e904de0084d41028
+      internalID: 123781943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_1
+      name: NPC store_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 760
-        width: 57
-        height: 66
+        x: 165
+        y: 1635
+        width: 158
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad3545a2dd714904d9753a2752080072
-      internalID: -695024349
+      spriteID: 7b8c2123646794644a2dbbd1dd360d37
+      internalID: 1512110836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_2
+      name: NPC store_2
       rect:
         serializedVersion: 2
-        x: 115
-        y: 765
-        width: 43
-        height: 64
+        x: 327
+        y: 1635
+        width: 157
+        height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e94f0815e7d5c6f459d3a9b46f3a0175
-      internalID: -479743393
+      spriteID: 170aa60a61cc24c45b919221df104d17
+      internalID: 2077317551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_3
+      name: NPC store_3
       rect:
         serializedVersion: 2
-        x: 172
-        y: 767
-        width: 40
-        height: 65
+        x: 491
+        y: 1637
+        width: 155
+        height: 159
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d5b1d8d22e040c418658b10c38db6ce
-      internalID: 1028187362
+      spriteID: 1afdf211c7a9efc4689505f2aaea7884
+      internalID: 2014872053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_4
+      name: NPC store_4
       rect:
         serializedVersion: 2
-        x: 231
-        y: 765
-        width: 42
-        height: 64
+        x: 651
+        y: 1635
+        width: 158
+        height: 167
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 416bc31bc7ef07545809abf1e896c6a2
-      internalID: 2120497655
+      spriteID: 08e27628778bc5d4796bc17976080f30
+      internalID: 1650659979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_5
+      name: NPC store_5
       rect:
         serializedVersion: 2
-        x: 967
-        y: 751
-        width: 96
-        height: 103
+        x: 4
+        y: 1448
+        width: 156
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2891accdd77da2448399901accec539
-      internalID: -1877584324
+      spriteID: 4363dc6bcd82b2c44b5d3e85f2bf076d
+      internalID: -1253828461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_6
+      name: NPC store_6
       rect:
         serializedVersion: 2
-        x: 1071
-        y: 752
-        width: 105
-        height: 101
+        x: 165
+        y: 1447
+        width: 158
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 701b9afd5f1c5c14486c7e3273347746
-      internalID: 1675427741
+      spriteID: 4cfc23be40c5fc74f9ac08cafe7a3fd4
+      internalID: 1787979916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_7
+      name: NPC store_7
       rect:
         serializedVersion: 2
-        x: 1184
-        y: 752
-        width: 104
-        height: 98
+        x: 327
+        y: 1448
+        width: 157
+        height: 159
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e178cc7baed80444ba1bf136c9eefea
-      internalID: -615892172
+      spriteID: bdf1bf1ef339ab247ac47422d23876d3
+      internalID: 1447178614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_8
+      name: NPC store_8
       rect:
         serializedVersion: 2
-        x: 1293
-        y: 754
-        width: 101
-        height: 98
+        x: 491
+        y: 1450
+        width: 155
+        height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbbbd4a2b269a504ba8f3ad8a77ee886
-      internalID: -1411844775
+      spriteID: 2259d1cda178111429d9b664ad2590b2
+      internalID: -1149123120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_9
+      name: NPC store_9
       rect:
         serializedVersion: 2
-        x: 45
-        y: 615
-        width: 6
-        height: 4
+        x: 651
+        y: 1448
+        width: 158
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e920fdf427ead44183622b95384e163
-      internalID: -1420800316
+      spriteID: 80ef7d6f2cd74f34980d2477e9a933e3
+      internalID: 673648177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_10
+      name: NPC store_10
       rect:
         serializedVersion: 2
-        x: 46
-        y: 586
-        width: 39
-        height: 62
+        x: 5
+        y: 1260
+        width: 155
+        height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9539cfe2f9e8d054daf04bc1596f45ae
-      internalID: -235594650
+      spriteID: 41a01dba4205eb24cad9c6bc13d61ecb
+      internalID: 2041054381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_11
+      name: NPC store_11
       rect:
         serializedVersion: 2
-        x: 99
-        y: 585
-        width: 41
-        height: 65
+        x: 166
+        y: 1260
+        width: 156
+        height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,20 +368,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf969ee8f1347d348a2da2d3d18c2b07
-      internalID: 187115637
+      spriteID: 625f59f90d4439640b5492e20c5a4ab3
+      internalID: -491367586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_12
+      name: NPC store_12
       rect:
         serializedVersion: 2
-        x: 156
-        y: 587
-        width: 39
-        height: 65
+        x: 10
+        y: 1071
+        width: 166
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,20 +389,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcceaba257875ef4a9b0cb98818c465b
-      internalID: 1545514982
+      spriteID: 4fa0511195694b441b1faee207c2b38b
+      internalID: 1512314744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_13
+      name: NPC store_13
       rect:
         serializedVersion: 2
-        x: 211
-        y: 588
-        width: 40
-        height: 62
+        x: 193
+        y: 1071
+        width: 164
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,20 +410,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0066bdbdf5e52a748a102e18882e7bca
-      internalID: 1670987191
+      spriteID: ecee97345a547984b82977b8f8808d76
+      internalID: -1031771133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_14
+      name: NPC store_14
       rect:
         serializedVersion: 2
-        x: 787
-        y: 576
-        width: 94
-        height: 99
+        x: 370
+        y: 1070
+        width: 159
+        height: 163
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -431,20 +431,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c4e2a14ba6d94d42a756f442af5e1d7
-      internalID: 948680822
+      spriteID: 3dad96072cb3c844ba7aecdba153b7ba
+      internalID: 636878984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_15
+      name: NPC store_15
       rect:
         serializedVersion: 2
-        x: 889
-        y: 577
-        width: 95
-        height: 99
+        x: 533
+        y: 1069
+        width: 181
+        height: 159
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,20 +452,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a167978745da7e942bd66d35e43d26f2
-      internalID: 102737026
+      spriteID: 412838c64bffdc54d903b65dafe9125b
+      internalID: -751377933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_16
+      name: NPC store_16
       rect:
         serializedVersion: 2
-        x: 993
-        y: 578
-        width: 95
-        height: 100
+        x: 719
+        y: 1070
+        width: 174
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -473,20 +473,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2483596328b36b488b026a4058ac06e
-      internalID: 1656559666
+      spriteID: 95cbeec086b607b4492b694685287956
+      internalID: -1985814239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_17
+      name: NPC store_17
       rect:
         serializedVersion: 2
-        x: 1094
-        y: 578
-        width: 95
-        height: 97
+        x: 4
+        y: 805
+        width: 131
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -494,20 +494,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e8495252e883f2469ec75906a448ea6
-      internalID: -2026441670
+      spriteID: 0c733a91ce6d0174cb4da37f874fc8b0
+      internalID: -687694600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_18
+      name: NPC store_18
       rect:
         serializedVersion: 2
-        x: 1195
-        y: 577
-        width: 96
-        height: 99
+        x: 139
+        y: 805
+        width: 130
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -515,20 +515,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b77de83064f4624eabc305855b80730
-      internalID: -1611734869
+      spriteID: 37c40975480a46e4e885bf5968f59693
+      internalID: -1749106589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_19
+      name: NPC store_19
       rect:
         serializedVersion: 2
-        x: 1299
-        y: 578
-        width: 97
-        height: 97
+        x: 276
+        y: 805
+        width: 128
+        height: 235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,20 +536,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f55901af371a8249a96e5c5bc35ffd9
-      internalID: 719791604
+      spriteID: df30e38c30aca8743a58379c63957754
+      internalID: 302954955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_20
+      name: NPC store_20
       rect:
         serializedVersion: 2
-        x: 1421
-        y: 577
-        width: 19
-        height: 6
+        x: 413
+        y: 805
+        width: 127
+        height: 237
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -557,20 +557,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cac1c600ca6516499c33397ccc5f4d2
-      internalID: 244220726
+      spriteID: ade05887fb9619048a19eb3378977aa1
+      internalID: -1827381910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_21
+      name: NPC store_21
       rect:
         serializedVersion: 2
-        x: 1074
-        y: 400
-        width: 97
-        height: 101
+        x: 548
+        y: 805
+        width: 128
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,20 +578,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 039a952aa3ae7a04aa194593837183bf
-      internalID: -1055277968
+      spriteID: 4222b1ed6239e964394075662c80ca0d
+      internalID: 1156303175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_22
+      name: NPC store_22
       rect:
         serializedVersion: 2
-        x: 1098
-        y: 499
-        width: 4
-        height: 4
+        x: 3
+        y: 789
+        width: 8
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -599,20 +599,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cdb0d59602b89a4a8c40cc906f0c02b
-      internalID: -382268646
+      spriteID: 61f59376c7ce5024ea8ce3e20f2468af
+      internalID: -659438412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_23
+      name: NPC store_23
       rect:
         serializedVersion: 2
-        x: 1178
-        y: 400
-        width: 108
-        height: 107
+        x: 11
+        y: 789
+        width: 14
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,20 +620,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5fed70bff4c38048b0ce404f13c81fc
-      internalID: -1832043098
+      spriteID: 1277cf9cf9c870648945cb76193e1e2c
+      internalID: -938555397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_24
+      name: NPC store_24
       rect:
         serializedVersion: 2
-        x: 1226
-        y: 497
-        width: 5
-        height: 6
+        x: 31
+        y: 789
+        width: 14
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -641,628 +641,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc87589c43ff4634d8b1b995673eb52a
-      internalID: -584796974
+      spriteID: 32824bc43d87c3e44ac1c818ff0d1591
+      internalID: 1401848927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_25
-      rect:
-        serializedVersion: 2
-        x: 1066
-        y: 469
-        width: 7
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f77edd175fb6c3249b22c5d5b80ff8fa
-      internalID: -1907420544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_26
-      rect:
-        serializedVersion: 2
-        x: 1305
-        y: 401
-        width: 91
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47f2e767f35bcba4ba835b01e561c687
-      internalID: -826893062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_27
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 406
-        width: 57
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb5c26564a3afaf4fbb1b0fd107e467e
-      internalID: -1207053622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_28
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 406
-        width: 57
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eca49012d59ba45479294ccf0f5dd48d
-      internalID: -1117689048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_29
-      rect:
-        serializedVersion: 2
-        x: 185
-        y: 408
-        width: 55
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f07b0874d672f148a674a3e4a3f41e4
-      internalID: -181123672
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_30
-      rect:
-        serializedVersion: 2
-        x: 247
-        y: 406
-        width: 57
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bf2075fd5ebbdf43955cf81d220b4fd
-      internalID: -555487169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_31
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 406
-        width: 57
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 545ef4636ec14bf4e8ed34ac80a6b262
-      internalID: -1275327815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_32
-      rect:
-        serializedVersion: 2
-        x: 1069
-        y: 452
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56356b597bed2c14a966a10c9a675264
-      internalID: -586718435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_33
+      name: NPC store_25
       rect:
         serializedVersion: 2
         x: 47
-        y: 236
-        width: 51
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d131754d33d16341bacc14778aa1d0a
-      internalID: -1848434247
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_34
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 235
-        width: 88
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f22cd46f5cfe6f349b059559aa5470e5
-      internalID: 1187682369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_35
-      rect:
-        serializedVersion: 2
-        x: 185
-        y: 235
-        width: 49
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e47867071fee7ae4eada915022a1dc20
-      internalID: 1032089939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_36
-      rect:
-        serializedVersion: 2
-        x: 238
-        y: 258
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d620d15f55e4a845b3ddf474c038dc3
-      internalID: -1144628304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_37
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 231
-        width: 89
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08f9ccf9826606b4c9c8cda77cebe892
-      internalID: -307093309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_38
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 260
-        width: 41
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b799487f4d20d544a1b2e802b4c4b5d
-      internalID: -678668461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_39
-      rect:
-        serializedVersion: 2
-        x: 373
-        y: 263
-        width: 17
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e0af1ce4127a7d45aafed96f12a68ae
-      internalID: -881196385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_40
-      rect:
-        serializedVersion: 2
-        x: 395
-        y: 252
-        width: 64
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e31c88ffae6fc394ea352b67917fb6f2
-      internalID: -1944115117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_41
-      rect:
-        serializedVersion: 2
-        x: 462
-        y: 251
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5de6f6ecee6d83046afbe1e5fa9f71d3
-      internalID: -319744578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_42
-      rect:
-        serializedVersion: 2
-        x: 507
-        y: 249
-        width: 86
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c082f8dd49a42454cb6d197da1e2b5ca
-      internalID: 1440720094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_43
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 258
-        width: 10
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 937504989223cae4ebb70da6e6719c38
-      internalID: 1407671188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_44
-      rect:
-        serializedVersion: 2
-        x: 609
-        y: 251
-        width: 28
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80881fb7016ce03439618883d66df278
-      internalID: -1432823838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_45
-      rect:
-        serializedVersion: 2
-        x: 744
-        y: 223
-        width: 99
-        height: 103
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f3111d7163ee8646ae2444eeaaecdad
-      internalID: -52520939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_46
-      rect:
-        serializedVersion: 2
-        x: 840
-        y: 261
+        y: 789
         width: 6
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 948218a40fa6ba94a9602f67c2325608
-      internalID: 2118966515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_47
-      rect:
-        serializedVersion: 2
-        x: 854
-        y: 223
-        width: 122
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 505fb66be01b2ea4a978af144a75dec6
-      internalID: -394527263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_48
-      rect:
-        serializedVersion: 2
-        x: 980
-        y: 223
-        width: 156
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bae0ee409e636f84f8dd83656c4034ab
-      internalID: -1177928245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_49
-      rect:
-        serializedVersion: 2
-        x: 1145
-        y: 223
-        width: 144
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a84889d5200c2045b2104055cd61083
-      internalID: -1312748346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_50
-      rect:
-        serializedVersion: 2
-        x: 1289
-        y: 224
-        width: 100
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ef22e94b5906fc45956d13697b6b5c8
-      internalID: -215414654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_51
-      rect:
-        serializedVersion: 2
-        x: 661
-        y: 65
-        width: 99
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 502ddc5969e8d454ba42f230cc22a7aa
-      internalID: 1648459404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_52
-      rect:
-        serializedVersion: 2
-        x: 686
-        y: 164
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b777b27fd95afbb4e886dac204bfb3e1
-      internalID: -447269916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_53
-      rect:
-        serializedVersion: 2
-        x: 771
-        y: 65
-        width: 109
-        height: 107
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab57882abbc17064cbb94d1136be04f6
-      internalID: -664655978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_54
-      rect:
-        serializedVersion: 2
-        x: 819
-        y: 161
-        width: 5
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1271,20 +662,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56d4d4210103f594f9c6d194b9721f34
-      internalID: 1596942049
+      spriteID: 7a47ef391c832f2428ee7e62f4c4a452
+      internalID: 1954588415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_55
+      name: NPC store_26
       rect:
         serializedVersion: 2
-        x: 886
-        y: 65
-        width: 90
-        height: 101
+        x: 59
+        y: 786
+        width: 10
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1292,20 +683,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1df8c29faf085a743825b2a61160a316
-      internalID: 849744457
+      spriteID: 901e2cbe6cf95314ebd0b1fdef7e95fd
+      internalID: 2136520939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_56
+      name: NPC store_27
       rect:
         serializedVersion: 2
-        x: 1132
-        y: 157
-        width: 15
-        height: 9
+        x: 71
+        y: 789
+        width: 6
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1313,20 +704,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e9e455f00ddfa24c8b27a56e6508fb6
-      internalID: -574017915
+      spriteID: 9e1dd22c62683cd4b92c9b49731b59e4
+      internalID: 187391339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_57
+      name: NPC store_28
       rect:
         serializedVersion: 2
-        x: 999
-        y: 151
-        width: 7
-        height: 6
+        x: 78
+        y: 786
+        width: 11
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1334,20 +725,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3287025c75da3e84d9c01097a814f4a5
-      internalID: 232697827
+      spriteID: e4e11e962b6c1684484b5dc7abb093c1
+      internalID: -1693421942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_58
+      name: NPC store_29
       rect:
         serializedVersion: 2
-        x: 1008
-        y: 154
-        width: 5
-        height: 5
+        x: 4
+        y: 538
+        width: 131
+        height: 242
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1355,18 +746,144 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ea61598222ae74418425c5b22f792eb
-      internalID: -1699748148
+      spriteID: 2203bb6997bddca4dbdc9bbe114f027d
+      internalID: -722028029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_59
+      name: NPC store_30
       rect:
         serializedVersion: 2
-        x: 1026
-        y: 151
+        x: 139
+        y: 538
+        width: 130
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27550552ab4c58944acfe366c16c67fb
+      internalID: -1433694440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_31
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 538
+        width: 128
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22b0788a99c6d54e8fab03ad47fde0a
+      internalID: 665490407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_32
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 538
+        width: 127
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3344e1b0a522c4148a2d376d20a176f1
+      internalID: 1801548623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_33
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 538
+        width: 128
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102ff0f8b8305eb418677be5d4548ff0
+      internalID: -1067542194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_34
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 522
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862a5a88d1f6bc74db13424ca4f9ac6c
+      internalID: -1973560778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_35
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 522
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9414a9df456c00d47bc0eed53b13d414
+      internalID: -1212334687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_36
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 522
         width: 6
         height: 10
       alignment: 0
@@ -1376,166 +893,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72704424ec78d814fb2023e10ef68594
-      internalID: -2004608938
+      spriteID: b12170f22859cd84d8662583572a36a5
+      internalID: -398242479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_60
+      name: NPC store_37
       rect:
         serializedVersion: 2
-        x: 1035
-        y: 149
-        width: 5
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85628d742fc6eb94bb88509ffeeec73d
-      internalID: -1793535990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_61
-      rect:
-        serializedVersion: 2
-        x: 1107
-        y: 142
-        width: 19
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec68de3a3f50cc341879a2c64f693447
-      internalID: -1656471500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_62
-      rect:
-        serializedVersion: 2
-        x: 779
-        y: 144
-        width: 7
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aeb9bce541cb43d42a3a5c8062800ca0
-      internalID: -1484016118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_63
-      rect:
-        serializedVersion: 2
-        x: 984
-        y: 64
-        width: 107
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03c56cfdb1ca7b243a183cf2a4089a17
-      internalID: 1209742230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_64
-      rect:
-        serializedVersion: 2
-        x: 1016
-        y: 146
-        width: 5
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a40ce95a0625d04d92f873a8e436e2b
-      internalID: -833750004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_65
-      rect:
-        serializedVersion: 2
-        x: 1133
-        y: 143
-        width: 10
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3df6d8bc0c6d5de4fae61029904f81f5
-      internalID: -1658950819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_66
-      rect:
-        serializedVersion: 2
-        x: 1150
-        y: 140
+        x: 39
+        y: 522
         width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e335ece03777742458460c73d1618e78
-      internalID: 1575242585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_67
-      rect:
-        serializedVersion: 2
-        x: 1158
-        y: 145
-        width: 4
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1544,397 +914,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 517391c7bc101184fb386206a6375096
-      internalID: 2126424227
+      spriteID: 3e39f68ce56c77249aec0987d6417697
+      internalID: 723258321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_68
+      name: NPC store_38
       rect:
         serializedVersion: 2
-        x: 654
-        y: 134
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad567837192c82f4a995877e15fe807f
-      internalID: -1505825464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_69
-      rect:
-        serializedVersion: 2
-        x: 1158
-        y: 132
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af0116c08600de04b89295195a66fe23
-      internalID: -1432032288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_70
-      rect:
-        serializedVersion: 2
-        x: 1171
-        y: 138
+        x: 47
+        y: 522
         width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c40b334ee01e7a4d935dba9141313a1
-      internalID: -866038718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_71
-      rect:
-        serializedVersion: 2
-        x: 1131
-        y: 134
-        width: 5
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a24f42de066fda44ad07dc1cfa88a8c
-      internalID: 742503291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_72
-      rect:
-        serializedVersion: 2
-        x: 1146
-        y: 130
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce21a066edeccd741b386d83d4728dee
-      internalID: -800725950
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_73
-      rect:
-        serializedVersion: 2
-        x: 1181
-        y: 128
-        width: 4
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbcf7d02cafcfff469a9af8e861f529e
-      internalID: 1689342934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_74
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 71
-        width: 53
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 499164ee435792640b82ce20c5e30eed
-      internalID: -146994148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_75
-      rect:
-        serializedVersion: 2
-        x: 119
-        y: 71
-        width: 58
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3fb15074e626a8448f2b7ac208b1e44
-      internalID: 737633220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_76
-      rect:
-        serializedVersion: 2
-        x: 875
-        y: 123
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4996c90dcd194514791e5c5c1607bb27
-      internalID: 1114841282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_77
-      rect:
-        serializedVersion: 2
-        x: 1094
-        y: 66
-        width: 103
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 874620d69d370ea4db07eebfd8e7d78f
-      internalID: -2073401667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_78
-      rect:
-        serializedVersion: 2
-        x: 1186
-        y: 125
-        width: 4
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6951c8b654ad45d459592234541f480b
-      internalID: -1054989369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_79
-      rect:
-        serializedVersion: 2
-        x: 1256
-        y: 54
-        width: 137
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd5fe2228259d9c44a81339d7b55ee89
-      internalID: -1306651161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_80
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 73
-        width: 56
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc7f078257604374bbc60458ed12db37
-      internalID: -1683552632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_81
-      rect:
-        serializedVersion: 2
-        x: 657
-        y: 117
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7780e9276d6880488af4e56108f9b9d
-      internalID: -1222365775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_82
-      rect:
-        serializedVersion: 2
-        x: 1211
-        y: 62
-        width: 87
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc38443b282845340a10d11eef50ce9d
-      internalID: -1031327925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_83
-      rect:
-        serializedVersion: 2
-        x: 344
-        y: 64
-        width: 76
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e831821b5761dab40a304e2ec7e88a86
-      internalID: 948228967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_84
-      rect:
-        serializedVersion: 2
-        x: 1192
-        y: 98
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4690b8f13a7c63446ab21d121d92d97e
-      internalID: 1676237784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_85
-      rect:
-        serializedVersion: 2
-        x: 1198
-        y: 98
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1581bb35b8b8624a83846c90c054e1e
-      internalID: 1919748281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_86
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 82
-        width: 15
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1943,20 +935,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e020aee04abb7304ab6f96f6545d11eb
-      internalID: 608207957
+      spriteID: a45b5e365fccab344a0174802ebbd349
+      internalID: -1591246527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_87
+      name: NPC store_39
       rect:
         serializedVersion: 2
-        x: 271
-        y: 64
-        width: 62
-        height: 32
+        x: 55
+        y: 522
+        width: 6
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1964,20 +956,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8680ada3518ca24ab7462a5dde7e0bf
-      internalID: -1566865857
+      spriteID: 4035541094aa7a049b27ae7151bfe1bc
+      internalID: -2498059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_88
+      name: NPC store_40
       rect:
         serializedVersion: 2
-        x: 1192
-        y: 88
-        width: 14
-        height: 8
+        x: 62
+        y: 522
+        width: 6
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1985,19 +977,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04095c8d4b48c3e418625b9b095ac542
-      internalID: 1265684401
+      spriteID: 0e556c86147c7f4488159afa5549bf58
+      internalID: 620053172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_89
+      name: NPC store_41
       rect:
         serializedVersion: 2
-        x: 1194
-        y: 78
-        width: 10
+        x: 70
+        y: 522
+        width: 6
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2006,41 +998,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07d014a4fb2f8e54fa9e5c5db29edbe4
-      internalID: -404459817
+      spriteID: 85d1ec57ef6262c4b8bdfc3c29989bdd
+      internalID: -1844428397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_90
+      name: NPC store_42
       rect:
         serializedVersion: 2
-        x: 1204
-        y: 77
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16617a9a9b524564780f12978b0f4dc1
-      internalID: 1054623839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_91
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 67
+        x: 77
+        y: 522
         width: 8
-        height: 9
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2048,8 +1019,659 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad4a9b3f0f4787a458cdafcc0400bc4d
-      internalID: 456412979
+      spriteID: 0574fc337881ea34bba8815ea750b214
+      internalID: 1937334058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_43
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 519
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cf121eb6b05584880cb66cc06e2e1f
+      internalID: 496466107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_44
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 522
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5cc2f780ee568439bbc4caaf6c51ef
+      internalID: 873291609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_45
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 522
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff333e29880c6a4459d2d666c29e6a40
+      internalID: -1722165106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_46
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 522
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d142a55534b0049a3f12f11b5f440f
+      internalID: 1814836741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_47
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 522
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35080ca3a1eec1a46a5d14fa8e73bc58
+      internalID: -988067253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_48
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 522
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7ff83e0e606d749a4509d08a87baa8
+      internalID: -781872004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_49
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 522
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5971de993d9c12346b7ebef5da950281
+      internalID: 2096642769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_50
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 522
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7285e6c539da964fa5328bfee756489
+      internalID: 1256308135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_51
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 522
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb72e7b39aded4408b9de7499a24449
+      internalID: -1226570972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_52
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 522
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e799485672688d4598e6de11db8902a
+      internalID: 491424601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_53
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 522
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf5198d11ac30949b26f7b675d0bc3e
+      internalID: 1821912823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_54
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 522
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd057b069e57b5a42aebc360397e72b3
+      internalID: 367189123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_55
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 522
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0e3e4570265b8499d1c86ca2c524d8
+      internalID: -1643961509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_56
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 522
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530dc8001eb61f4459e57031910e547f
+      internalID: -749093672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_57
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 519
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957d23e4cbd9b114d8fed9125d20a781
+      internalID: -567929699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_58
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 522
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0b7385af8e132498f414e89b3df41c
+      internalID: 426643462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_59
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 519
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfedfce3d57567439bf8e007c573885
+      internalID: 2102724987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_60
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 271
+        width: 125
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecfbec3ec3604640bcf87796438722e
+      internalID: 938053372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_61
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 271
+        width: 130
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add623440f29aa24f88c104e014a380b
+      internalID: 2079899361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_62
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 255
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355686cb49a57fe4b85a9caaa0d303a0
+      internalID: -2116390570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_63
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 255
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f617bcb95ba457f4d9547e4422b79947
+      internalID: -1673486971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_64
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 255
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c73ff87719e5b45bfc3d9aaca2e652
+      internalID: -402239086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_65
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 255
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475fb76514857f94e99d5a3d0a9544e7
+      internalID: -705759405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_66
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 255
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fc35bde671d4c4e9f791a8e1464a59
+      internalID: -1929877924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_67
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 255
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87af253ed59de24e9d9250df64e409e
+      internalID: 1094106213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_68
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 255
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8773c93c7fc9a54799e4b27e0d0c63f
+      internalID: 1257232261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_69
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4
+        width: 139
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41cb6ca7752606439ee629ad46a2fe3
+      internalID: -1423061257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_70
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 5
+        width: 127
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6980f4d7302a89545a754dab38dfd1c9
+      internalID: -1303098705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_71
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 5
+        width: 128
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e095fbde56b6d144b88a414d09de42c
+      internalID: 1727873839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_72
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 3
+        width: 141
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a718d7935895e0f42af06f96c6adc218
+      internalID: -1560329799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC store_73
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 5
+        width: 138
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8895a96186a4c4d44b72955e0f117136
+      internalID: 478779732
       vertices: []
       indices: 
       edges: []
@@ -2065,98 +1687,80 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Enemy_0: 62200354
-      Enemy_1: -695024349
-      Enemy_10: -235594650
-      Enemy_11: 187115637
-      Enemy_12: 1545514982
-      Enemy_13: 1670987191
-      Enemy_14: 948680822
-      Enemy_15: 102737026
-      Enemy_16: 1656559666
-      Enemy_17: -2026441670
-      Enemy_18: -1611734869
-      Enemy_19: 719791604
-      Enemy_2: -479743393
-      Enemy_20: 244220726
-      Enemy_21: -1055277968
-      Enemy_22: -382268646
-      Enemy_23: -1832043098
-      Enemy_24: -584796974
-      Enemy_25: -1907420544
-      Enemy_26: -826893062
-      Enemy_27: -1207053622
-      Enemy_28: -1117689048
-      Enemy_29: -181123672
-      Enemy_3: 1028187362
-      Enemy_30: -555487169
-      Enemy_31: -1275327815
-      Enemy_32: -586718435
-      Enemy_33: -1848434247
-      Enemy_34: 1187682369
-      Enemy_35: 1032089939
-      Enemy_36: -1144628304
-      Enemy_37: -307093309
-      Enemy_38: -678668461
-      Enemy_39: -881196385
-      Enemy_4: 2120497655
-      Enemy_40: -1944115117
-      Enemy_41: -319744578
-      Enemy_42: 1440720094
-      Enemy_43: 1407671188
-      Enemy_44: -1432823838
-      Enemy_45: -52520939
-      Enemy_46: 2118966515
-      Enemy_47: -394527263
-      Enemy_48: -1177928245
-      Enemy_49: -1312748346
-      Enemy_5: -1877584324
-      Enemy_50: -215414654
-      Enemy_51: 1648459404
-      Enemy_52: -447269916
-      Enemy_53: -664655978
-      Enemy_54: 1596942049
-      Enemy_55: 849744457
-      Enemy_56: -574017915
-      Enemy_57: 232697827
-      Enemy_58: -1699748148
-      Enemy_59: -2004608938
-      Enemy_6: 1675427741
-      Enemy_60: -1793535990
-      Enemy_61: -1656471500
-      Enemy_62: -1484016118
-      Enemy_63: 1209742230
-      Enemy_64: -833750004
-      Enemy_65: -1658950819
-      Enemy_66: 1575242585
-      Enemy_67: 2126424227
-      Enemy_68: -1505825464
-      Enemy_69: -1432032288
-      Enemy_7: -615892172
-      Enemy_70: -866038718
-      Enemy_71: 742503291
-      Enemy_72: -800725950
-      Enemy_73: 1689342934
-      Enemy_74: -146994148
-      Enemy_75: 737633220
-      Enemy_76: 1114841282
-      Enemy_77: -2073401667
-      Enemy_78: -1054989369
-      Enemy_79: -1306651161
-      Enemy_8: -1411844775
-      Enemy_80: -1683552632
-      Enemy_81: -1222365775
-      Enemy_82: -1031327925
-      Enemy_83: 948228967
-      Enemy_84: 1676237784
-      Enemy_85: 1919748281
-      Enemy_86: 608207957
-      Enemy_87: -1566865857
-      Enemy_88: 1265684401
-      Enemy_89: -404459817
-      Enemy_9: -1420800316
-      Enemy_90: 1054623839
-      Enemy_91: 456412979
+      NPC store_0: 123781943
+      NPC store_1: 1512110836
+      NPC store_10: 2041054381
+      NPC store_11: -491367586
+      NPC store_12: 1512314744
+      NPC store_13: -1031771133
+      NPC store_14: 636878984
+      NPC store_15: -751377933
+      NPC store_16: -1985814239
+      NPC store_17: -687694600
+      NPC store_18: -1749106589
+      NPC store_19: 302954955
+      NPC store_2: 2077317551
+      NPC store_20: -1827381910
+      NPC store_21: 1156303175
+      NPC store_22: -659438412
+      NPC store_23: -938555397
+      NPC store_24: 1401848927
+      NPC store_25: 1954588415
+      NPC store_26: 2136520939
+      NPC store_27: 187391339
+      NPC store_28: -1693421942
+      NPC store_29: -722028029
+      NPC store_3: 2014872053
+      NPC store_30: -1433694440
+      NPC store_31: 665490407
+      NPC store_32: 1801548623
+      NPC store_33: -1067542194
+      NPC store_34: -1973560778
+      NPC store_35: -1212334687
+      NPC store_36: -398242479
+      NPC store_37: 723258321
+      NPC store_38: -1591246527
+      NPC store_39: -2498059
+      NPC store_4: 1650659979
+      NPC store_40: 620053172
+      NPC store_41: -1844428397
+      NPC store_42: 1937334058
+      NPC store_43: 496466107
+      NPC store_44: 873291609
+      NPC store_45: -1722165106
+      NPC store_46: 1814836741
+      NPC store_47: -988067253
+      NPC store_48: -781872004
+      NPC store_49: 2096642769
+      NPC store_5: -1253828461
+      NPC store_50: 1256308135
+      NPC store_51: -1226570972
+      NPC store_52: 491424601
+      NPC store_53: 1821912823
+      NPC store_54: 367189123
+      NPC store_55: -1643961509
+      NPC store_56: -749093672
+      NPC store_57: -567929699
+      NPC store_58: 426643462
+      NPC store_59: 2102724987
+      NPC store_6: 1787979916
+      NPC store_60: 938053372
+      NPC store_61: 2079899361
+      NPC store_62: -2116390570
+      NPC store_63: -1673486971
+      NPC store_64: -402239086
+      NPC store_65: -705759405
+      NPC store_66: -1929877924
+      NPC store_67: 1094106213
+      NPC store_68: 1257232261
+      NPC store_69: -1423061257
+      NPC store_7: 1447178614
+      NPC store_70: -1303098705
+      NPC store_71: 1727873839
+      NPC store_72: -1560329799
+      NPC store_73: 478779732
+      NPC store_8: -1149123120
+      NPC store_9: 673648177
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
