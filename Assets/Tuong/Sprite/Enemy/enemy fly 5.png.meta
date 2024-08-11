@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: 02bc5a5888a33d7478933e691a4791b0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy fly 5_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2142
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c40e862f8ba0f241a9146131db92765
+      internalID: -1682935229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2006
+        width: 277
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693c0509ee937d84ba99aeba5c61513a
+      internalID: -1572100838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 2005
+        width: 279
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7001a154f8c314894e5d006c68635d
+      internalID: -864356842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_3
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 2005
+        width: 281
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703fb4d465126f3469c36aec007e29df
+      internalID: -862181197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_4
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 2005
+        width: 281
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7b80dd972ce8440972806561d775a8
+      internalID: -1435663828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_5
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 2002
+        width: 284
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3a0f572be8a09409a895cd1d22c6d2
+      internalID: -244972397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1986
+        width: 42
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070f1e0eb66c9e74eb637b25f4f06769
+      internalID: 908879970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1745
+        width: 251
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0e197c02f36e841934f9d7e07b6cc1
+      internalID: -176500244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_8
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1766
+        width: 268
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ffacc69f14d8b4ba44081444ab7084
+      internalID: -195338736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_9
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1772
+        width: 250
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddefbe7824bfef547a435416708feaa0
+      internalID: 1823217599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_10
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1721
+        width: 223
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de24e39c77a6814296dae22860272ec
+      internalID: 994414619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1701
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecaa9a6464f991e46b45db9c42b4573f
+      internalID: 55675946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1465
+        width: 268
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f21add9dcea35840a2f5faba6825111
+      internalID: -852068138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_13
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1461
+        width: 264
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f196fc445b16c845ad03046e32adec2
+      internalID: 219840579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_14
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1463
+        width: 256
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9659ab6602502a2469f69f36dc9e32e4
+      internalID: 338728054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_15
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1462
+        width: 238
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b86c7535713e74b8720c70cb715a55
+      internalID: -253604955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1444
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2b31c0d23749e488c9cc4ad416d1c5
+      internalID: -1398574943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_17
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1244
+        width: 132
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4ea81306973c44c8bfe4d337b5b2d6
+      internalID: 1785320516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_18
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1239
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17d41b2721eda840a1ac0936c4a3021
+      internalID: 1570057947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1223
+        width: 41
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ae90750ddc4f0419f86b696649176b
+      internalID: -823888948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_20
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1220
+        width: 72
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd73e81b6c64bfc4ebac526d0518a433
+      internalID: 462608819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_21
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 964
+        width: 200
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575f967afb7a6ca469ec7611bf5639f1
+      internalID: -1957359461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_22
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 969
+        width: 240
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4e33e7ff6e8c940a596fa2289c0c6c
+      internalID: 1964011341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_23
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 969
+        width: 234
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e19644958d46a2438852299a30ab5df
+      internalID: -1337739520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_24
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 971
+        width: 223
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8666a7d64b8e5c6438793fa251b00cff
+      internalID: -1607134314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_25
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 969
+        width: 234
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5fb00ade191d8468b8771a4b5806dd
+      internalID: -274522183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_26
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 715
+        width: 223
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191ff31aeb578174291e2f3185320c95
+      internalID: -1070496823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_27
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 714
+        width: 226
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1e58ba2db89d54985964376416d80a
+      internalID: -116260807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 692
+        width: 41
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5138b85d326dd8c4690038edd3c2e903
+      internalID: 266830545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 404
+        width: 255
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e0d591ea81c0b4781ad8dcffcf5461
+      internalID: 997369678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_30
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 395
+        width: 288
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b29d33553eda24fa2bb43d019040d4
+      internalID: 2041600445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_31
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 391
+        width: 313
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11df0a3120812dd44920eed3f84975e5
+      internalID: 500310036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 374
+        width: 41
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b191099152bffbd4186db9733a21e32a
+      internalID: -734577740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_33
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 371
+        width: 60
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c32314b8ed565643a98aa68beee7782
+      internalID: 1187352446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_34
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 108
+        width: 209
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1c5d353dbe8ce428a12265b27eef22
+      internalID: -303082000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_35
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 92
+        width: 37
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e7cc8cf03592a4bb8d97dc29e98ff8
+      internalID: -797875023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_36
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 92
+        width: 47
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9562a7c75b4db3f4bab3ce82643e7734
+      internalID: -1732805799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_37
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 9
+        width: 32
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8603ddf5ae2354eb2ff7555f06f758
+      internalID: -1244688618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_38
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 3
+        width: 110
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb390ec238e0b146a8fce7ae96bb859
+      internalID: 926407364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_39
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 54
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2603102415901004aa900185b8fd79cf
+      internalID: -1623338038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_40
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 44
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74851304bfb3c9f4a9489d81294e9316
+      internalID: 988624672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy fly 5_41
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 35
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a54ff4866b5364098ab2dc441a27be
+      internalID: 883967692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      enemy fly 5_0: -1682935229
+      enemy fly 5_1: -1572100838
+      enemy fly 5_10: 994414619
+      enemy fly 5_11: 55675946
+      enemy fly 5_12: -852068138
+      enemy fly 5_13: 219840579
+      enemy fly 5_14: 338728054
+      enemy fly 5_15: -253604955
+      enemy fly 5_16: -1398574943
+      enemy fly 5_17: 1785320516
+      enemy fly 5_18: 1570057947
+      enemy fly 5_19: -823888948
+      enemy fly 5_2: -864356842
+      enemy fly 5_20: 462608819
+      enemy fly 5_21: -1957359461
+      enemy fly 5_22: 1964011341
+      enemy fly 5_23: -1337739520
+      enemy fly 5_24: -1607134314
+      enemy fly 5_25: -274522183
+      enemy fly 5_26: -1070496823
+      enemy fly 5_27: -116260807
+      enemy fly 5_28: 266830545
+      enemy fly 5_29: 997369678
+      enemy fly 5_3: -862181197
+      enemy fly 5_30: 2041600445
+      enemy fly 5_31: 500310036
+      enemy fly 5_32: -734577740
+      enemy fly 5_33: 1187352446
+      enemy fly 5_34: -303082000
+      enemy fly 5_35: -797875023
+      enemy fly 5_36: -1732805799
+      enemy fly 5_37: -1244688618
+      enemy fly 5_38: 926407364
+      enemy fly 5_39: -1623338038
+      enemy fly 5_4: -1435663828
+      enemy fly 5_40: 988624672
+      enemy fly 5_41: 883967692
+      enemy fly 5_5: -244972397
+      enemy fly 5_6: 908879970
+      enemy fly 5_7: -176500244
+      enemy fly 5_8: -195338736
+      enemy fly 5_9: 1823217599
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
