@@ -29,6 +29,8 @@ public class PlayerAttack2 : MonoBehaviour
     public TMP_Text upgradeCostText;
     //Audio
     public AudioSource coinAudio;
+    //Đame
+    public TMP_Text baseDamageText;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -37,6 +39,8 @@ public class PlayerAttack2 : MonoBehaviour
         LoadPlayerStats();
         UpdateUpgradeSlider();
         coinAudio.Stop();
+        UpdateBaseDamageUI();
+
     }
     private void Update()
     {
@@ -146,6 +150,36 @@ public class PlayerAttack2 : MonoBehaviour
             SaveScore();
             SavePlayerStats();
             UpdateUpgradeSlider();
+            UpdateBaseDamageUI(); 
+        }
+    }
+
+    public void HackUpdateDamage()
+    {
+        float cost = GetUpgradeCost();
+        if (score >= cost)
+        {
+            baseDamage += GetBaseDamageIncrease();
+            score -= cost;
+            upgradeLevel++;
+            UpdateScore();
+            SaveScore();
+            UpdateUpgradeSlider();
+            UpdateBaseDamageUI();
+        }
+    }
+
+    public void NeftDamage()
+    {
+        if (baseDamage > 0)
+        {
+            baseDamage -= GetBaseDamageIncrease();
+            if (upgradeLevel > 1)
+            {
+                upgradeLevel--;
+            }
+            UpdateUpgradeSlider();
+            UpdateBaseDamageUI();
         }
     }
     public void DamageReduction()
@@ -159,6 +193,7 @@ public class PlayerAttack2 : MonoBehaviour
             }
             SavePlayerStats();
             UpdateUpgradeSlider();
+            UpdateBaseDamageUI(); 
         }
     }
 
@@ -220,4 +255,13 @@ public class PlayerAttack2 : MonoBehaviour
     {
         coinAudio.Play();
     }
+
+    private void UpdateBaseDamageUI()
+    {
+        if(baseDamageText != null)
+        {
+            baseDamageText.text = $"Base Damage: {baseDamage}";
+        }
+    }
+
 }

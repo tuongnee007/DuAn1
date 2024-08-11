@@ -1,0 +1,3154 @@
+fileFormatVersion: 2
+guid: d7117f9803a7f4b48b4d0c0bba783f1b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_0"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4355
+        width: 53
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ac879fdb9e5de4cae2a420c703afe3
+      internalID: -1585735107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_1"
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 4355
+        width: 42
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c4fc78964f9c34895afe9e3cb3025c
+      internalID: -501261816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_2"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4060
+        width: 88
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39bfb87f7110c14f9f1b65b4aa32dc8
+      internalID: -1239304422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_3"
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 4225
+        width: 58
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf27f1963744ac4fbed229f10630fd5
+      internalID: -391863016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_4"
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 4225
+        width: 56
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f9c210e62cc9946ab6133e8804d7d3
+      internalID: 164876658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_5"
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 4223
+        width: 60
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571ff2b50d4db4241a9acd48b4176c3d
+      internalID: 493484503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_6"
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 4319
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda5614d284be5d48aafc83e40807932
+      internalID: 1185079650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_7"
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 4225
+        width: 53
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873132f3ad6818d4ab0175e553a58752
+      internalID: 182031829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_8"
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 4329
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0ed6c0d47521648b080aa69375f3c7
+      internalID: -878720151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_9"
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 4225
+        width: 51
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddcae5abbba7ec42807fc31650e7193
+      internalID: -1597796350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_10"
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 4225
+        width: 57
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fdf5275d4ffae448c22cae8e394b1a
+      internalID: -340922767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_11"
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 4225
+        width: 58
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d100c7d366a54a448097250b4aff120
+      internalID: 1058713483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_12"
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 4225
+        width: 56
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61317452ae8bdd4b9be3f469188540d
+      internalID: 338738080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_13"
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 4225
+        width: 57
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90bb420a14df80241abfc4b5f1d109b8
+      internalID: 1820961886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_14"
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 4225
+        width: 55
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c4595c9a7d6ae44a053004e0ae5563
+      internalID: -1896465493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_15"
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 4225
+        width: 47
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70049c0e12a42464f8a1ce8dcd8cbd71
+      internalID: -1388614843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_16"
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 4225
+        width: 55
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12ff6c4207b02c4b8e94228d5931164
+      internalID: -1066795645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_17"
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 4225
+        width: 58
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f22be99cc017243b924cf87affde49
+      internalID: -1084138582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_18"
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 4225
+        width: 60
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836051fe44197454b93a09c70a418143
+      internalID: -1012084437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_19"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4041
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1fc4d8a7655ba4e94f82468db82eff
+      internalID: -369270037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_20"
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 3635
+        width: 218
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba6e9b9a3268d74f9bd5c220aecfac0
+      internalID: -1975114470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_21"
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 4011
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f71a572a2efdbf49b8aad8ec467537d
+      internalID: -2114111582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_22"
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 3640
+        width: 209
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393e6e023224a8c43a7d9aef74044597
+      internalID: 747584252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_23"
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 4018
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca9afe36218b0c4494c96c554d3e467
+      internalID: -2060463366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_24"
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 3635
+        width: 218
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee944a4e9992a0747b7fd0dba334e1cb
+      internalID: -791880226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_25"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3636
+        width: 214
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33add561bed07b147b8025429c33c0d0
+      internalID: 1548186486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_26"
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 3635
+        width: 214
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325b197e9948c5d4186a4a99e28b9a30
+      internalID: 6447541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_27"
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 3635
+        width: 213
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafd770fec01f1f4885ee87ddfe6ceec
+      internalID: 393637389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_28"
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 3636
+        width: 213
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09eec230b9ad3d64b806a1e453a5395e
+      internalID: 1391925313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_29"
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 3635
+        width: 214
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d91a6ff4f99e44db21538e4d2e0717
+      internalID: -140653982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_30"
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 3635
+        width: 214
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfb66092fd77a743b0c9ae056638738
+      internalID: 307533089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_31"
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 3640
+        width: 209
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8def354ffae1a46930d00ce7869af4
+      internalID: -1100182086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_32"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3618
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31656d85e98c87f4cb83be90825f0523
+      internalID: 788640893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_33"
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 3593
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75587206684b06644a37f2e59356ac73
+      internalID: 446957168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_34"
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 3238
+        width: 213
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a57eb239e49fa40a510ea351454bf9
+      internalID: -988379614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_35"
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 3240
+        width: 230
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4f3724dbfe0054fb0473d636bdc23b
+      internalID: -1021974461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_36"
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 3234
+        width: 228
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b06903efa434447af0f02f98b0280a
+      internalID: -2063600036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_37"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3213
+        width: 175
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359140bba070ebf4abf4a0c8da52d435
+      internalID: -1918350998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_38"
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 3215
+        width: 77
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c3f24ebca0d6d4a9434ae9aefc69a0
+      internalID: -1069437090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_39"
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 3213
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f19940d33f22f41b4f303ea4796252
+      internalID: 1341433010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_40"
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 3189
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e72094b37d18e489609d2c218f4a0f
+      internalID: -1284829162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_41"
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 3170
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794d7d9b8f00d084ca6b48f5b9bc3068
+      internalID: 1035588804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_42"
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 2811
+        width: 215
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b5b0c0ea7658d40a6b94f16539e858
+      internalID: 809252467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_43"
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 2824
+        width: 228
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab6070ac5b0d2a499f3a1b807470142
+      internalID: 1500924859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_44"
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 2809
+        width: 133
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3244090e3cc791469478924d1be702a
+      internalID: -35391468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_45"
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 3170
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b56e879d694000439463bb18ba87871
+      internalID: 1023706970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_46"
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 2809
+        width: 182
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f7fc5d676e2554b81b93753720ac55
+      internalID: -1973317768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_47"
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 2803
+        width: 192
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fa1b88d0d21594cbba42245eccaed9
+      internalID: 263865352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_48"
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 3125
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dff834d928eee4408501a3f4b958cb7
+      internalID: 292420704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_49"
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 2805
+        width: 151
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691846507ae253346832f1cd94aa9e47
+      internalID: -1090744754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_50"
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 2803
+        width: 205
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0182944ad421647943c7a83483d686
+      internalID: 584347771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_51"
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 3115
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716ed694b6585db49b8b93b5ae84b86c
+      internalID: -682736561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_52"
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 3113
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adc0e78aae3f2a49a1aed79516e5637
+      internalID: 413885639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_53"
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 3033
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e092ed015dd934cb9cb5369c794bc9
+      internalID: 524783925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_54"
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 2833
+        width: 47
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c8e820ff362f64686a5fa56ba9a2b7
+      internalID: 1692025969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_55"
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 2809
+        width: 79
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2213d0774a10484e9ecda7f4abf5cba
+      internalID: 958140410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_56"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2785
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73c8981c7bbc104aadff053e88efe95
+      internalID: 620550747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_57"
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1879
+        width: 227
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebde1d85f2489ba40a884ada1633722e
+      internalID: 132016688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_58"
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1954
+        width: 146
+        height: 642
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d2b3675a8bce041b03fa531a90aef9
+      internalID: 1706838359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_59"
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1909
+        width: 136
+        height: 760
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2618a395737806488c8cce48ab0fd61
+      internalID: -1618414948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_60"
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 1881
+        width: 115
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9d651434d3e4440b205a8eededcfcb
+      internalID: 1900645629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_61"
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 2309
+        width: 21
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de91407c56eccb44929dbd2623532fb
+      internalID: -2076989210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_62"
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 2381
+        width: 69
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bb146982eb6804ea53420fb169228b
+      internalID: -1362353154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_63"
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 2447
+        width: 17
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0deeea97e70c6cc4696d8154673d6d67
+      internalID: -1143084298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_64"
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2116
+        width: 229
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b681341d41a5b8742b70c26117db6765
+      internalID: 578988248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_65"
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 2186
+        width: 44
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc2b3cba6c65d945a232491aabd59e6
+      internalID: -1366238993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_66"
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 2285
+        width: 5
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b4757f4a87e044c9166a82dc92d804
+      internalID: -1251309759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_67"
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 1881
+        width: 71
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caece1169cecd34449a3849e8491e238
+      internalID: 2050775401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_68"
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 2248
+        width: 5
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c23390bed7cfef418a52597ad939e6c
+      internalID: 1597611177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_69"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1863
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f32241ef0c34646a6f384d23d3bac9
+      internalID: 1694519205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_70"
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1859
+        width: 137
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e2a29ec46509647bdfcd1c430afc4d
+      internalID: 1330749388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_71"
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1863
+        width: 105
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be4e8ac5b1daa646ba036a1500dbd14
+      internalID: 1745396227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_72"
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1863
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c2684c5d41fe948879380bc335b8db
+      internalID: -918586045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_73"
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1859
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45036c091aa3a745868d5dfaa3e6b80
+      internalID: 50871876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_74"
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1863
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9b7132c294b35429172ece6f0d38c9
+      internalID: -345522811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_75"
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1833
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86421a0cdd8a56a4893acd275412100f
+      internalID: -48932304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_76"
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 1850
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed0bd516e2a8304fbb7f7074436574e
+      internalID: -1836156748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_77"
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1825
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f0a5b06b30e2b4ca657525ee95bf7f
+      internalID: -150436564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_78"
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1462
+        width: 222
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24dc2ce66379c347bbac46d668048c5
+      internalID: -1110515203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_79"
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1464
+        width: 224
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76948af20a01d54f8b9948c197afbcc
+      internalID: -1819284415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_80"
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 1464
+        width: 224
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ccb172e56c92f4281cbe69798bbfa6
+      internalID: 1785504796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_81"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1464
+        width: 216
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffc6ef63503c9544985ef10d35a8f79
+      internalID: 1922901283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_82"
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1457
+        width: 222
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881c73e76d16c014eabb30e75f0cf790
+      internalID: -5215459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_83"
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 1673
+        width: 151
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbc6972044ff934a80f1b158a3299e6
+      internalID: -752807477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_84"
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1656
+        width: 222
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae6dfe833efe0c4ca54d2fc1c87a654
+      internalID: 1211532228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_85"
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 1654
+        width: 230
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f3689df1251cf4f932accc6532c339
+      internalID: -494782812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_86"
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 1648
+        width: 212
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be51d98f8576be4b9d17a78df3e72a3
+      internalID: 1957551285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_87"
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 1654
+        width: 226
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce0443789b39214b92e7d9c4d6ea127
+      internalID: 392929491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_88"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1438
+        width: 120
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c062910a467718844b0a3678e5082261
+      internalID: 226489186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_89"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1415
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cbc81e80d8e574f9c9ec944252dfb5
+      internalID: -632734915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_90"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1056
+        width: 218
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a7f0d9643d3434eb91ac701bde7d4e
+      internalID: 1380377593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_91"
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1056
+        width: 269
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032135a6bf1e1604c818fbf2fdf29449
+      internalID: -543082888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_92"
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1060
+        width: 312
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c650218bf9525b4eb1fa0f2549808d3
+      internalID: 1121671661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_93"
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 1067
+        width: 320
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a53a50cfc4e49439430d2de1290091
+      internalID: 169428189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_94"
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 1071
+        width: 332
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3584b6108be6e4faf22b3ac1f70374
+      internalID: 527163736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_95"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1039
+        width: 45
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d691bc379c21e7343b954e25e5ee1c14
+      internalID: 460062729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_96"
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1013
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c270b7794b31b419ab51943a326551
+      internalID: 1678391525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_97"
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 599
+        width: 269
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453324d3381ec364295ed0985744205f
+      internalID: -665753984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_98"
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 792
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65bf0f3437b400143a3224fdef643496
+      internalID: 1315902876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_99"
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 638
+        width: 295
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b84d3d31b379545b516bbb4f41cc25
+      internalID: -1902672981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_100"
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 654
+        width: 216
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71adc21019ca1464ca6a7966badc15be
+      internalID: -1941724051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_101"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 580
+        width: 53
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad5eb24e82b22c4d95578b34f2a0337
+      internalID: 343092931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_102"
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 578
+        width: 84
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acce6a7538805174ea839f3b7858dc88
+      internalID: 992192896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_103"
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 474
+        width: 97
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c8964294e95744cbcda0a15069e722
+      internalID: -406646079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_104"
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 572
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff564453838c31428dca9e635ac8dce
+      internalID: -528090629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_105"
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 478
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e888f10bab006f4fbf3ba8878a1908a
+      internalID: -65118428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_106"
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 445
+        width: 108
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0e0f7132f9ed442945fbf83d69c15e
+      internalID: 172164607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_107"
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 552
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd25ec50ab2e0d74094e6d5f908c00ff
+      internalID: -1239215608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_108"
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 473
+        width: 88
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc95cc311d06494394c8f1ec922d5a5
+      internalID: 983315011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_109"
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 568
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd98031fdd4a534eab6a547521556b1
+      internalID: -2020919100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_110"
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 546
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a88bc27b9faf034ab3eb03e4bd5eb7b
+      internalID: 197770271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_111"
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 484
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddbffa3bd6eca3459163f8d310a547c
+      internalID: -586378042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_112"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5faab112dbee120408157409a522cf95
+      internalID: -553736714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_113"
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 476
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16781a5cef7abb44f81c36e6eac7125c
+      internalID: -268810570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_114"
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 555
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b007b2ffdf06ef94ea15551390d4a3b3
+      internalID: 1621925789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_115"
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 472
+        width: 92
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4faeeade00faa4e934aec835c2eadd
+      internalID: 626201569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_116"
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 482
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7029b46adac052544a0ee20fc25285cf
+      internalID: 1154467006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_117"
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 419
+        width: 182
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075048cf3ae44cc498472a6abe72d62e
+      internalID: -2017126131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_118"
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 441
+        width: 56
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e1ad6550f36024086ee5f2aa653e97
+      internalID: -277328203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_119"
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 505
+        width: 17
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541264f7046585841a8dd7ebee46e198
+      internalID: 1949738386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_120"
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 462
+        width: 45
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90403b6f3b0a36b4daca4861f867c330
+      internalID: 1143689672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_121"
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 507
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea9f95d9c29e224fad9bae982cb5316
+      internalID: -1094276343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_122"
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 454
+        width: 42
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5e6e4566ca4e048bec837e85e3d84e
+      internalID: 904072664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_123"
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 536
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11022cea60ff9174aafbac1c18267737
+      internalID: -526944464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_124"
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 537
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799aa904483ac824ea2c0e4425eaa5f1
+      internalID: 1300843707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_125"
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 479
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef497b1bb44954e44803a9ed494e6004
+      internalID: 2115522173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_126"
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 514
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884298213baccfb47bd3cef030ebca4d
+      internalID: 852104843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_127"
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 514
+        width: 13
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811358aa350ba21418230365ac160f13
+      internalID: -24829348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_128"
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 482
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4dbaaa8c905f74aa98eae319a8797c
+      internalID: -1166628530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_129"
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 492
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6422e0e9a4e0a04899a419a5c38a87f
+      internalID: -1868530213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_130"
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 497
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d72e333538d2a41aac65a6c7bac38b
+      internalID: -985766192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_131"
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 484
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed16bb387d723e42892f57448abd1a0
+      internalID: -203581767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_132"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 403
+        width: 41
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5483dc28103cfc146a96f98d085f934d
+      internalID: -1229872146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_133"
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1
+        width: 201
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec18f603671a90542b5b7f1a70132a40
+      internalID: -860155635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_134"
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 3
+        width: 207
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b975552a06cf1ba42872e3ce0949f088
+      internalID: -1243144595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_135"
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 371
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56b9d4afc86acf4895f7bce3dc8e8c8
+      internalID: 298673789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "enemy ph\xE1p s\u01B0_136"
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 5
+        width: 233
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9119ccb98d776a4fa567c2f3891bc29
+      internalID: 1576833535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "enemy ph\xE1p s\u01B0_0": -1585735107
+      "enemy ph\xE1p s\u01B0_1": -501261816
+      "enemy ph\xE1p s\u01B0_10": -340922767
+      "enemy ph\xE1p s\u01B0_100": -1941724051
+      "enemy ph\xE1p s\u01B0_101": 343092931
+      "enemy ph\xE1p s\u01B0_102": 992192896
+      "enemy ph\xE1p s\u01B0_103": -406646079
+      "enemy ph\xE1p s\u01B0_104": -528090629
+      "enemy ph\xE1p s\u01B0_105": -65118428
+      "enemy ph\xE1p s\u01B0_106": 172164607
+      "enemy ph\xE1p s\u01B0_107": -1239215608
+      "enemy ph\xE1p s\u01B0_108": 983315011
+      "enemy ph\xE1p s\u01B0_109": -2020919100
+      "enemy ph\xE1p s\u01B0_11": 1058713483
+      "enemy ph\xE1p s\u01B0_110": 197770271
+      "enemy ph\xE1p s\u01B0_111": -586378042
+      "enemy ph\xE1p s\u01B0_112": -553736714
+      "enemy ph\xE1p s\u01B0_113": -268810570
+      "enemy ph\xE1p s\u01B0_114": 1621925789
+      "enemy ph\xE1p s\u01B0_115": 626201569
+      "enemy ph\xE1p s\u01B0_116": 1154467006
+      "enemy ph\xE1p s\u01B0_117": -2017126131
+      "enemy ph\xE1p s\u01B0_118": -277328203
+      "enemy ph\xE1p s\u01B0_119": 1949738386
+      "enemy ph\xE1p s\u01B0_12": 338738080
+      "enemy ph\xE1p s\u01B0_120": 1143689672
+      "enemy ph\xE1p s\u01B0_121": -1094276343
+      "enemy ph\xE1p s\u01B0_122": 904072664
+      "enemy ph\xE1p s\u01B0_123": -526944464
+      "enemy ph\xE1p s\u01B0_124": 1300843707
+      "enemy ph\xE1p s\u01B0_125": 2115522173
+      "enemy ph\xE1p s\u01B0_126": 852104843
+      "enemy ph\xE1p s\u01B0_127": -24829348
+      "enemy ph\xE1p s\u01B0_128": -1166628530
+      "enemy ph\xE1p s\u01B0_129": -1868530213
+      "enemy ph\xE1p s\u01B0_13": 1820961886
+      "enemy ph\xE1p s\u01B0_130": -985766192
+      "enemy ph\xE1p s\u01B0_131": -203581767
+      "enemy ph\xE1p s\u01B0_132": -1229872146
+      "enemy ph\xE1p s\u01B0_133": -860155635
+      "enemy ph\xE1p s\u01B0_134": -1243144595
+      "enemy ph\xE1p s\u01B0_135": 298673789
+      "enemy ph\xE1p s\u01B0_136": 1576833535
+      "enemy ph\xE1p s\u01B0_14": -1896465493
+      "enemy ph\xE1p s\u01B0_15": -1388614843
+      "enemy ph\xE1p s\u01B0_16": -1066795645
+      "enemy ph\xE1p s\u01B0_17": -1084138582
+      "enemy ph\xE1p s\u01B0_18": -1012084437
+      "enemy ph\xE1p s\u01B0_19": -369270037
+      "enemy ph\xE1p s\u01B0_2": -1239304422
+      "enemy ph\xE1p s\u01B0_20": -1975114470
+      "enemy ph\xE1p s\u01B0_21": -2114111582
+      "enemy ph\xE1p s\u01B0_22": 747584252
+      "enemy ph\xE1p s\u01B0_23": -2060463366
+      "enemy ph\xE1p s\u01B0_24": -791880226
+      "enemy ph\xE1p s\u01B0_25": 1548186486
+      "enemy ph\xE1p s\u01B0_26": 6447541
+      "enemy ph\xE1p s\u01B0_27": 393637389
+      "enemy ph\xE1p s\u01B0_28": 1391925313
+      "enemy ph\xE1p s\u01B0_29": -140653982
+      "enemy ph\xE1p s\u01B0_3": -391863016
+      "enemy ph\xE1p s\u01B0_30": 307533089
+      "enemy ph\xE1p s\u01B0_31": -1100182086
+      "enemy ph\xE1p s\u01B0_32": 788640893
+      "enemy ph\xE1p s\u01B0_33": 446957168
+      "enemy ph\xE1p s\u01B0_34": -988379614
+      "enemy ph\xE1p s\u01B0_35": -1021974461
+      "enemy ph\xE1p s\u01B0_36": -2063600036
+      "enemy ph\xE1p s\u01B0_37": -1918350998
+      "enemy ph\xE1p s\u01B0_38": -1069437090
+      "enemy ph\xE1p s\u01B0_39": 1341433010
+      "enemy ph\xE1p s\u01B0_4": 164876658
+      "enemy ph\xE1p s\u01B0_40": -1284829162
+      "enemy ph\xE1p s\u01B0_41": 1035588804
+      "enemy ph\xE1p s\u01B0_42": 809252467
+      "enemy ph\xE1p s\u01B0_43": 1500924859
+      "enemy ph\xE1p s\u01B0_44": -35391468
+      "enemy ph\xE1p s\u01B0_45": 1023706970
+      "enemy ph\xE1p s\u01B0_46": -1973317768
+      "enemy ph\xE1p s\u01B0_47": 263865352
+      "enemy ph\xE1p s\u01B0_48": 292420704
+      "enemy ph\xE1p s\u01B0_49": -1090744754
+      "enemy ph\xE1p s\u01B0_5": 493484503
+      "enemy ph\xE1p s\u01B0_50": 584347771
+      "enemy ph\xE1p s\u01B0_51": -682736561
+      "enemy ph\xE1p s\u01B0_52": 413885639
+      "enemy ph\xE1p s\u01B0_53": 524783925
+      "enemy ph\xE1p s\u01B0_54": 1692025969
+      "enemy ph\xE1p s\u01B0_55": 958140410
+      "enemy ph\xE1p s\u01B0_56": 620550747
+      "enemy ph\xE1p s\u01B0_57": 132016688
+      "enemy ph\xE1p s\u01B0_58": 1706838359
+      "enemy ph\xE1p s\u01B0_59": -1618414948
+      "enemy ph\xE1p s\u01B0_6": 1185079650
+      "enemy ph\xE1p s\u01B0_60": 1900645629
+      "enemy ph\xE1p s\u01B0_61": -2076989210
+      "enemy ph\xE1p s\u01B0_62": -1362353154
+      "enemy ph\xE1p s\u01B0_63": -1143084298
+      "enemy ph\xE1p s\u01B0_64": 578988248
+      "enemy ph\xE1p s\u01B0_65": -1366238993
+      "enemy ph\xE1p s\u01B0_66": -1251309759
+      "enemy ph\xE1p s\u01B0_67": 2050775401
+      "enemy ph\xE1p s\u01B0_68": 1597611177
+      "enemy ph\xE1p s\u01B0_69": 1694519205
+      "enemy ph\xE1p s\u01B0_7": 182031829
+      "enemy ph\xE1p s\u01B0_70": 1330749388
+      "enemy ph\xE1p s\u01B0_71": 1745396227
+      "enemy ph\xE1p s\u01B0_72": -918586045
+      "enemy ph\xE1p s\u01B0_73": 50871876
+      "enemy ph\xE1p s\u01B0_74": -345522811
+      "enemy ph\xE1p s\u01B0_75": -48932304
+      "enemy ph\xE1p s\u01B0_76": -1836156748
+      "enemy ph\xE1p s\u01B0_77": -150436564
+      "enemy ph\xE1p s\u01B0_78": -1110515203
+      "enemy ph\xE1p s\u01B0_79": -1819284415
+      "enemy ph\xE1p s\u01B0_8": -878720151
+      "enemy ph\xE1p s\u01B0_80": 1785504796
+      "enemy ph\xE1p s\u01B0_81": 1922901283
+      "enemy ph\xE1p s\u01B0_82": -5215459
+      "enemy ph\xE1p s\u01B0_83": -752807477
+      "enemy ph\xE1p s\u01B0_84": 1211532228
+      "enemy ph\xE1p s\u01B0_85": -494782812
+      "enemy ph\xE1p s\u01B0_86": 1957551285
+      "enemy ph\xE1p s\u01B0_87": 392929491
+      "enemy ph\xE1p s\u01B0_88": 226489186
+      "enemy ph\xE1p s\u01B0_89": -632734915
+      "enemy ph\xE1p s\u01B0_9": -1597796350
+      "enemy ph\xE1p s\u01B0_90": 1380377593
+      "enemy ph\xE1p s\u01B0_91": -543082888
+      "enemy ph\xE1p s\u01B0_92": 1121671661
+      "enemy ph\xE1p s\u01B0_93": 169428189
+      "enemy ph\xE1p s\u01B0_94": 527163736
+      "enemy ph\xE1p s\u01B0_95": 460062729
+      "enemy ph\xE1p s\u01B0_96": 1678391525
+      "enemy ph\xE1p s\u01B0_97": -665753984
+      "enemy ph\xE1p s\u01B0_98": 1315902876
+      "enemy ph\xE1p s\u01B0_99": -1902672981
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

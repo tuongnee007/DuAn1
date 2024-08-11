@@ -26,6 +26,8 @@ public class Health : MonoBehaviour
     //UI chết
     public GameObject gameoverPanel;
     private Animator anim;
+    //Hack Health
+    public TMP_Text updateHealthText;
     private void Awake()
     {
         takedamage.Stop();
@@ -41,6 +43,7 @@ public class Health : MonoBehaviour
         AddHealth(health);
         LoadPlayerStats();
         UpdateUpgradeSlider();
+        UpdateHealthText();
     }
     public void AddHealth(float health1)
     {
@@ -102,6 +105,24 @@ public class Health : MonoBehaviour
             SavePlayerStats();
             UpdateHealthUI();
             UpdateUpgradeSlider();
+            HackUpdateHealth();
+        }
+    }
+
+    public void HackUpdateHealth()
+    {
+        float cost = GetUpgradeCost();
+        PlayerAttack2 playerAttack2 = FindObjectOfType<PlayerAttack2>();
+        if (playerAttack2 != null && playerAttack2.score >= cost)
+        {
+            float healthIncrease = GetMaxHealthIncrease();
+            maxHealth += healthIncrease;
+            health += healthIncrease;
+            playerAttack2.AddScore(-cost);
+            upgradeLevel++;
+            UpdateHealthUI();
+            UpdateUpgradeSlider();
+            UpdateHealthText();
         }
     }
 
@@ -119,6 +140,22 @@ public class Health : MonoBehaviour
             UpdateUpgradeSlider();
         }
     }
+
+    public void NeftHealth()
+    {
+        if (maxHealth > 0)
+        {
+            maxHealth -= GetMaxHealthIncrease();
+            if (upgradeLevel >= 2)
+            {
+                upgradeLevel--;
+            }
+
+            UpdateUpgradeSlider();
+            UpdateHealthText();
+        }
+    }
+
 
     private void SavePlayerStats()
     {
@@ -201,5 +238,10 @@ public class Health : MonoBehaviour
             Vector3 newRespawnPoint = collision.transform.position;
             respawnPoints.Add(newRespawnPoint);
         }
+    }
+
+    private void UpdateHealthText()
+    {
+        updateHealthText.text = $"Health: {maxHealth}";
     }
 }

@@ -45,9 +45,45 @@ public class UpdateManager : MonoBehaviour
         Player player2 = player.GetComponent<Player>(); 
         player2.UpgradeSpeed();
     }
-    public void BloodHealth()
+    public void BloodSpeed()
     {
         Player player2 = player.GetComponent<Player>();
         player2.hypotension();
+    }
+
+    public void HackUpdateDamage()
+    {
+
+        PlayerAttack2 attack = player.GetComponent<PlayerAttack2>();
+        attack.HackUpdateDamage();
+    }
+
+    public void NEftDamage()
+    {
+
+        PlayerAttack2 attack = player.GetComponent<PlayerAttack2>();
+        attack.NeftDamage();
+    }
+    public void HackUpdateSpeed()
+    {
+
+        Player attack = player.GetComponent<Player>();
+        attack.HackUpdateSpeed();
+    }
+    public void NeftSpeed()
+    {
+
+        Player attack = player.GetComponent<Player>();
+        attack.BloodSpeed();
+    }
+    public void HackUpdateHealth()
+    {
+        Health health = player.GetComponent<Health>();
+        health.HackUpdateHealth();
+    }
+    public void NeftHealth()
+    {
+        Health health = player.GetComponent<Health>();
+        health.NeftHealth();
     }
 }

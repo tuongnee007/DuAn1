@@ -15,7 +15,7 @@ public class EnemyFlying2 : MonoBehaviour
     public bool chase;
     public int diem = 2;
     private bool isDead = false;
-    public float time;
+
     private Animator anim;
     private Rigidbody2D rb;
     private Vector2 startingPoint;
@@ -62,11 +62,7 @@ public class EnemyFlying2 : MonoBehaviour
             ReturnToStartingPointOrPatrol();
             return;
         }
-        //if (distanceToPlayer > Mathf.Max(boxX, boxY))
-        //{
-        //    ReturnToStartingPointOrPatrol();
-        //    return;
-        //}
+
         if (distanceToPlayer <= Mathf.Max(shotingRangeX, shotingRangeY) && nextFireTime < Time.time)
         {
             nextFireTime = Time.time + fireRate;

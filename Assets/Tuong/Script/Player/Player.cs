@@ -47,11 +47,13 @@ public class Player : MonoBehaviour
     public SpriteRenderer recallSprire;
     // NÂng cấp tốc chạy
     public float speedUpdateCost = 75f;
-    public float upgradeLevel = 1f;
+    public int upgradeLevel = 1;
     public float maxUpgradeLevel = 10f;
     private float initialRunSpeed;
     // Kill
     public TMP_Text enemyDeathCountText;
+    //Update Text
+    public TMP_Text updateSpeedText;
     private void Awake()
     {
         flashAudio.Stop();
@@ -74,6 +76,8 @@ public class Player : MonoBehaviour
         cooldownTimer2 = teleportCooldown;
         recallTimer = recallTime;
         recallSprire.gameObject.SetActive(false);
+        UpdateSpeedText();
+        LoadPlayerStats();
     }
 
     private void Update()
@@ -283,10 +287,34 @@ public class Player : MonoBehaviour
         PlayerAttack2 playerAttack2 = FindObjectOfType<PlayerAttack2>();
         if (playerAttack2 != null && playerAttack2.score >= cost)
         {
+            float speedIncrease = GetSpeedIncrease();
+            runSpeed += speedIncrease;
+            playerAttack2.AddScore(-cost);
+            upgradeLevel++;
+            UpdateSpeedText();
+            SavePlayerStats();
+        }
+    }
+    public void HackUpdateSpeed()
+    {
+        float cost = GetUpgradeCost();
+        PlayerAttack2 playerAttack2 = FindObjectOfType<PlayerAttack2>();
+        if (playerAttack2 != null && playerAttack2.score >= cost)
+        {
             float healthIncrease = GetSpeedIncrease();
             runSpeed += healthIncrease;
             playerAttack2.AddScore(-cost);
             upgradeLevel++;
+            UpdateSpeedText();
+        }
+    }
+    public void BloodSpeed()
+    {
+        if (runSpeed > 0)
+        {
+                runSpeed -= GetSpeedIncrease();
+                upgradeLevel--;
+                UpdateSpeedText();
         }
     }
     public void hypotension()
@@ -297,10 +325,14 @@ public class Player : MonoBehaviour
             {
                 runSpeed -= GetSpeedIncrease();
                 upgradeLevel--;
-            }
+                UpdateSpeedText();
+                SavePlayerStats();
+                }
             else
             {
                 runSpeed = initialRunSpeed;
+                UpdateSpeedText();
+                SavePlayerStats();
             }
         }
     }
@@ -334,4 +366,23 @@ public class Player : MonoBehaviour
     {
         return 2f;
     }
+
+    private void UpdateSpeedText()
+    {
+        updateSpeedText.text = $"Speed: {runSpeed}";
+        SavePlayerStats();
+    }
+
+    private void SavePlayerStats()
+    {
+        PlayerPrefs.SetFloat("PlayerSpeed", runSpeed);
+        PlayerPrefs.SetInt("UpgradeLevel", upgradeLevel);
+    }
+
+    private void LoadPlayerStats()
+    {
+        runSpeed = PlayerPrefs.GetFloat("PlayerSpeed", runSpeed);
+        upgradeLevel = PlayerPrefs.GetInt("UpgradeLevel", 1);
+    }
+
 }
