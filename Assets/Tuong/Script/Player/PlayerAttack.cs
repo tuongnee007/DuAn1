@@ -24,15 +24,15 @@ public class PlayerAttack : MonoBehaviour
     }
     private void Update()
     {
-        AudioManager audioManager = FindObjectOfType<AudioManager>();
+        //AudioManager audioManager = FindObjectOfType<AudioManager>();
         if(Input.GetMouseButtonDown(0) && !isAttacking)
         {
             isAttacking = true;
             anim.SetTrigger("attack");
-            if(audioManager != null)
-            {
-                audioManager.StartVolume();
-            }
+            //if(audioManager != null)
+            //{
+            //    audioManager.StartVolume();
+            //}
             StartCoroutine(EndAttack());
         }
     }
@@ -44,16 +44,16 @@ public class PlayerAttack : MonoBehaviour
     }
     private void DealDamageToEnemies()
     {
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, Mathf.Max(attackRangeX, attackRangeY), whatIsEnemies);
-        foreach (Collider2D enemy in hitEnemies)
-        {
-            EnemyFlying enemyFlying = enemy.GetComponent<EnemyFlying>();
-            if (enemyFlying != null)
-            {
-                //enemyFlying.TakeDamage(damage);
-            }
+        //Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, Mathf.Max(attackRangeX, attackRangeY), whatIsEnemies);
+        //foreach (Collider2D enemy in hitEnemies)
+        //{
+        //    EnemyFlying enemyFlying = enemy.GetComponent<EnemyFlying>();
+        //    if (enemyFlying != null)
+        //    {
+        //        //enemyFlying.TakeDamage(damage);
+        //    }
 
-        }    
+        //}    
     }
 
     private IEnumerator EndAttack()

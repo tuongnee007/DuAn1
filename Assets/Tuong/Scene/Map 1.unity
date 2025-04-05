@@ -10725,7 +10725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5656678158737557720, guid: 1706a3419831b5947a69a115c5eb26a6, type: 3}
       propertyPath: m_Name
-      value: Enemy flying 2 (1)
+      value: Nightfang 1
       objectReference: {fileID: 0}
     - target: {fileID: 6990228689900610362, guid: 1706a3419831b5947a69a115c5eb26a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11558,6 +11558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Deep
       objectReference: {fileID: 0}
+    - target: {fileID: 3768396873790933765, guid: d58186665163db04faeb7ce871399426, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6917237789869610555, guid: d58186665163db04faeb7ce871399426, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.8
@@ -11750,7 +11754,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2499543446573216682, guid: 4a8fa5d370e10dc4ea531d620ab80e0d, type: 3}
       propertyPath: m_Name
-      value: Enemy flying 3 (2)
+      value: Doom Scarab 2
       objectReference: {fileID: 0}
     - target: {fileID: 2571208075466020410, guid: 4a8fa5d370e10dc4ea531d620ab80e0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16215,6 +16219,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653291336}
   m_CullTransparentMesh: 1
+--- !u!1001 &654418047
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4776198943242505183, guid: 5e8f3b39e1d391b4085995b61a43ed3f, type: 3}
+      propertyPath: m_Name
+      value: Apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077529103005263639, guid: 5e8f3b39e1d391b4085995b61a43ed3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.134329
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077529103005263639, guid: 5e8f3b39e1d391b4085995b61a43ed3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.65989
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077529103005263639, guid: 5e8f3b39e1d391b4085995b61a43ed3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.904987
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077529103005263639, guid: 5e8f3b39e1d391b4085995b61a43ed3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077529103005263639, guid: 5e8f3b39e1d391b4085995b61a43ed3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077529103005263639, guid: 5e8f3b39e1d391b4085995b61a43ed3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077529103005263639, guid: 5e8f3b39e1d391b4085995b61a43ed3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077529103005263639, guid: 5e8f3b39e1d391b4085995b61a43ed3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077529103005263639, guid: 5e8f3b39e1d391b4085995b61a43ed3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077529103005263639, guid: 5e8f3b39e1d391b4085995b61a43ed3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e8f3b39e1d391b4085995b61a43ed3f, type: 3}
 --- !u!1 &656787404
 GameObject:
   m_ObjectHideFlags: 0
@@ -17835,7 +17896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5656678158737557720, guid: 1706a3419831b5947a69a115c5eb26a6, type: 3}
       propertyPath: m_Name
-      value: Enemy flying 2
+      value: Nightfang
       objectReference: {fileID: 0}
     - target: {fileID: 6990228689900610362, guid: 1706a3419831b5947a69a115c5eb26a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29272,7 +29333,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2499543446573216682, guid: 4a8fa5d370e10dc4ea531d620ab80e0d, type: 3}
       propertyPath: m_Name
-      value: Enemy flying 3 (1)
+      value: Doom Scarab 1
       objectReference: {fileID: 0}
     - target: {fileID: 2571208075466020410, guid: 4a8fa5d370e10dc4ea531d620ab80e0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51425,7 +51486,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2499543446573216682, guid: 4a8fa5d370e10dc4ea531d620ab80e0d, type: 3}
       propertyPath: m_Name
-      value: Enemy flying 3
+      value: Doom Scarab
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499543446573216682, guid: 4a8fa5d370e10dc4ea531d620ab80e0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2571208075466020410, guid: 4a8fa5d370e10dc4ea531d620ab80e0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51466,6 +51531,10 @@ PrefabInstance:
     - target: {fileID: 2571208075466020410, guid: 4a8fa5d370e10dc4ea531d620ab80e0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571308283109633052, guid: 4a8fa5d370e10dc4ea531d620ab80e0d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4013984019334828527, guid: 4a8fa5d370e10dc4ea531d620ab80e0d, type: 3}
       propertyPath: healthBarSlider
@@ -52317,3 +52386,4 @@ SceneRoots:
   - {fileID: 4596199026527427357}
   - {fileID: 25645689}
   - {fileID: 944624594}
+  - {fileID: 654418047}
