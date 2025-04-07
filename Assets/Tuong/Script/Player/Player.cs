@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
         anim.SetBool("grounded", grounded);
     }
 
-    private void HandleMovement()
+    public void HandleMovement()
     {
         horizontalInput = Input.GetAxis("Horizontal");
         float targetSpeed = runSpeed * horizontalInput;

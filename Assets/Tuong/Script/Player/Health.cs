@@ -84,8 +84,10 @@ public class Health : MonoBehaviour
     void UpdateHealthUI()
     {
         float healthPercent = (health / maxHealth);
-        healthSlider.value = healthPercent; 
-        healthText.text = $"Health: {healthPercent * 100f:0}%"; 
+        if(healthSlider != null) 
+            healthSlider.value = healthPercent; 
+        if(healthText != null)
+            healthText.text = $"Health: {healthPercent * 100f:0}%"; 
     }
     public void UpgradeHealth()
     {
