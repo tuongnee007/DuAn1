@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Experimental.GlobalIllumination;
 public class TestCoin
 {
     [Test]
@@ -52,14 +53,56 @@ public class TestCoin
         player.TakeDamage(5);
         Assert.AreEqual(495, player.health);
     }
+
     [Test]
-    public void TestFlipDirection ()
+    public void TestAddHealth()
     {
-        var go = new GameObject("PlayerFlipTest");
-        var player = go.AddComponent<Player>();
+        var go = new GameObject("TestAddHealth");
+        var health = go.AddComponent<Health>();
 
+        health.maxHealth = 600;
+        health.health = 500;
 
-        player.transform.localScale = Vector3.one;
-        player.Sim
+        health.AddHealth(20);
+        Assert.AreEqual(520, health.health);
     }
+    [Test]
+    public void TestResSpawn()
+    {
+        var go = new GameObject("ResSpawn");
+        var resSpawn = go.AddComponent<Health>();
+
+        resSpawn.maxHealth = 600;
+        resSpawn.health = 500;
+        resSpawn.transform.position = new Vector3(0,0, 0);  
+        
+        resSpawn.Respawn();
+
+        Assert.AreEqual(300, resSpawn.health);
+    }
+    [Test]
+    public void TestMovePlatform()
+    {
+        var go = new GameObject("PlatformMoving");
+        var platform = go.AddComponent<MovingPlatform>();
+
+        Transform Point1 = new GameObject("Point1").transform;
+        Transform Point2 = new GameObject("Point2").transform;
+
+        Point1.position = new Vector3(0, 0, 0);
+        Point2.position = new Vector3(6, 0, 0);
+
+        platform.points = new[] { Point1, Point2 };
+        platform.startingPoint = 0;
+        platform.speed = 20f;
+
+        platform.Start();
+        Assert.AreEqual(Point1.position, platform.transform.position);
+
+        platform.Update();
+        Assert.AreNotEqual(Point1.position, platform.transform.position);
+
+        Assert.Less(Vector3.Distance(platform.transform.position, Point2.position), 5f);
+    }
+
 }

@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -8,14 +8,14 @@ public class EnemyCling : MonoBehaviour
     public float moveSpeed = 5f;
     public GameObject[] wayPoints;
     public float damage;
-    int nextWayPoint = 1;
+    public int nextWayPoint = 0;
     float distToPoint;
     public float score = 2f;
     private void Update()
     {
         Move();
     }
-    private void Move()
+    public void Move()
     {
         distToPoint = Vector2.Distance(transform.position, wayPoints[nextWayPoint].transform.position);
 

@@ -336,7 +336,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private float GetUpgradeCost()
+    public float GetUpgradeCost()
     {
         if (upgradeLevel >= 1 && upgradeLevel <= 3)
         {

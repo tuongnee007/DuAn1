@@ -10,16 +10,16 @@ public class NPC : MonoBehaviour
     public TMP_Text dialogueText;
     public TMP_Text text2;
     public string[] dialogueLines;
-    private int currentLineIndex = 0;
-    private bool isPlayerInRange = false;
+    public int currentLineIndex = 0;
+    public bool isPlayerInRange = false;
 
-    private void Start()
+    public void Start()
     {
         dialoguePanel.SetActive(false); 
         text2.gameObject.SetActive(false);
     }
 
-    private void Update()
+    public void Update()
     {
         if(isPlayerInRange && Input.GetKeyDown(KeyCode.F))
         {
@@ -35,7 +35,7 @@ public class NPC : MonoBehaviour
             }
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
@@ -60,7 +60,7 @@ public class NPC : MonoBehaviour
             dialogueText.text = dialogueLines[currentLineIndex];
         }
     }
-    private void NextdialogueLine()
+    public void NextdialogueLine()
     {
         currentLineIndex++;
         if(currentLineIndex < dialogueLines.Length)

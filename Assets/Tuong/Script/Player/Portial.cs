@@ -8,7 +8,7 @@ using TMPro;
 
 public class Portial : MonoBehaviour
 {
-    private bool playerInTrigger = false;
+    public bool playerInTrigger = false;
     public GameObject infoPanel;
     private void Start()
     {

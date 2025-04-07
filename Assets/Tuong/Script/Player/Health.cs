@@ -211,7 +211,7 @@ public class Health : MonoBehaviour
     {
         return 20f;
     }
-    private void Respawn()
+    public void Respawn()
     {
         Vector3 nearestRespawnPoint = FindNearestRespawnPoint();
         transform.position = nearestRespawnPoint;
