@@ -56,7 +56,7 @@ public class PlayerHealth_test
         enemy.damage = 10;
         var colision = newobj.AddComponent<BoxCollider2D>();
         colision.isTrigger = true;
-        colision.tag = "Player";
+        colision.tag = "Player";    
         enemy.OnTriggerEnter2D(colision);
         Assert.AreEqual(90,player.health);
     }
