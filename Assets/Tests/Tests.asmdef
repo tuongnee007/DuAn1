@@ -6,7 +6,8 @@
         "UnityEditor.TestRunner",
         "NewAssembly",
         "Unity.TextMeshPro",
-        "UnityEngine.UI"
+        "UnityEngine.UI",
+        "H_ASEnemyFly"
     ],
     "includePlatforms": [
         "Editor"
