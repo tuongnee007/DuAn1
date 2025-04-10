@@ -44,15 +44,15 @@ public class PlayerAttack2 : MonoBehaviour
     }
     private void Update()
     {
-        //AudioManager audioManager = FindObjectOfType<AudioManager>();
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
         if (Input.GetMouseButtonDown(0) && !isAttacking)
         {
             isAttacking = true;
             anim.SetTrigger("attack");
-            //if (audioManager != null)
-            //{
-            //    audioManager.StartVolume();
-            //}
+            if (audioManager != null)
+            {
+                audioManager.StartVolume();
+            }
             StartCoroutine(EndAttack());
         }
 
@@ -60,10 +60,10 @@ public class PlayerAttack2 : MonoBehaviour
         {
             isAttacking = true;
             anim.SetTrigger("attack2");
-            //if (audioManager != null)
-            //{
-            //    audioManager.StartVolume();
-            //}
+            if (audioManager != null)
+            {
+                audioManager.StartVolume();
+            }
             StartCoroutine(EndAttack());
         }
     }
@@ -79,18 +79,18 @@ public class PlayerAttack2 : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackEnemy.position, Mathf.Max(attackRangeX, attackRangeY), whatIsEnemies);
         foreach (Collider2D enemy in hitEnemies)
         {
-            float damage = CalculateDamage();    
-            //EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
-            ////if (enemyHealth != null)
-            ////{
-            ////    enemyHealth.TakeDamage(damage);
-            ////}
-            ////Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
-            //if(rb != null)
-            //{
-            //    Vector2 direction = (enemy.transform.position - transform.position).normalized;
-            //    rb.AddForce(direction * pushForce, ForceMode2D.Impulse);
-            //}
+            float damage = CalculateDamage();
+            EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(damage);
+            }
+            Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                Vector2 direction = (enemy.transform.position - transform.position).normalized;
+                rb.AddForce(direction * pushForce, ForceMode2D.Impulse);
+            }
         }
     }
 

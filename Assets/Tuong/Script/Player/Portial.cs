@@ -10,7 +10,7 @@ public class Portial : MonoBehaviour
 {
     public bool playerInTrigger = false;
     public GameObject infoPanel;
-    private void Start()
+    public void Start()
     {
         infoPanel.gameObject.SetActive(false);
     }
@@ -23,7 +23,7 @@ public class Portial : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    public void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
@@ -31,7 +31,7 @@ public class Portial : MonoBehaviour
             infoPanel.gameObject.SetActive(false);
         }
     }
-    private void Update()
+    public void Update()
     {
         if (playerInTrigger && Input.GetKeyDown(KeyCode.F))
         {

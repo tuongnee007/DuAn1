@@ -242,7 +242,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    private void UpdateHealthText()
+    public void UpdateHealthText()
     {
         updateHealthText.text = $"Health: {maxHealth}";
     }

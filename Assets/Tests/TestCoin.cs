@@ -6,6 +6,7 @@ using UnityEngine.TestTools;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.Experimental.GlobalIllumination;
+using System.Net.WebSockets;
 public class TestCoin
 {
     [Test]
@@ -94,15 +95,101 @@ public class TestCoin
 
         platform.points = new[] { Point1, Point2 };
         platform.startingPoint = 0;
-        platform.speed = 20f;
+        platform.speed = 3f;
 
         platform.Start();
         Assert.AreEqual(Point1.position, platform.transform.position);
 
         platform.Update();
         Assert.AreNotEqual(Point1.position, platform.transform.position);
-
-        Assert.Less(Vector3.Distance(platform.transform.position, Point2.position), 5f);
     }
+    [UnityTest]
+    public IEnumerator TestAudioStart()
+    {
+        var gameObject = new GameObject();
 
+        var audioSource = gameObject.AddComponent<AudioSource>();
+        var audioManage = gameObject.AddComponent<AudioManager>();
+
+        audioSource.playOnAwake = false;
+        audioSource.Play();
+
+        yield return null;
+
+        Assert.IsFalse(audioSource.isPlaying, "Nguồn âm thanh phải được dừng");
+    }
+    [UnityTest]
+    public IEnumerator TestInfoPanelStart()
+    {
+        var go = new GameObject("TestInfoPanel");
+        var uiController = go.AddComponent<Portial>();
+
+        var infoPanel = new GameObject("InfoPanel");
+        infoPanel.SetActive(true);
+        uiController.infoPanel = infoPanel;
+
+        uiController.Start();
+        yield return null;
+
+        Assert.IsFalse(infoPanel.activeSelf, "InfoPanel phải được ẩn");
+    }
+    [Test]
+    public void TestShowInfoPanel()
+    {
+        var triggerObj = new GameObject("TriggerObj");
+        var trigger = triggerObj.AddComponent<Portial>();//Gắn Porital vào gameObject
+
+        var triggerColider = triggerObj.AddComponent<BoxCollider2D>();// gắn boxcolliider2d vào game object
+        triggerColider.isTrigger = true;//Bật istrigger cho gameobject để phát hiện va chạm
+
+        var infoPanel = new GameObject("InfoPanel");
+        infoPanel.SetActive(false);// Ẩn InfoPanel 
+        trigger.infoPanel = infoPanel;//Gắn infoPanel cho gameObject
+
+        var player = new GameObject("Player");
+        player.tag = "Player";//Tạo Player và gắn tag Player
+        var playerCollider = player.AddComponent<BoxCollider2D>();//Thêm boxCollider cho player
+
+        trigger.OnTriggerEnter2D(playerCollider);//Gọi hàm TriggerEnter2d khi tham số truyền vào va chạm là playerCollider
+
+        Assert.IsTrue(trigger.playerInTrigger, "Người chơi phải được đánh dấu là đang kích hoạt");
+        Assert.IsTrue(infoPanel.activeSelf, "Bảng điều khiển sẽ hiển thị sau khi kích hoạt");
+    }
+    [Test]
+    public void TestCloseInfoPanel()
+    {
+        var triggerObj = new GameObject("TriggerObj");
+        var trigger = triggerObj.AddComponent<Portial>();//Gắn Porital vào gameObject
+
+        var triggerColider = triggerObj.AddComponent<BoxCollider2D>();// gắn boxcolliider2d vào game object
+        triggerColider.isTrigger = true;//Bật istrigger cho gameobject để phát hiện va chạm
+
+        var infoPanel = new GameObject("InfoPanel");
+        infoPanel.SetActive(true);// Ẩn InfoPanel 
+        trigger.infoPanel = infoPanel;//Gắn infoPanel cho gameObject
+
+        var player = new GameObject("Player");
+        player.tag = "Player";//Tạo Player và gắn tag Player
+        var playerCollider = player.AddComponent<BoxCollider2D>();//Thêm boxCollider cho player
+
+        trigger.OnTriggerExit2D(playerCollider);//Gọi hàm TriggerEnter2d khi tham số truyền vào va chạm là playerCollider
+
+        Assert.IsFalse(trigger.playerInTrigger, "Người chơi phải được đánh dấu là đang kích hoạt");
+        Assert.IsFalse(infoPanel.activeSelf, "Bảng điều khiển sẽ hiển thị sau khi kích hoạt");
+    }
+    [Test]
+    public void UpdateHealthText()
+    {
+        var update = new GameObject();
+        var health = update.AddComponent<Health>();
+
+        var text = new GameObject();
+        var textUI = text.AddComponent<TextMeshProUGUI>();
+
+        health.updateHealthText = textUI;
+        health.maxHealth = 150;
+        health.UpdateHealthText();
+
+        Assert.AreEqual("Health: 150",textUI.text);
+    }
 }

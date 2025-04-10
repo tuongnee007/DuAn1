@@ -22020,10 +22020,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5c0ac0b791523ee4ca1cbc6d2face850, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -25123,7 +25123,7 @@ Transform:
   m_GameObject: {fileID: 1076725931}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.928642, y: 13.06279, z: -1.3660245}
+  m_LocalPosition: {x: 9.928642, y: 13.2, z: -1.3660245}
   m_LocalScale: {x: 14.841474, y: 14.900143, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49467,6 +49467,8 @@ MonoBehaviour:
     s\u1EF1 th\u1EADt nh\u01B0ng tr\u01B0\u1EDBc ti\xEAn h\xE3y \u0111\xE1nh b\u1EA1i
     \u0111\xE1m qu\xE1i v\u1EADt n\xE0y"
   - "Ch\xFAc may m\u1EAFn"
+  currentLineIndex: 0
+  isPlayerInRange: 0
 --- !u!212 &2048220418
 SpriteRenderer:
   m_ObjectHideFlags: 0
