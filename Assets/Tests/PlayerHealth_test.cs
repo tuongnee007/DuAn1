@@ -8,18 +8,18 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerHealth_test
-{        
+{            
     [Test]
     public void TextTakeDamage()
     {
         var god = new GameObject();
-        var player = god.AddComponent<Health>();   
+        var player = god.AddComponent<Health>();
         player.healthSlider = god.AddComponent<Slider>();
         player.healthText = god.AddComponent<TextMeshProUGUI>();
         player.gameoverPanel = god;
         player.takedamage = god.AddComponent<ParticleSystem>();
         player.takeDamage = god.AddComponent<AudioSource>();
-        player.updateHealthText = god.AddComponent <TextMeshProUGUI>();
+        player.updateHealthText = god.AddComponent<TextMeshProUGUI>();
         player.health = 250;
         player.TakeDamage(1f);
         Assert.AreEqual(249, player.health);
@@ -87,5 +87,88 @@ public class PlayerHealth_test
         enemy.nextWayPoint = 0;
         enemy.Move();
         Assert.AreEqual(1,enemy.nextWayPoint);
+    }
+    [Test]
+    public void EnemyChassePlayer()
+    {
+        var newobj = new GameObject();
+        newobj.AddComponent<Rigidbody2D>();
+        newobj.AddComponent<Animator>();        
+        var enemy = newobj.AddComponent<EnemyFlying>();
+        var player = new GameObject();
+        player.tag = "Player";
+        enemy.Speed = 5f;
+        enemy.boxX = 10;
+        enemy.boxY = 10;
+        enemy.transform.position= Vector2.zero;
+        player.transform.position = Vector2.right * 5f;
+        enemy.Start();
+        enemy.Update();
+        Assert.AreNotEqual(enemy.transform.position, Vector2.zero);
+    }
+    [Test]
+    public void EnemyReturnToStart()
+    {
+        var newobj = new GameObject();
+        newobj.AddComponent<Animator>();
+        var enemy = newobj.AddComponent<EnemyFlying>();
+        var player = new GameObject();
+        player.tag = "Player";
+        enemy.Speed = 5f;
+        enemy.boxX = 2f;
+        enemy.boxY = 2f;
+        enemy.transform.position = Vector2.zero;
+        player.transform.position = Vector2.right * 10f;
+        Assert.AreEqual(enemy.transform.position, Vector3.MoveTowards(Vector2.zero, Vector2.zero, enemy.Speed * Time.deltaTime));
+    }
+    [Test]
+    public void EnemyAttack()
+    {
+        var newobj = new GameObject();
+        newobj.AddComponent<Animator>();
+        var enemy = newobj.AddComponent<EnemyFlying>();
+        var player = new GameObject();
+        player.tag = "Player";
+        enemy.Speed = 5f;
+        enemy.boxX = 10f;
+        enemy.boxY = 10f;                
+        newobj.transform.position = Vector2.zero;
+        player.transform.position = Vector2.right * 1.5f;
+
+        enemy.Start();
+        enemy.Update();
+
+        Assert.IsTrue(enemy.isAttacking);
+    }
+    [Test]
+    public void EnemyRotationPlayer()
+    {
+        var newobj = new GameObject();
+        newobj.AddComponent<Animator>();
+        var enemy = newobj.AddComponent<EnemyFlying>();
+        var Player = new GameObject();
+        Player.tag = "Player";
+
+        enemy.transform.position = new Vector3(5, 0, 0);
+        Player.transform.position = new Vector3(0, 0, 0);
+
+        enemy.Start();
+        enemy.Update();
+
+        Assert.AreEqual(Quaternion.Euler(0, 0, 0), enemy.transform.rotation);
+    }
+    [Test]  
+    public void EnemyDead()
+    {
+        var newobj = new GameObject();
+        newobj.AddComponent<Animator>();
+        var enemy = newobj.AddComponent<EnemyFlying>();
+        var player = new GameObject();
+        player.tag = "Player";
+
+        enemy.isDead = true;
+        enemy.Start();
+        enemy.Update();        
+        Assert.IsTrue(enemy.isDead);
     }
 }

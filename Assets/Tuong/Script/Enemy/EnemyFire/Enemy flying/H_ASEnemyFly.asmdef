@@ -1,0 +1,17 @@
+{
+    "name": "H_ASEnemyFly",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e54fcc84887d6f74e9531f8fd883fd62",
+        "GUID:ba171b3dd2a51234ab864770f99741a5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

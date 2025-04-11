@@ -15,22 +15,22 @@ public class EnemyFlying : MonoBehaviour
     private float nextFireTime;
     public bool chase;
     public int diem = 2;
-    private bool isDead = false;
+    public bool isDead = false;
     public float time;
     private Animator anim;
     private Rigidbody2D rb;
     private Vector2 startingPoint;
     public float boxX;
     public float boxY;
-    private bool isAttacking = false;
-    private void Start()
+    public bool isAttacking = false;
+    public void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         startingPoint = transform.position;
     }
-    private void Update()
+    public void Update()
     {
         if (isDead)
         {
