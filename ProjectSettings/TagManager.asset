@@ -12,6 +12,7 @@ TagManager:
   - ground
   - Ladder
   - RespawnPoint
+  - SliderVolume
   layers:
   - Default
   - TransparentFX

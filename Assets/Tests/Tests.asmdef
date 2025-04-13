@@ -7,7 +7,9 @@
         "NewAssembly",
         "Unity.TextMeshPro",
         "UnityEngine.UI",
-        "H_ASEnemyFly"
+        "H_ASEnemyFly",
+        "Unity.InputSystem",
+        "Unity.InputSystem.TestFramework"
     ],
     "includePlatforms": [
         "Editor"
