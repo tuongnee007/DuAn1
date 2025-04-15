@@ -8,7 +8,8 @@
         "Unity.InputSystem",
         "UnityEngine.UI.Tests",
         "UnityEngine.UI",
-        "NewAssembly"
+        "NewAssembly",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

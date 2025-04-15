@@ -21,20 +21,20 @@ public class Health : MonoBehaviour
     public TMP_Text upgradeCostText;
     //Điểm hồi sinh
     private Vector3 respawnPoint;
-    private bool hasDieonce = false;
+    public bool hasDieonce = false;
     private List<Vector3> respawnPoints = new List<Vector3>();
     //UI chết
     public GameObject gameoverPanel;
-    private Animator anim;
+    public Animator anim;
     //Hack Health
     public TMP_Text updateHealthText;
     private void Awake()
     {
-        takedamage.Stop();
-        takeDamage.Stop();
+        //takedamage.Stop();
+        //takeDamage.Stop();
         respawnPoint = transform.position;;
         anim = GetComponent<Animator>();
-        gameoverPanel.SetActive(false);
+        //gameoverPanel.SetActive(false);
     }
     private void Start()
     {
