@@ -14,11 +14,11 @@ public class EnemyHealth : MonoBehaviour
     private bool scored = true;
     public float waitTime;
     public float time;
-    private Animator anim;
+    public Animator anim;
     public AudioSource dieAudio;
     public ParticleSystem takeDamage;
     private bool isDead = false;
-    private void Start()
+    private void Start()    
     {
         healthBarSlider.gameObject.SetActive(false);
         health = maxHealth;
@@ -45,15 +45,14 @@ public class EnemyHealth : MonoBehaviour
         {
             isDead = true;
             UpateHeathBarPosition();
-            anim.SetTrigger("die");
-            dieAudio.Play();
+            DieAndSound();
             gameManager.Instance.IncreaseEnemyDeathCount();
-            PlayerAttack playerAttack = FindObjectOfType<PlayerAttack>();
-            if (playerAttack != null && scored)
-            {
-                playerAttack.AddScore(score);
-                scored = false;
-            }
+            //PlayerAttack playerAttack = FindObjectOfType<PlayerAttack>();
+            //if (playerAttack != null && scored)
+            //{
+            //    playerAttack.AddScore(score);
+            //    scored = false;
+            //}
             PlayerAttack2 playerAttack2 = FindObjectOfType<PlayerAttack2>();
             if (playerAttack2 != null && scored)
             {
@@ -62,6 +61,11 @@ public class EnemyHealth : MonoBehaviour
             }
             Destroy(gameObject, waitTime);
         }
+    }
+    public void DieAndSound()
+    {
+        anim.SetTrigger("die");
+        dieAudio.Play();
     }
     private IEnumerator WaitTime()
     {

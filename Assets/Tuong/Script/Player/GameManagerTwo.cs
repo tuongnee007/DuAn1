@@ -20,6 +20,11 @@ public class GameManagerTwo : MonoBehaviour
     {
         Lives--;
         UpdateUI();
+    }  
+    public void PlayerAddDided()
+    {
+        Lives++;
+        UpdateUI();
     }
     public void UpdateUI()
     {

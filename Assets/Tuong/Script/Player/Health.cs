@@ -19,6 +19,7 @@ public class Health : MonoBehaviour
     // UI
     public Slider upgradeSlider;
     public TMP_Text upgradeCostText;
+
     //Điểm hồi sinh
     private Vector3 respawnPoint;
     public bool hasDieonce = false;
@@ -81,7 +82,7 @@ public class Health : MonoBehaviour
         }
         UpdateHealthUI();
     }
-    void UpdateHealthUI()
+    public void UpdateHealthUI()
     {
         float healthPercent = (health / maxHealth);
         if(healthSlider != null) 

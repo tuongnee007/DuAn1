@@ -56,7 +56,7 @@ public class UISuite : InputTestFixture
         volumeSlider.value = 0.5f;
         Assert.AreEqual(0.5f,volumeSlider.value);
         yield return null;
-    }
+    }  
     //[UnityTest]
     //public IEnumerator TestGraphicsResolution()
     //{

@@ -192,4 +192,97 @@ public class TestCoin
 
         Assert.AreEqual("Health: 150",textUI.text);
     }
+
+    //Test hud
+
+    [Test]// Ví trí Slider Player
+    public void SliderPosition()
+    {
+        GameObject sliderGameObject = GameObject.Find("SliderHealthPlayer");
+        Assert.IsNotNull(sliderGameObject, "Không tìm thấy Slider");
+
+        RectTransform rt = sliderGameObject.GetComponent<RectTransform>();
+        Assert.IsNotNull(rt, "Slider không có Rect transform");
+        Assert.AreEqual(new Vector2(0.5f, 0.5f), rt.anchorMin);
+        Assert.AreEqual(new Vector2(0.5f, 0.5f), rt.anchorMax);
+
+        Vector2 expectedAnchoeddPos = new Vector2(-778f, 504f);
+        Assert.AreEqual(expectedAnchoeddPos, rt.anchoredPosition, "Slider nằm không đúng vị trí");
+    }   
+
+    [Test]// Ví trí Image FlashPosition
+    public void FlashPosition()
+    {
+        GameObject imageGameobject = GameObject.Find("Flash");
+        Assert.IsNotNull(imageGameobject, "Không tìm thấy Image Flash");
+
+        RectTransform rt = imageGameobject.GetComponent<RectTransform>();
+        Assert.IsNotNull(rt, "Slider không có Rect transform");
+        Assert.AreEqual(new Vector2(0.5f, 0.5f), rt.anchorMin);
+        Assert.AreEqual(new Vector2(0.5f, 0.5f), rt.anchorMax);
+
+        Vector2 expectedAnchoeddPos = new Vector2(-490f, 508f);
+        Assert.AreEqual(expectedAnchoeddPos, rt.anchoredPosition, "Slider nằm không đúng vị trí");
+    }
+
+    [Test]// Hiển thị % máu player
+    public void HealthPlayer()
+    {
+        var go = new GameObject("Health");
+        var health = go.AddComponent<Health>();
+
+        var textGo = new GameObject("HealthText");
+        var textUI = textGo.AddComponent<TextMeshProUGUI>();
+        
+        health.healthText = textUI;
+
+        health.health = 100;
+        health.maxHealth = 100;
+
+        health.UpdateHealthUI(); 
+
+        Assert.AreEqual("Health: 100%", textUI.text, "Hiển thị % máu không đúng");
+    }
+
+    [Test] // Phát nhạc nền và lặp lại 
+    public void PlaySound()
+    {
+        GameObject sound = GameObject.Find("Audio/SoundManager");
+        Assert.IsNotNull(sound, "SoundManager không tồn tại trong Scene");
+
+        AudioSource audioSource = sound.GetComponent<AudioSource>();
+
+        Assert.AreEqual(true, audioSource.playOnAwake, "Nhạc nền không được khi bắt đầu game");
+        Assert.AreEqual(true, audioSource.loop, "Nhạc nền không được phát lặp lại");
+    }
+
+    [Test] // Phát animation run  khi chạy
+    public void PlayAnimationRun()
+    {
+        GameObject player = GameObject.Find("Player 1");
+        Assert.IsNotNull(player, "Player không tồn tại trong Scene");
+        Animator animator = player.GetComponent<Animator>();
+        Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector2(-5f, 0);
+        float speed = rb.velocity.magnitude;
+        animator.SetBool("run", speed > 0.1f);
+        bool isRunning = animator.GetBool("run");
+        Assert.AreEqual(true, isRunning, "animation run không chạy khi nhân vật di chuyển");
+    }
+
+    [Test] //Mở panelTesting
+    public void OpenPanelTesting()
+    {
+        var button = GameObject.Find("Canvas/Setting Button");
+        Assert.IsNotNull(button, "Không có button trong canvas");
+
+        Button button2 = button.GetComponent<Button>();
+        Assert.IsNotNull(button2, "Không có Button trong Scene");
+
+        var panel = GameObject.Find("Canvas/Setting Button/Setting Panel");
+        Assert.IsNotNull(panel, "Không có Panel trong Scene"); ;
+
+        button2.onClick.Invoke();
+        Assert.IsTrue(panel.activeSelf,"Panel không được bật");
+    }
 }
